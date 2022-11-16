@@ -90,6 +90,33 @@
         "padding_bottom": 52
       }
     },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
     "e664ffef-887a-4468-b461-478a838fdf2c": {
       "type": "slideshow",
       "blocks": {
@@ -142,33 +169,6 @@
         "change_slides_speed": 5,
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
       }
     },
     "9c57abdd-83c6-46dd-972f-ab760b612a9e": {
@@ -312,8 +312,8 @@
   "order": [
     "image_banner",
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33",
-    "e664ffef-887a-4468-b461-478a838fdf2c",
     "featured_collection",
+    "e664ffef-887a-4468-b461-478a838fdf2c",
     "9c57abdd-83c6-46dd-972f-ab760b612a9e",
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59",
     "93cda31d-517a-4aaf-afdf-e0db73bace11"
