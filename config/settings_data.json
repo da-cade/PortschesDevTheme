@@ -136,8 +136,7 @@
         "block_order": [
           "announcement-bar-0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -145,6 +144,8 @@
           "color_scheme": "accent-1",
           "logo": "shopify:\/\/shop_images\/portsches-logo.png",
           "logo_width": 230,
+          "logo_nav_width": 120,
+          "logo_mobile_width": 150,
           "logo_position": "float-center",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
@@ -214,9 +215,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -359,8 +358,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",
