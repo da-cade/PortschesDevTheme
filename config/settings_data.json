@@ -9,8 +9,8 @@
     "colors_background_2": "#ffffff",
     "type_header_font": "cormorant_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
-    "body_scale": 100,
+    "type_body_font": "cormorant_n4",
+    "body_scale": 115,
     "page_width": 1200,
     "spacing_sections": 60,
     "spacing_grid_horizontal": 8,
@@ -113,6 +113,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/portsches-logo.png",
     "currency_code_enabled": true,
     "cart_type": "notification",
     "show_vendor": false,
@@ -135,12 +136,13 @@
         "block_order": [
           "announcement-bar-0"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "logo": "shopify:\/\/shop_images\/portsches-logo.png",
           "logo_width": 180,
           "logo_position": "top-left",
@@ -212,7 +214,9 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
@@ -355,7 +359,8 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
