@@ -955,6 +955,10 @@
           "unit": "px",
           "label": "Custom logo width"
         },
+        "logo_nav_width": {
+          "unit": "px",
+          "label": "Custom logo width on non-home pages"
+        },
         "logo_position": {
           "label": "Desktop logo position",
           "options__1": {
