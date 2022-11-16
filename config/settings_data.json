@@ -144,7 +144,7 @@
         "settings": {
           "color_scheme": "accent-1",
           "logo": "shopify:\/\/shop_images\/portsches-logo.png",
-          "logo_width": 140,
+          "logo_width": 230,
           "logo_position": "float-center",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
