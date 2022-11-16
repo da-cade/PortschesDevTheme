@@ -122,14 +122,20 @@
           "label": "Accent 1",
           "info": "Used for solid button background."
         },
-        "gradient_accent_1": {
-          "label": "Accent 1 gradient"
+        "contrast_accent_1": {
+          "label": "Accent 1 contrast"
         },
         "colors_accent_2": {
           "label": "Accent 2"
         },
-        "gradient_accent_2": {
-          "label": "Accent 2 gradient"
+        "contrast_accent_2": {
+          "label": "Accent 2 contrast"
+        },
+        "light_background_1": {
+          "label": "Light background 1"
+        },
+        "light_background_2": {
+          "label": "Light background 2"
         },
         "header__1": {
           "content": "Primary colors"
