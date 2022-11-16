@@ -2277,11 +2277,13 @@ input[type='checkbox'] {
   }
 
   .header--top-center {
+    grid-template-areas:
+      'left-icon heading icons'
+      'navigation navigation navigation';
+  }
+  .header--float-center {
     display: flex;
     justify-content: space-between;
-    /* grid-template-areas:
-      'left-icon heading icons'
-      'navigation navigation navigation'; */
   }
 
   .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
