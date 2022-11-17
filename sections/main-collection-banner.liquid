@@ -7,9 +7,12 @@
       padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
     }
   }
+  .buffer-top {
+    margin-top: {{ section.settings.margin_top }}px;
+  }
 {%- endstyle -%}
 
-
+<div class="buffer-top">
   <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
     <div class="collection-hero__inner page-width">
       <div class="collection-hero__text-wrapper">
@@ -43,6 +46,7 @@
         {%- endif -%}
       </div>
     </div>
+  </div>
     
 {% schema %}
 {
@@ -93,7 +97,17 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
-    }
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.main-collection-banner.settings.margin_top.label",
+      "default": 0
+    },
   ]
 }
 {% endschema %}
