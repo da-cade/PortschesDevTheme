@@ -33,8 +33,10 @@
     justify-content: space-between;
   }
 
-  @media screen and (min-width: 990px) {
-    .header_
+  @media screen and (max-width: 990px) {
+    .header__heading-home-logo {
+      max-width: {{ section.settings.logo_mobile_width }}px;
+    }
   }
 
   .header__center {
@@ -849,6 +851,16 @@
       "default": 100,
       "unit": "t:sections.header.settings.logo_nav_width.unit",
       "label": "t:sections.header.settings.logo_nav_width.label"
+    },
+    {
+      "type": "range",
+      "id": "logo_mobile_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "default": 100,
+      "unit": "t:sections.header.settings.logo_mobile_width.unit",
+      "label": "t:sections.header.settings.logo_mobile_width.label"
     },
     {
       "type": "select",

@@ -991,6 +991,10 @@
         "mobile_layout": {
           "content": "Mobile layout"
         },
+        "logo_mobile_width": {
+          "unit": "px",
+          "label": "Custom logo width for mobile"
+        },
         "mobile_logo_position": {
           "label": "Mobile logo position",
           "options__1": {
