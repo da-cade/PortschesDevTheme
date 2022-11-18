@@ -17,9 +17,8 @@
     }
   }
   .bg-img{
-    background-image: {{ section.settings.image }};
+    background-image: {{ section.settings.image }}, {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};;
     background-size: cover;
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
 {%- endstyle -%}
