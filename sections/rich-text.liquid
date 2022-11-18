@@ -16,11 +16,17 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+{%- endstyle -%}
+
+{%- style -%}
+  {%- if section.settings.image != blank -%}
   .bg-img{
-    background-image: {{ section.settings.image }}, {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};;
+    background-image: url(
+      {{ section.settings.image | image_url | prepend: 'http:' }}
+    );
     background-size: cover;
   }
-
+  {%- endif -%}
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %} bg-img">
