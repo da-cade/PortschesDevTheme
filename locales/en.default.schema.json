@@ -2390,6 +2390,12 @@
     "rich-text": {
       "name": "Rich text",
       "settings": {
+        "image": {
+          "label": "First image"
+        },
+        "image_overlay_opacity": {
+          "label": "Image overlay opacity"
+        },
         "desktop_content_position": {
           "options__1": {
             "label": "Left"
