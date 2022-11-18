@@ -54,21 +54,21 @@
         "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
+            "heading": "<p>The Premier Boise Boutique<\/p>",
             "heading_size": "h1"
           }
         },
         "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Portsche's Fine Jewelry have helped thousands choose their perfect engagement ring, from  finding the right diamond to custom building the rest. We take pride in offering best in class service, expert repairs, and unique designs made in house by our goldsmiths. Custom processes can be begun by contacting our team. <\/p>"
           }
         },
         "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Send a Message",
+            "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
