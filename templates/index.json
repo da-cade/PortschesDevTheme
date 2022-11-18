@@ -48,6 +48,46 @@
         "show_text_below": false
       }
     },
+    "9c57abdd-83c6-46dd-972f-ab760b612a9e": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-0",
+        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-1",
+        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33": {
       "type": "rich-text",
       "blocks": {
@@ -61,7 +101,7 @@
         "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Portsche's Fine Jewelry have helped thousands choose their perfect engagement ring, from  finding the right diamond to custom building the rest. We take pride in offering best in class service, expert repairs, and unique designs made in house by our goldsmiths. Custom processes can be begun by contacting our team. <\/p>"
+            "text": "<p>Portsche's Fine Jewelry have helped thousands choose their perfect piece, from engagement rings to estate jewelry to custom pieces. We take pride in offering best in class service, expert repairs, and unique designs made in house by our goldsmiths. Custom processes can begin by contacting our team. <\/p>"
           }
         },
         "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-2": {
@@ -173,46 +213,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "9c57abdd-83c6-46dd-972f-ab760b612a9e": {
-      "type": "collection-list",
-      "blocks": {
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-0",
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-1",
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-2"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59": {
       "type": "image-with-text",
       "blocks": {
@@ -313,10 +313,10 @@
   },
   "order": [
     "image_banner",
+    "9c57abdd-83c6-46dd-972f-ab760b612a9e",
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33",
     "featured_collection",
     "e664ffef-887a-4468-b461-478a838fdf2c",
-    "9c57abdd-83c6-46dd-972f-ab760b612a9e",
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59",
     "93cda31d-517a-4aaf-afdf-e0db73bace11"
   ]
