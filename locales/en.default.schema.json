@@ -1167,6 +1167,9 @@
         "image": {
           "label": "Image"
         },
+        "image_2": {
+          "label": "Background Image"
+        },
         "height": {
           "options__1": {
             "label": "Adapt to image"
