@@ -246,6 +246,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/P8300766.jpg",
         "image_2": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
+        "color": "",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",

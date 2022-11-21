@@ -1170,6 +1170,9 @@
         "image_2": {
           "label": "Background Image"
         },
+        "color_scheme": {
+          "info": "Background color for greeting card."
+        },
         "height": {
           "options__1": {
             "label": "Adapt to image"
