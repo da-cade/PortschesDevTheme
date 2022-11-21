@@ -131,12 +131,6 @@
         "contrast_accent_2": {
           "label": "Accent 2 contrast"
         },
-        "light_background_1": {
-          "label": "Light background 1"
-        },
-        "light_background_2": {
-          "label": "Light background 2"
-        },
         "header__1": {
           "content": "Primary colors"
         },
@@ -154,14 +148,14 @@
         "colors_background_1": {
           "label": "Background 1"
         },
-        "gradient_background_1": {
-          "label": "Background 1 gradient"
-        },
         "colors_background_2": {
           "label": "Background 2"
         },
-        "gradient_background_2": {
-          "label": "Background 2 gradient"
+        "light_background_1": {
+          "label": "Light background 1"
+        },
+        "light_background_2": {
+          "label": "Light background 2"
         }
       }
     },
