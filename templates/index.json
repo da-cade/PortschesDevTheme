@@ -244,9 +244,9 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-2"
       ],
       "settings": {
-        "image": "",
+        "image": "shopify:\/\/shop_images\/P8300766.jpg",
         "image_2": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
-        "height": "adapt",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
@@ -254,8 +254,8 @@
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "93cda31d-517a-4aaf-afdf-e0db73bace11": {
