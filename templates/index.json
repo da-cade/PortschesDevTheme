@@ -66,7 +66,7 @@
         "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "under-100"
           }
         }
       },
@@ -135,12 +135,12 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Collection of Featured Items",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "philip-portsche-collection",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
@@ -150,7 +150,7 @@
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
