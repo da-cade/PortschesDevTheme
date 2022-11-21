@@ -35,8 +35,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/store-interior.resize.jpg",
-        "image_overlay_opacity": 70,
+        "image": "shopify:\/\/shop_images\/P9100906.jpg",
+        "image_overlay_opacity": 50,
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
