@@ -1,8 +1,8 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "text_color_1": "#000000",
-    "text_color_2": "#ffffff",
+    "text_color_1": "255, 255, 255",
+    "text_color_2": "0, 0, 0",
     "colors_accent_1": "#64816f",
     "colors_accent_2": "#ffe2d8",
     "colors_text": "#121212",
