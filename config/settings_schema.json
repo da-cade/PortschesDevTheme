@@ -46,12 +46,12 @@
       },
       {
         "id": "light_background_1",
-        "type": "color_background",
+        "type": "color",
         "label": "t:settings_schema.colors.settings.light_background_1.label"
       },
       {
         "id": "light_background_2",
-        "type": "color_background",
+        "type": "color",
         "label": "t:settings_schema.colors.settings.light_background_2.label"
       },
       {
