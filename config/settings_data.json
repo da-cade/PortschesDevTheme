@@ -1,6 +1,8 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
+    "text_color_1": "#000000",
+    "text_color_2": "#ffffff",
     "colors_accent_1": "#64816f",
     "colors_accent_2": "#ffe2d8",
     "colors_text": "#121212",
@@ -136,8 +138,7 @@
         "block_order": [
           "announcement-bar-0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -217,9 +218,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -362,8 +361,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",

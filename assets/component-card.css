@@ -172,6 +172,7 @@
 }
 
 .card__heading {
+  color: inherit;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -312,8 +313,7 @@
 .card-information {
   display: flex;
   flex-direction: column;
-  /* height: auto; */
-  /* justify-content: space-between; */
+  color: inherit;
   flex-grow: 1;
   width: 100%;
 }
