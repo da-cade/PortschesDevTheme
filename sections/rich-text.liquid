@@ -31,13 +31,14 @@
     background-size: cover;
   }
   .bg-banner{
+    display: block !important;
     max-width: 5vw;
     flex-direction: column;
     flex-grow: 1;
   }
   .flex-col{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .bg-blue{
     background-color: #DFF2FF;
@@ -47,8 +48,8 @@
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %} flex-col">
   <div class="bg-img bg-banner"></div>
-  <div class="rich-text content-container {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding ">
-    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %} color-{{ section.settings.color_scheme }} gradient py-5 bg-blue">
+  <div class="rich-text content-container {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding bg-blue">
+    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %} color-{{ section.settings.color_scheme }} gradient py-5 ">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
