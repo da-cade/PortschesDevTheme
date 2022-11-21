@@ -113,7 +113,7 @@
 .card__content {
   display: grid;
   grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr);
-  padding: 1rem;
+  padding: .5rem;
   width: 100%;
   flex-grow: 1;
 }
@@ -138,6 +138,9 @@
   .card__information {
     padding-bottom: 1.7rem;
     padding-top: 1.7rem;
+  }
+  .card__content {
+    padding: .75rem;
   }
 }
 
@@ -226,6 +229,7 @@
   outline: 0;
 }
 
+
 @media screen and (min-width: 990px) {
   .card .media.media--hover-effect > img:only-child,
   .card-wrapper .media.media--hover-effect > img:only-child {
@@ -252,6 +256,9 @@
   .underline-links-hover:hover a {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+  }
+  .card__content {
+    padding: 1rem;
   }
 }
 
