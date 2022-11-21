@@ -75,6 +75,10 @@
   }
 }
 
+.collection__view-all {
+  margin-top: 3rem;
+}
+
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
