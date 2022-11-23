@@ -9,6 +9,7 @@
   },
   {
     "name": "t:settings_schema.colors.name",
+    "id": "color_schemes_list",
     "settings": [
       {
         "type": "header",
