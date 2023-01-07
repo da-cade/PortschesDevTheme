@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
+{%- if section.settings.menu_type_desktop == 'mega' -%}
+  <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
+{%- endif -%}
 {%- if settings.cart_type == "drawer" -%}
   {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
   {{ 'component-cart.css' | asset_url | stylesheet_tag }}
@@ -28,90 +32,8 @@
     margin-left: -1.2rem;
   }
 
-  .header{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media screen and (max-width: 600px) {
-    #desktop-logo {
-      display: none;
-      visibility: hidden;
-    }
-    .header__offset-right{
-      padding: 0;
-      position: absolute;
-      display: flex;
-      top: -3%;
-      justify-content: center;
-      width: 100%;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    .header__center{
-      position: absolute;
-      display: flex;
-      top: -3%;
-      justify-content: center;
-      width: 100%;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  @media screen and (min-width: 600px) {
-    #mobile-logo {
-      display: none;
-      visibility: hidden;
-    }
-    .header__center {
-      position: absolute;
-      display: flex;
-      top: 56%;
-      justify-content: center;
-      width: 100%;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    .header__offset-right{
-      padding: 0;
-      position: absolute;
-      display: flex;
-      top: -3%;
-      justify-content: center;
-      width: 100%;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  @media screen and (min-width: 990px) {
-    .header__offset-right {
-      padding-left: 0;
-      padding-right: inherit;
-      display: flex;
-      position: absolute;
-      justify-content: end;
-      width: auto;
-      right: 20%;
-      top: 10%;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  .header__icons{
-    margin-top: 5px;
-  }
-
-  .header__heading-mobile-logo {
-    max-width: {{ section.settings.mobile_logo_width }}px;
-  }
-  .header__heading-home-logo {
+  .header__heading-logo {
     max-width: {{ section.settings.logo_width }}px;
-  }
-  .header__heading-nav-logo {
-    max-width: {{ section.settings.logo_nav_width }}px;
   }
 
   @media screen and (min-width: 990px) {
@@ -201,65 +123,8 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  {%- if section.settings.logo_position == 'float-center' -%}
-    {%- if request.page_type == 'index' -%}
-      <h1 class="header__center">
-    {%- else -%}
-      <h1 class="header__offset-right page-width">
-    {%- endif -%}
-    <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-    {%- if section.settings.logo != blank -%}
-      {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
-      {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
-      {%- assign logo_nav_height = section.settings.logo_nav_width | divided_by: section.settings.logo.aspect_ratio -%}
-      {%- if request.page_type == 'index' -%}
-        {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
-          id: 'desktop-logo',
-          class: 'header__heading-home-logo',
-          widths: '50, 100, 150, 200, 250, 300, 400, 500',
-          height: logo_height,
-          width: section.settings.logo_width,
-          alt: logo_alt
-        }}
-        {%- else -%}
-        {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
-          id: 'desktop-logo',
-          class: 'header__heading-nav-logo',
-          widths: '50, 100, 150, 200, 250, 300, 400, 500',
-          height: logo_nav_height,
-          width: section.settings.logo_nav_width,
-          alt: logo_alt
-        }}
-      {%- endif -%}
-      
-      {%- else -%}
-      <span class="h2">{{ shop.name }}</span>
-    {%- endif -%}
-    {%- if section.settings.mobile_logo != blank -%}
-        {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
-        {%- assign mobile_logo_height = section.settings.mobile_logo_width | divided_by: section.settings.logo.aspect_ratio -%}
-        {{ section.settings.mobile_logo | image_url: width: section.settings.width | image_tag:
-          id: 'mobile-logo',
-          class: 'header__heading-mobile-logo',
-          widths: '50, 100, 150, 200, 250, 300, 400, 500',
-          height: mobile_logo_height,
-          width: section.settings.mobile_logo_width,
-          alt: logo_alt
-        }}
-    {%- else -%}
-      <span class="h2">{{ shop.name }}</span>
-    {%- endif -%}
-    </a>
-    {%- if request.page_type == 'index' -%}
-      </h1>
-    {% else %}
-      </h1>
-    {%- endif -%}
-  {%- endif -%}
-
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
-      
       <header-drawer data-breakpoint="tablet">
         <details id="Details-menu-drawer-container" class="menu-drawer-container">
           <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
@@ -429,7 +294,7 @@
       </header-drawer>
     {%- endif -%}
 
-    {% comment %} {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
+    {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -502,7 +367,31 @@
           </div>
         </details>
       </details-modal>
-    {%- endif -%} {% endcomment %}
+    {%- endif -%}
+
+    {%- if section.settings.logo_position != 'middle-center' -%}
+      {%- if request.page_type == 'index' -%}
+        <h1 class="header__heading">
+      {%- endif -%}
+          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+            {%- if section.settings.logo != blank -%}
+              {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
+              {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
+              {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+                class: 'header__heading-logo',
+                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                height: logo_height,
+                width: section.settings.logo_width,
+                alt: logo_alt
+              }}
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+      {%- if request.page_type == 'index' -%}
+        </h1>
+      {%- endif -%}
+    {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
@@ -600,6 +489,30 @@
             {%- endfor -%}
           </ul>
         </nav>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if section.settings.logo_position == 'middle-center' -%}
+      {%- if request.page_type == 'index' -%}
+        <h1 class="header__heading">
+      {%- endif -%}
+          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+            {%- if section.settings.logo != blank -%}
+              {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
+              {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
+              {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+                class: 'header__heading-logo',
+                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                height: logo_height,
+                width: section.settings.logo_width,
+                alt: logo_alt
+              }}
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+      {%- if request.page_type == 'index' -%}
+        </h1>
       {%- endif -%}
     {%- endif -%}
 
@@ -899,40 +812,27 @@
       "label": "t:sections.header.settings.logo_width.label"
     },
     {
-      "type": "range",
-      "id": "logo_nav_width",
-      "min": 50,
-      "max": 250,
-      "step": 10,
-      "default": 100,
-      "unit": "t:sections.header.settings.logo_nav_width.unit",
-      "label": "t:sections.header.settings.logo_nav_width.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "mobile_logo",
-      "label": "t:sections.header.settings.mobile_logo.label"
-    },
-    {
-      "type": "range",
-      "id": "mobile_logo_width",
-      "min": 50,
-      "max": 250,
-      "step": 10,
-      "default": 100,
-      "unit": "t:sections.header.settings.mobile_logo_width.unit",
-      "label": "t:sections.header.settings.mobile_logo_width.label"
-    },
-    {
       "type": "select",
       "id": "logo_position",
       "options": [
         {
-          "value": "float-center",
+          "value": "top-left",
+          "label": "t:sections.header.settings.logo_position.options__2.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.header.settings.logo_position.options__3.label"
+        },
+        {
+          "value": "middle-left",
           "label": "t:sections.header.settings.logo_position.options__1.label"
+        },
+        {
+          "value": "middle-center",
+          "label": "t:sections.header.settings.logo_position.options__4.label"
         }
       ],
-      "default": "float-center",
+      "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label"
     },
     {
