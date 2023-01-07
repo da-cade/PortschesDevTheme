@@ -956,7 +956,16 @@
         "logo_position": {
           "label": "Desktop logo position",
           "options__1": {
-            "label": "Float center"
+            "label": "Middle left"
+          },
+          "options__2": {
+            "label": "Top left"
+          },
+          "options__3": {
+            "label": "Top center"
+          },
+          "options__4": {
+            "label": "Middle center"
           }
         },
         "menu": {
