@@ -9,6 +9,17 @@
     },
     "166758138605b0c625": {
       "type": "apps",
+      "blocks": {
+        "d119eb75-aaef-4926-8a14-940d2602bbef": {
+          "type": "shopify:\/\/apps\/cli-react-playground\/blocks\/app-block\/4f89c47d-1222-4d2a-b482-54d9f9b0e3d5",
+          "settings": {
+            "color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "d119eb75-aaef-4926-8a14-940d2602bbef"
+      ],
       "settings": {
         "include_margins": true
       }
