@@ -87,6 +87,8 @@
 
 {%- style -%}
   .header {
+    display: flex;
+    justify-content: space-between;
     padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
   }
@@ -96,6 +98,7 @@
   }
 
   .header-wrapper {
+    position: absolute;
     width: 90%;
   }
 

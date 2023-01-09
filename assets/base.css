@@ -2232,7 +2232,6 @@ input[type='checkbox'] {
 
 /* section-header */
 #shopify-section-header {
-  position: absolute;
   width: 100%;
   justify-content: center;
   display: flex;
