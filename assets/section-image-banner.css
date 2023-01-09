@@ -152,11 +152,11 @@
 
 /* REVIEW important - non permanent */
 .banner__media {
-  height: 94%!important;
+  height: 98%!important;
   position: absolute;
-  left: 1.5%;
-  top: 3%;
-  width: 97%;
+  left: .5%;
+  top: 1%;
+  width: 99%;
 }
 
 .banner__media-half {
