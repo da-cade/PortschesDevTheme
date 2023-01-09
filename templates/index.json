@@ -37,7 +37,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/byz-wallpaper_66cfbe5b-3094-4cf1-bfa5-75a1784d8aab.jpg",
         "image_2": "shopify:\/\/shop_images\/handmade-jewelry-textile-background-gift-women-bijouterie-jewellery-women_230311-39816.jpg",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 10,
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-right",
