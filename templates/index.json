@@ -284,6 +284,7 @@
         "template--14669277954153__93cda31d-517a-4aaf-afdf-e0db73bace11-166863043466cc0644-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/hand-holds-up-a-two-scoop-ice-cream-cone.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
