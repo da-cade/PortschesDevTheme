@@ -772,6 +772,8 @@ h3 .icon-arrow,
   transition: transform var(--duration-short) ease;
 }
 
+/* REVIEW change this */
+
 .animate-arrow:hover .icon-arrow path {
   transform: translateX(-0.05rem);
 }
@@ -1256,7 +1258,7 @@ summary::-webkit-details-marker {
 .media > img {
   object-fit: cover;
   object-position: center center;
-  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .media--square {
@@ -2230,6 +2232,10 @@ input[type='checkbox'] {
 
 /* section-header */
 #shopify-section-header {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  display: flex;
   z-index: 3;
 }
 

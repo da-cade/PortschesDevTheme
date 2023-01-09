@@ -103,6 +103,8 @@
 
 .card__inner {
   width: 100%;
+  margin-bottom: 1rem;
+  
 }
 
 .card--media .card__inner .card__content {
@@ -116,6 +118,11 @@
   padding: .5rem;
   width: 100%;
   flex-grow: 1;
+}
+
+/* MINE */
+.inset-shadow {
+  box-shadow: 0 0 3px 0 inset rgba(0, 0, 0, 0.171);
 }
 
 .card__content--auto-margins {
@@ -138,9 +145,6 @@
   .card__information {
     padding-bottom: 1.7rem;
     padding-top: 1.7rem;
-  }
-  .card__content {
-    padding: .75rem;
   }
 }
 
@@ -256,9 +260,6 @@
   .underline-links-hover:hover a {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
-  }
-  .card__content {
-    padding: 1rem;
   }
 }
 
