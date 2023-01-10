@@ -49,7 +49,7 @@
 
 <div class="isolate flex-card bg-img w-100">
   <div class="rich-text content-container rich-text--full-width content-container--full-width section-{{ section.id }}-padding w-80">
-    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}page-width color-{{ section.settings.color_scheme }} gradient p-5 w-100">
+    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }} color-{{ section.settings.color_scheme }} gradient p-5 w-100">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
