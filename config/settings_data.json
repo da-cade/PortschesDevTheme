@@ -147,6 +147,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
+          "background_image": "shopify:\/\/shop_images\/byz-wallpaper_66cfbe5b-3094-4cf1-bfa5-75a1784d8aab.jpg",
           "logo": "shopify:\/\/shop_images\/thin_logo_gold.png",
           "logo_width": 190,
           "logo_position": "middle-left",
