@@ -49,6 +49,33 @@
         "show_text_below": false
       }
     },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Collection of Featured Items",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "philip-portsche-collection",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "accent-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
     "9c57abdd-83c6-46dd-972f-ab760b612a9e": {
       "type": "collection-list",
       "blocks": {
@@ -131,33 +158,6 @@
         "full_width": true,
         "padding_top": 80,
         "padding_bottom": 80
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Collection of Featured Items",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "philip-portsche-collection",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "accent-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
       }
     },
     "e664ffef-887a-4468-b461-478a838fdf2c": {
@@ -318,9 +318,9 @@
   },
   "order": [
     "image_banner",
+    "featured_collection",
     "9c57abdd-83c6-46dd-972f-ab760b612a9e",
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33",
-    "featured_collection",
     "e664ffef-887a-4468-b461-478a838fdf2c",
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59",
     "93cda31d-517a-4aaf-afdf-e0db73bace11"
