@@ -740,8 +740,64 @@ details > * {
 :root {
   --duration-short: 100ms;
   --duration-default: 200ms;
-  --duration-long: 500ms;
+  --duration-long: 350ms;
 }
+
+/* MINE */
+
+.btn-flip{
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block!important;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+
+.btn-flip:hover::after{
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover::before{
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-flip:after{
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: white;
+  background: black;
+  display: block;
+  transition: var(--duration-long);
+  position: absolute;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip:before{
+  top: 0;
+  left: 0;
+  opacity: 1;
+  /* color: #adadaf; */
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: var(--duration-long);
+  position: relative;
+  /* background: #323237; */
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+}
+
 
 .underlined-link,
 .customer a {
@@ -2980,3 +3036,4 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
