@@ -100,6 +100,7 @@
 
   .section-header::after{
     content: "";
+    position: absolute;
     background-size: cover;
     background-image: url(
       {{ section.settings.background_image | image_url | prepend: 'http:' }}
