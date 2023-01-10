@@ -98,6 +98,18 @@
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .section-header::after{
+    content: "";
+    background-size: cover;
+    background-image: url(
+      {{ section.settings.background_image | image_url | prepend: 'http:' }}
+    );
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+
+  }
+
   .header-wrapper {
     position: absolute;
     width: 98%;
@@ -805,6 +817,11 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "t:sections.header.settings.background_image.label"
     },
     {
       "type": "image_picker",

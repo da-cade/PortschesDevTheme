@@ -942,6 +942,9 @@
     "header": {
       "name": "Header",
       "settings": {
+        "background_image": {
+          "label": "Background Image"
+        },
         "logo": {
           "label": "Logo image"
         },
