@@ -16,60 +16,40 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  .py-5{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .p-5{
+    padding: 5rem;
   }
 {%- endstyle -%}
 
 {%- style -%}
   {%- if section.settings.image != blank -%}
-  @media screen and (max-width: 750px){
-    .flex-col{
-      display: flex;
-      flex-direction: column;
-      /* justify-content: center; */
-    }
-    .bg-banner{
-      display: block !important;
-      /* max-width: 100%; */
-      flex-grow: 1;
-      height: 10vh;
-    }
-  }
-  @media screen and (min-width: 750px){
-    .flex-col{
-      display: flex;
-      margin-left: auto;
-      max-width: 90%;
-    }
-    
-    .bg-banner{
-      display: block !important;
-      max-width: 5vw;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-  }
+
   .bg-img{
     background-image: url(
       {{ section.settings.image | image_url | prepend: 'http:' }}
     );
     background-size: cover;
   }
-  .bg-blue{
-    background-color: #DFF2FF;
+
+  .bg-blush{
+    background-color: #FFE2D8;
   }
-  .mw-fill{
-    flex-grow: 1;
+
+  .accent-bar{
+    display: block!important;
+    height: 1rem;
   }
+
+  .w-100{
+    width: 100%;
+  }
+
   {%- endif -%}
 {%- endstyle -%}
 
-<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %} flex-col">
-  <div class="bg-img bg-banner"></div>
-  <div class="rich-text content-container {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding bg-blue mw-fill">
-    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %} color-{{ section.settings.color_scheme }} gradient py-5 ">
+<div class="isolate flex-card bg-img w-100">
+  <div class="rich-text content-container rich-text--full-width content-container--full-width section-{{ section.id }}-padding w-60">
+    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}page-width color-{{ section.settings.color_scheme }} gradient p-5 w-100">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -98,6 +78,7 @@
         {%- endfor -%}
       </div>
     </div>
+    <div class="bg-blush accent-bar w-100"></div>
   </div>
   
 </div>
