@@ -24,24 +24,6 @@
 {%- endif -%}
 
 {%- style -%}
-  /* .bg-white{
-    display: flex;
-    top: 30vh;
-    left: 5%;
-    height: 70%;
-    width: 90%;
-    position: absolute;
-    background: #0f1329;
-  } */
-
-  .make-big {
-    height: 150vh;
-  }
-
-  .landing-bg-img{
-    /* display: block!important; */
-    display: flex;
-  }
 
   #overlay__media::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
@@ -49,7 +31,7 @@
 
   .my__media {
     position: absolute;
-    top: 35vh;
+    top: 10%;
     left: 5%;
     height: 70%;
     width: 90%;
@@ -59,76 +41,53 @@
     /* outline: solid 30px #412828; RED */
     /* border: solid 2px black; */
   }
-
-  .bg__media {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    /* top: 60vh; */
-    width: 100%;
-  }
   
   .my__banner {
     display: flex!important;
   }
 
-  @media screen and (max-width: 749px) {
-    .my__media {
-      position: relative;
-    }
-  }
-  @media screen and (min-width: 750px) {
-    .my__banner {
-      padding: 2rem!important;
-    }
-  }
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="make-big banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
-    <div class="bg__media landing-bg-img">
-      
-        <div id="overlay__media" class="my__media media">
-          {%-liquid
-            assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
-          -%}
-          {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
-            loading: 'lazy',
-            width: section.settings.image_2.width,
-            height: image_height_2,
-            class: image_class_2,
-            sizes: sizes,
-            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-            alt: section.settings.image_2.alt | escape
-          }}
-          <div class="my__banner banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-            <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                  {%- when 'heading' -%}
-                    <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                      <span>{{ block.settings.heading | escape }}</span>
-                    </h2>
-                  {%- when 'text' -%}
-                    <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                      <span>{{ block.settings.text | escape }}</span>
-                    </div>
-                  {%- when 'buttons' -%}
-                    <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
-                      {%- if block.settings.button_label_1 != blank -%}
-                        <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
-                      {%- endif -%}
-                      {%- if block.settings.button_label_2 != blank -%}
-                        <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
-                      {%- endif -%}
-                    </div>
-                {%- endcase -%}
-              {%- endfor -%}
-            </div>
-          </div>
-        </div>
-      
+  <div id="overlay__media" class="my__media media">
+    {%-liquid
+      assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
+    -%}
+    {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
+      loading: 'lazy',
+      width: section.settings.image_2.width,
+      height: image_height_2,
+      class: image_class_2,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image_2.alt | escape
+    }}
+    <div class="my__banner banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+      <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+              <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                <span>{{ block.settings.heading | escape }}</span>
+              </h2>
+            {%- when 'text' -%}
+              <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                <span>{{ block.settings.text | escape }}</span>
+              </div>
+            {%- when 'buttons' -%}
+              <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+                {%- if block.settings.button_label_1 != blank -%}
+                  <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
+                {%- endif -%}
+                {%- if block.settings.button_label_2 != blank -%}
+                  <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+                {%- endif -%}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
-  
+  </div>    
 </div>
 
 {% schema %}
