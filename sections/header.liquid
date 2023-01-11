@@ -105,14 +105,14 @@
     background-image: url(
       {{ section.settings.background_image | image_url | prepend: 'http:' }}
     );
-    height: 100vh;
+    height: 130vh;
     width: 100%;
   }
 
   .header-wrapper {
     width: 98%;
-    margin-top: 10px;
-    margin-bottom: 5vh;
+    margin-top: 2vh;
+    margin-bottom: calc(2vh + 30px);
   }
 
   @media screen and (min-width: 750px) {

@@ -2291,7 +2291,6 @@ input[type='checkbox'] {
   width: 100%;
   justify-content: center;
   display: flex;
-  z-index: 3;
 }
 
 .shopify-section-header-sticky {
@@ -2316,7 +2315,7 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .header-wrapper--border-bottom {
