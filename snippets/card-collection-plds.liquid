@@ -21,9 +21,6 @@
   elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
     assign ratio = card_collection.featured_image.aspect_ratio
   endif
-  if ratio == 0 or ratio == null
-    assign ratio = 1
-  endif
   assign card_color_scheme = settings.card_color_scheme
   assign card_style = settings.card_style
   if wrapper_class == null or wrapper_class == 'none'
@@ -32,7 +29,7 @@
   endif
 -%}
 
-<div class="card-wrapper{% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+<div class="card-wrapper {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
   <div
     class="
       card
@@ -54,12 +51,12 @@
           <div class="media media--transparent media--hover-effect">
             <img
               srcset="
-                {%- if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
+                {% comment %} {%- if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
                 {%- if card_collection.featured_image.width >= 330 -%}{{ card_collection.featured_image | image_url: width: 330 }} 330w,{%- endif -%}
                 {%- if card_collection.featured_image.width >= 535 -%}{{ card_collection.featured_image | image_url: width: 535 }} 535w,{%- endif -%}
                 {%- if card_collection.featured_image.width >= 750 -%}{{ card_collection.featured_image | image_url: width: 750 }} 750w,{%- endif -%}
                 {%- if card_collection.featured_image.width >= 1000 -%}{{ card_collection.featured_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                {%- if card_collection.featured_image.width >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if card_collection.featured_image.width >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500 }} 1500w,{%- endif -%} {% endcomment %}
                 {%- if card_collection.featured_image.width >= 3000 -%}{{ card_collection.featured_image | image_url: width: 3000 }} 3000w,{%- endif -%}
                 {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width }}w
               "
