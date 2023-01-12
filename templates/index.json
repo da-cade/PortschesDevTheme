@@ -63,7 +63,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "link",
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "color_scheme": "accent-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
