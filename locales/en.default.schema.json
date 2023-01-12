@@ -590,6 +590,53 @@
         "name": "Collection list"
       }
     },
+    "cover-image": {
+      "name": "Cover image",
+      "settings": {
+        "image": {
+          "label": "Image"
+        },
+        "image_overlay_opacity": {
+          "label": "Image overlay opacity"
+        },
+        "header": {
+          "content": "Mobile Layout"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Description"
+            },
+            "text_style": {
+              "options__1": {
+                "label": "Body"
+              },
+              "options__2": {
+                "label": "Subtitle"
+              },
+              "options__3": {
+                "label": "Uppercase"
+              },
+              "label": "Text style"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Pleiades Collection list"
+      }
+    },
     "plds-collection-list": {
       "name": "Pleiades Collection list",
       "settings": {
