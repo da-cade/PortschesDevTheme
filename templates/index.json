@@ -76,46 +76,6 @@
         "padding_bottom": 36
       }
     },
-    "9c57abdd-83c6-46dd-972f-ab760b612a9e": {
-      "type": "collection-list",
-      "blocks": {
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "emerald-rings"
-          }
-        },
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "engagement-rings"
-          }
-        },
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "under-100"
-          }
-        }
-      },
-      "block_order": [
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-0",
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-1",
-        "template--14669277954153__9c57abdd-83c6-46dd-972f-ab760b612a9e-16686299202fe8cbe5-2"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "background-2",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33": {
       "type": "rich-text",
       "blocks": {
@@ -319,7 +279,6 @@
   "order": [
     "image_banner",
     "featured_collection",
-    "9c57abdd-83c6-46dd-972f-ab760b612a9e",
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33",
     "e664ffef-887a-4468-b461-478a838fdf2c",
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59",
