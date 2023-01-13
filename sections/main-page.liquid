@@ -16,22 +16,14 @@
     padding: 1rem;
   }
 
-  .heading-banner {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.450);
-  }
-
   .rte{
-  max-height: 30%;
-  flex-grow: 1;
+    max-height: 30%;
+    /* flex-grow: 1; */
   }
 
   .page-content {
-  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
 
@@ -52,6 +44,13 @@
     );
     background-size: cover;
     background-position: center;
+  }
+
+  .heading-banner {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.450);
   }
 
   .main-page-title {
@@ -81,8 +80,8 @@
 <div class="section-{{ section.id }}-padding">
   <div class="content-column">
     <div class="cover-img">
-      <div class="heading-banner">
-        <h1 class="main-page-title page-title h0  page-width">
+      <div class="heading-banner banner__content--{{ section.settings.desktop_title_position }}">
+        <h1 class="main-page-title page-title h0 page-width">
           {{ page.title | escape }}
         </h1>
       </div>
@@ -105,6 +104,50 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.main-page.settings.image.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_title_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__1.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__2.label"
+        },
+        {
+          "value": "top-right",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__3.label"
+        },
+        {
+          "value": "middle-left",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__4.label"
+        },
+        {
+          "value": "middle-center",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__5.label"
+        },
+        {
+          "value": "middle-right",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__6.label"
+        },
+        {
+          "value": "bottom-left",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__7.label"
+        },
+        {
+          "value": "bottom-center",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__8.label"
+        },
+        {
+          "value": "bottom-right",
+          "label": "t:sections.main-page.settings.desktop_title_position.options__9.label"
+        }
+      ],
+      "default": "middle-center",
+      "label": "t:sections.main-page.settings.desktop_title_position.label"
     },
     {
       "type": "header",
