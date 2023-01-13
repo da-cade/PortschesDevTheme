@@ -221,15 +221,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "1449514830453105753": {
-        "type": "shopify:\/\/apps\/appointment-scheduling\/blocks\/appointment-scheduler-embed\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Default": {
