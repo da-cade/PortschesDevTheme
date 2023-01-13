@@ -138,6 +138,15 @@
   --color-card-hover: var(--color-base-solid-button-labels);
 }
 
+.bg-light-1 {
+  background-color: rgb(var(--color-base-background-1));
+}
+
+.bg-light-2{
+  background-color: rgb(var(--color-base-background-2));
+
+}
+
 :root,
 .color-icon-text {
   --color-icon: rgb(var(--color-base-text));
