@@ -144,7 +144,11 @@
 
 .bg-light-2{
   background-color: rgb(var(--color-base-background-2));
+}
 
+/* MINE */
+main {
+  background-color: rgb(var(--color-base-background-1));
 }
 
 :root,
