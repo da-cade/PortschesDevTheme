@@ -5,85 +5,107 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-}
-
-@media screen and (min-width: 750px) {
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top }}px;
-padding-bottom: {{ section.settings.padding_bottom }}px;
-}
-}
+  {%- comment -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+  {%- endcomment -%}
 
 
-{%- if section.settings.image -%}
-.cover-img {
-height: 60vh;
-width: 100%;
-background-image: url(
-{{ section.settings.image | image_url | prepend: 'http:' }}
-);
-background-size: cover;
-background-position: center;
-}
+  .cover-break {
+  height: 70%;
+  }
 
-.main-page-title {
-/* color: white; */
-}
-{%- endif -%}
+  .rte{
+    max-height: 30%;
+    flex-grow: 1;
+  }
+
+  .page-content {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+
+
+  {%- if section.settings.image -%}
+  .cover-img {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 100%;
+  background-image: url(
+  {{ section.settings.image | image_url | prepend: 'http:' }}
+  );
+  background-size: cover;
+  background-position: center;
+  }
+
+  .main-page-title {
+  /* color: white; */
+  }
+  {%- endif -%}
+
+  @media screen and (min-width: 750px) {
+  {%- comment -%}.section-{{ section.id }}-padding { {%- endcomment -%}
+  .page-content {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 {%- endstyle -%}
 
 {% comment %} <div class="page-width page-width--narrow section-{{ section.id }}-padding"> {% endcomment %}
-  <div class="section-{{ section.id }}-padding">
-    <div class="cover-img">
-      <div class="content-column page-width">
-        <h1 class="main-page-title page-title h0">
-          {{ page.title | escape }}
-        </h1>
-        <div class="rte bg-light-1">
-          {{ page.content }}
-        </div>
-      </div>
+<div class="section-{{ section.id }}-padding">
+  <div class="cover-img">
+    <div class="heading-banner">
+      <h1 class="main-page-title page-title h0  page-width">
+        {{ page.title | escape }}
+      </h1>
     </div>
   </div>
+  <div class="rte bg-light-1">
+    <div class="page-content page-width page-width--narrow">
+      {{ page.content }}
+    </div>
+  </div>
+</div>
 
-  {% schema %}
-  {
+{% schema %}
+{
   "name": "t:sections.main-page.name",
   "tag": "section",
   "class": "section",
   "settings": [
-  {
-  "type": "image_picker",
-  "id": "image",
-  "label": "t:sections.main-page.settings.image.label"
-  },
-  {
-  "type": "header",
-  "content": "t:sections.all.padding.section_padding_heading"
-  },
-  {
-  "type": "range",
-  "id": "padding_top",
-  "min": 0,
-  "max": 100,
-  "step": 4,
-  "unit": "px",
-  "label": "t:sections.all.padding.padding_top",
-  "default": 36
-  },
-  {
-  "type": "range",
-  "id": "padding_bottom",
-  "min": 0,
-  "max": 100,
-  "step": 4,
-  "unit": "px",
-  "label": "t:sections.all.padding.padding_bottom",
-  "default": 36
-  }
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.main-page.settings.image.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
   ]
-  }
-  {% endschema %}
+}
+{% endschema %}
