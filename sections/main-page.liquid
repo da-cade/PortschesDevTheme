@@ -5,20 +5,8 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-  {%- comment -%}
-  .section-{{ section.id }}-padding {
-  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-  {%- endcomment -%}
-
   .content-column {
     padding: 1rem;
-  }
-
-  .rte{
-    max-height: 30%;
-    /* flex-grow: 1; */
   }
 
   .page-content {
@@ -28,10 +16,6 @@
 
 
   {%- if section.settings.image -%}
-
-  /* .section-header::after{
-  display: none;
-  } */
 
   .cover-img {
     position: relative;
@@ -88,7 +72,7 @@
         </h1>
       </div>
     </div>
-    <div class="rte bg-light-1">
+    <div class="rte">
       <div class="page-content page-width page-width--narrow">
         {{ page.content }}
       </div>
