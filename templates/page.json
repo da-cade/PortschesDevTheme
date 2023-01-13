@@ -3,6 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "image": "",
         "padding_top": 40,
         "padding_bottom": 0
       }

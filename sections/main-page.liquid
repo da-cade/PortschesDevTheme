@@ -17,7 +17,7 @@
     }
   }
 
-  {%- if section.settings.cover-img -%}
+
   .cover-img {
     height: 40vh;
     width: 100%;
@@ -30,10 +30,10 @@
   .main-page-title {
     color: white;
   }
-  {%- endif -%}
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding bg-light-1">
+{% comment %} <div class="page-width page-width--narrow section-{{ section.id }}-padding bg-light-1"> {% endcomment %}
+<div class="section-{{ section.id }}-padding bg-light-1">
   <div class="cover-img">
     <h1 class="main-page-title page-title h0">
       {{ page.title | escape }}
