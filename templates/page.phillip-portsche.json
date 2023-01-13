@@ -9,6 +9,15 @@
         "padding_bottom": 40
       }
     },
+    "6af8887e-1567-4a18-876d-e9bfad14d221": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "b7133956-d560-4ab4-859a-c02890570e3f": {
       "type": "featured-collection",
       "settings": {
@@ -39,6 +48,7 @@
   },
   "order": [
     "main",
+    "6af8887e-1567-4a18-876d-e9bfad14d221",
     "b7133956-d560-4ab4-859a-c02890570e3f"
   ]
 }
