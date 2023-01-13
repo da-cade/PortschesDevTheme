@@ -35,8 +35,8 @@
 
   .cover-img {
     position: relative;
+    padding: 20px 0;
     display: flex;
-    align-items: center;
     height: 60vh;
     width: 100%;
     background-image: url(
@@ -54,7 +54,9 @@
   }
 
   .main-page-title {
-  color: white;
+    display: flex;
+    text-align: inherit;
+    color: white;
   }
 
   {%- endif -%}
@@ -79,9 +81,9 @@
 {% comment %} <div class="page-width page-width--narrow section-{{ section.id }}-padding"> {% endcomment %}
 <div class="section-{{ section.id }}-padding">
   <div class="content-column">
-    <div class="cover-img">
-      <div class="heading-banner banner__content--{{ section.settings.desktop_title_position }}">
-        <h1 class="main-page-title page-title h0 page-width">
+    <div class="cover-img title__content--{{ section.settings.desktop_title_position }}">
+      <div class="heading-banner">
+        <h1 class="main-page-title page-title h0">
           {{ page.title | escape }}
         </h1>
       </div>
