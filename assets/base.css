@@ -2175,7 +2175,7 @@ input[type='checkbox'] {
 }
 
 .no-js details[open] .modal__toggle {
-  position: absolute;
+  position: fixed;
   z-index: 5;
 }
 
@@ -2567,7 +2567,11 @@ details[open] > .search-modal {
   animation: animateMenuOpen var(--duration-default) ease;
 }
 
-details[open] .modal-overlay {
+details[open] > body {
+  padding-right: 15px;
+}
+
+/* details[open] .modal-overlay {
   display: block;
 }
 
@@ -2579,7 +2583,7 @@ details[open] .modal-overlay::after {
   left: 0;
   right: 0;
   height: 100vh;
-}
+} */
 
 .no-js details[open] > .header__icon--search {
   top: 1rem;
