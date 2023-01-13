@@ -9,16 +9,6 @@
     },
     "166758138605b0c625": {
       "type": "apps",
-      "blocks": {
-        "ec7789df-19f0-4838-ba4a-89e2f939a241": {
-          "type": "shopify:\/\/apps\/appointment-scheduling\/blocks\/appointment-scheduler\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "ec7789df-19f0-4838-ba4a-89e2f939a241"
-      ],
       "settings": {
         "include_margins": true
       }
