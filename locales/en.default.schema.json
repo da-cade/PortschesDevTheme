@@ -2769,9 +2769,11 @@
               "info": "Color scheme. Will appear on mobile"
             },
             "button_color_front": {
+              "label": "Button color - front",
               "info": "Color of the action button."
             },
             "button_color_back": {
+              "label": "Button color - back",
               "info": "Color of the button after rotation."
             },
             "text_alignment_mobile": {

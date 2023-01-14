@@ -132,11 +132,14 @@
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
+
         .slideshow-button-{{ forloop.index }} > .btn-flip::before {
           background-color: rgb(var(--color-base-{{ block.settings.button_color_front }}));
+          color: white;
         }
         .slideshow-button-{{ forloop.index }} > .btn-flip::after {
           background-color: rgb(var(--color-base-{{ block.settings.button_color_back }}));
+          color: black;
         }
       </style>
       <div
