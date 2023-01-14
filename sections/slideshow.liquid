@@ -133,10 +133,10 @@
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
         .slideshow-button-{{ forloop.index }} .btn-flip::before {
-          background-color: rgb({{ block.settings.button_color_front }});
+          background-color: var(--color-base-{{ block.settings.button_color_front }});
         }
         .slideshow-button-{{ forloop.index }} .btn-flip::after {
-          background-color: rgb({{ block.settings.button_color_back }});
+          background-color: var(--color-base-{{ block.settings.button_color_back }});
         }
       </style>
       <div
