@@ -28,7 +28,7 @@
     background-color: transparent;
   }
 
-  .btn-flip::before {
+  #Banner-{{ section.id }} > .btn-flip::before {
     background: #ffe2d8;
     color: black;
   }
@@ -90,7 +90,7 @@
               </div>
             {%- when 'buttons' -%}
               <div
-                class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+                class="banner__buttons {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 <a

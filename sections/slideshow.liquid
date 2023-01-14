@@ -27,13 +27,6 @@
 {%- endif -%}
 
 {%- style -%}
-  :root {
-    --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
-    --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
-    --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
-    --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
-  }
-
   .btn-flip::before,
   .btn-flip::after {
     opacity: 80%;
@@ -129,14 +122,21 @@
   >
     {%- for block in section.blocks -%}
       <style>
+        :root {
+          --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
+          --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
+          --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
+          --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
+        }
+
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
-        .slideshow-button-{{ forloop.index }} .btn-flip::before {
-          background-color: var(--color-base-{{ block.settings.button_color_front }});
+        .slideshow-button-{{ forloop.index }} > .btn-flip::before {
+          background-color: rgb(var(--color-base-{{ block.settings.button_color_front }}));
         }
-        .slideshow-button-{{ forloop.index }} .btn-flip::after {
-          background-color: var(--color-base-{{ block.settings.button_color_back }});
+        .slideshow-button-{{ forloop.index }} > .btn-flip::after {
+          background-color: rgb(var(--color-base-{{ block.settings.button_color_back }}));
         }
       </style>
       <div
@@ -175,10 +175,10 @@
               </div>
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
-              <div class="banner__buttons">
+              <div class="banner__buttons slideshow-button-{{ forloop.index }}">
                 <a
                   href="{{ block.settings.link }}"
-                  class=".slideshow-button-{{ forloop.index }} btn-flip"
+                  class="btn-flip"
                   aria-labelledby="SwiperLink-{{ section.id }} SectionHeading-{{ section.id }}"
                   data-back="{{ block.settings.button_label | escape }}"
                   data-front="{{ block.settings.button_label | escape }}"
@@ -569,7 +569,7 @@
               "label": "t:sections.all.colors.inverse.label"
             }
           ],
-          "default": "background-1",
+          "default": "accent-1",
           "label": "t:sections.all.colors.label",
           "info": "t:sections.slideshow.blocks.slide.settings.button_color_front.info"
         },
@@ -598,7 +598,7 @@
               "label": "t:sections.all.colors.inverse.label"
             }
           ],
-          "default": "background-1",
+          "default": "accent-1",
           "label": "t:sections.all.colors.label",
           "info": "t:sections.slideshow.blocks.slide.settings.button_color_back.info"
         },
