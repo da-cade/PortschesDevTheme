@@ -179,7 +179,7 @@
             "image_overlay_opacity": 30,
             "color_scheme": "accent-1",
             "button_color_front": "accent-1",
-            "button_color_back": "accent-2",
+            "button_color_back": "accent-1",
             "text_alignment_mobile": "center"
           }
         },
