@@ -195,10 +195,10 @@
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 100,
+            "image_overlay_opacity": 30,
             "color_scheme": "background-2",
-            "button_color_front": "background-2",
-            "button_color_back": "accent-1",
+            "button_color_front": "inverse",
+            "button_color_back": "accent-2",
             "text_alignment_mobile": "center"
           }
         }
