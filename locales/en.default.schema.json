@@ -2766,7 +2766,7 @@
               "label": "Image overlay opacity"
             },
             "color_scheme": {
-              "label": "Color scheme"
+              "info": "Color scheme. Will appear on mobile"
             },
             "button_color_front": {
               "info": "Color of the action button."

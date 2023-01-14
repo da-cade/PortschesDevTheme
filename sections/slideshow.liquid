@@ -1,6 +1,7 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'base.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
@@ -26,16 +27,16 @@
 {%- endif -%}
 
 {%- style -%}
+  :root {
+    --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
+    --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
+    --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
+    --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
+  }
+
   .btn-flip::before,
   .btn-flip::after {
     opacity: 80%;
-  }
-
-  .btn-flip::before {
-    background-color: rgb(var(--color-base-accent-1));
-  }
-
-  .btn-flip::after {
   }
 {%- endstyle -%}
 
@@ -132,10 +133,10 @@
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
         .slideshow-button-{{ forloop.index }} .btn-flip::before {
-          rgb({{ block.settings.button-color-front }});
+          background-color: rgb({{ block.settings.button-color-front }});
         }
         .slideshow-button-{{ forloop.index }} .btn-flip::after {
-          rgb({{ block.settings.button-color-back }});
+          background-color: rgb({{ block.settings.button-color-back }});
         }
       </style>
       <div
