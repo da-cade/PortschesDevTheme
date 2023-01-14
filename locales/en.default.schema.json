@@ -1079,9 +1079,6 @@
         "image": {
           "label": "First image"
         },
-        "image_2": {
-          "label": "Second image"
-        },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
         },
@@ -1234,9 +1231,6 @@
     "image-banner-plds": {
       "name": "Pleiades Image banner",
       "settings": {
-        "image": {
-          "label": "First image"
-        },
         "image_2": {
           "label": "Second image"
         },
