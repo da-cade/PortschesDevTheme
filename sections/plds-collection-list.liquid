@@ -25,17 +25,15 @@
     z-index: -1;
   }
 
-
   .color-stripe::after {
     content: '';
-    margin: inherit;
-    padding: inherit;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #E2EFF9;
     position: absolute;
+    width: 70%;
+    top: 0;
+    left: 15%;
+    right: 0;
+    bottom: 0;
+    background-color: #E2EFF9;
   }
 
   .collection-column {
@@ -60,7 +58,7 @@
 -%}
 
 <div class="isolate collection-wrapper">
-  <div class="color-stripe page-width"></div>
+  <div class="color-stripe"></div>
   {% comment %} <div class="{% if show_mobile_slider %} page-width-desktop{% endif %}"> {% endcomment %}
   <div class="collection-column">
     {% comment %} title {% endcomment %}

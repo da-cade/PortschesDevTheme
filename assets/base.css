@@ -138,6 +138,14 @@
   --color-card-hover: var(--color-base-solid-button-labels);
 }
 
+.bg-accent-1 {
+  background: rgb(var(--color-base-accent-1))
+}
+
+.bg-accent-2 {
+  background: rgb(var(--color-base-accent-2))
+}
+
 .bg-light-1 {
   background-color: rgb(var(--color-base-background-1));
 }
@@ -770,6 +778,7 @@ details > * {
   text-decoration: none;
   font-family: 'Open Sans';
   text-transform: uppercase;
+  /* visibility: none; */
 }
 
 .btn-flip:hover::after{
@@ -800,13 +809,12 @@ details > * {
   top: 0;
   left: 0;
   opacity: 1;
-  /* color: #adadaf; */
   display: block;
   padding: 0 30px;
   line-height: 40px;
   transition: var(--duration-long);
+  background: rgb(var(--color-base-accent-1));
   position: relative;
-  /* background: #323237; */
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
 }
@@ -2300,6 +2308,12 @@ input[type='checkbox'] {
 }
 
 /* section-header */
+.show-shadow {
+  -webkit-box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.39);
+  box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.39);
+}
+
 #shopify-section-header {
   width: 100%;
   z-index: 3;
@@ -2341,6 +2355,7 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  transition: box-shadow 0.5s ease-out;
 }
 
 @media screen and (min-width: 990px) {

@@ -2766,7 +2766,13 @@
               "label": "Image overlay opacity"
             },
             "color_scheme": {
-              "info": "Visible when container displayed."
+              "label": "Color scheme"
+            },
+            "button_color_front": {
+              "info": "Color of the action button."
+            },
+            "button_color_back": {
+              "info": "Color of the button after rotation."
             },
             "text_alignment_mobile": {
               "label": "Mobile content alignment",
