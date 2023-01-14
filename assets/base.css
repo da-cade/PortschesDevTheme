@@ -799,6 +799,7 @@ details > * {
   color: white;
   background: black;
   display: block;
+  text-align: center;
   transition: var(--duration-long);
   position: absolute;
   content: attr(data-back);
@@ -810,6 +811,7 @@ details > * {
   left: 0;
   opacity: 1;
   display: block;
+  text-align: center;
   padding: 0 30px;
   line-height: 40px;
   transition: var(--duration-long);
