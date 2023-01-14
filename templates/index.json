@@ -1,5 +1,53 @@
 {
   "sections": {
+    "08d07866-ec0e-4e60-bfda-01b254b990ac": {
+      "type": "image-banner-plds",
+      "blocks": {
+        "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "See the Store",
+            "heading_size": "h1"
+          }
+        },
+        "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-1": {
+          "type": "text",
+          "settings": {
+            "text": "The finest purveyors of custom and estate jewelry, located in downtown Boise",
+            "text_style": "subtitle"
+          }
+        },
+        "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop All",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-0",
+        "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-1",
+        "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-2"
+      ],
+      "settings": {
+        "image_2": "shopify:\/\/shop_images\/handmade-jewelry-textile-background-gift-women-bijouterie-jewellery-women_230311-39816.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "right",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -272,6 +320,7 @@
     }
   },
   "order": [
+    "08d07866-ec0e-4e60-bfda-01b254b990ac",
     "featured_collection",
     "31f7032c-a5c9-4f1e-a361-8db1d5ff908f",
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33",
