@@ -1,0 +1,100 @@
+{% comment %}
+  /* MINE */
+  Renders a flip button
+  Accepts:
+  - button-id: {str} unique button id, can be section id
+  - classlist: space-separated classes {str} to add
+  - button-link: {str} href target link
+  - button-text-front: {String} text displayed before button flips
+  - button-text-back: {String} text displayed after button flips
+  - button-color-front: {String} color displayed before button flips
+  - button-color-back: {String} color displayed after button flips
+
+  Usage w/ example data:
+  {% render 'flip-button', button-id: section-id + 'flip' + forloopindex, classlist: 'super big button', button-link: section.settings.button_link , button-text-front: section.settings.button_link, button-text-back: section.settings.button_link, button-color-front: block.settings.button_color_front, button-color-back: block.settings.button_color_back %}
+{% endcomment %}
+
+{%- liquid
+
+-%}
+
+{%- style -%}
+  :root {
+    --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
+    --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
+    --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
+    --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
+  }
+
+  .btn-flip{
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block!important;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+  }
+
+  .btn-flip:hover::after{
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+
+  .btn-flip:hover::before{
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+  }
+
+  .btn-flip:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: white;
+    background: black;
+    display: block;
+    text-align: center;
+    transition: var(--duration-long);
+    position: absolute;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+
+  .btn-flip:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    text-align: center;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: var(--duration-long);
+    background: rgb(var(--color-base-accent-1));
+    position: relative;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
+
+  .btn-flip::before {
+    background-color: rgb(var(--color-base-{{ button-color-front }}));
+    color: white;
+  }
+  .btn-flip::after {
+    background-color: rgb(var(--color-base-{{ button-color-back }}));
+    color: black;
+  }
+{%- endstyle -%}
+
+<a
+  href="{{ button-link }}"
+  id="{{ button-id }}"
+  aria-label="{{ button-link }}"
+  class="btn-flip {{ classlist }}"
+  data-front="{{ button-text-front }}"
+  data-back="{{ button-text-back }}"
+></a>
