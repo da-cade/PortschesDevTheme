@@ -764,6 +764,14 @@ details > * {
   --duration-long: 350ms;
 }
 
+.text-black {
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+
 
 .underlined-link,
 .customer a {

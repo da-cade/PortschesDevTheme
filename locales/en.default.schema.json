@@ -1363,8 +1363,13 @@
             "button_link_1": {
               "label": "First button link"
             },
-            "button_style_secondary_1": {
-              "label": "Use outline button style"
+            "button_color_front": {
+              "label": "Button color - front",
+              "info": "Color of the action button."
+            },
+            "button_color_back": {
+              "label": "Button color - back",
+              "info": "Color of the button after rotation."
             },
             "button_label_2": {
               "label": "Second button label",
@@ -1372,9 +1377,6 @@
             },
             "button_link_2": {
               "label": "Second button link"
-            },
-            "button_style_secondary_2": {
-              "label": "Use outline button style"
             }
           }
         }

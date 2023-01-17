@@ -32,10 +32,10 @@
     background-color: transparent;
   }
 
-  #Banner-{{ section.id }} > .btn-flip::before {
+  /* #Banner-{{ section.id }} > .btn-flip::before {
     background: #ffe2d8;
     color: black;
-  }
+  } */
 
   #overlay__media::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
@@ -97,12 +97,24 @@
                 class="banner__buttons {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                <a
-                  href="{{ block.settings.button_link_1 }}"
-                  class="btn-flip"
-                  data-back="{{ block.settings.button_label_1 }}"
-                  data-front="{{ block.settings.button_label_1 }}"
-                ></a>
+                {%- assign button_id = 'flip-' | append: section.id %}
+                {%- render 'flip-button',
+                  button-id: button_id,
+                  classlist: '',
+                  button-link: block.settings.button_link,
+                  button-text-front: block.settings.button_label_1,
+                  button-text-back: block.settings.button_label_2,
+                  button-color-front: block.settings.button_color_front,
+                  button-color-back: block.settings.button_color_back
+                -%}
+                {% comment %}
+                  <a
+                    href="{{ block.settings.button_link_1 }}"
+                    class="btn-flip"
+                    data-back="{{ block.settings.button_label_1 }}"
+                    data-front="{{ block.settings.button_label_1 }}"
+                  ></a>
+                {% endcomment %}
               </div>
           {%- endcase -%}
         {%- endfor -%}
@@ -397,6 +409,64 @@
           "default": "Button label",
           "label": "t:sections.image-banner-plds.blocks.buttons.settings.button_label_2.label",
           "info": "t:sections.image-banner-plds.blocks.buttons.settings.button_label_2.info"
+        },
+        {
+          "type": "select",
+          "id": "button_color_front",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "t:sections.all.colors.accent_1.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.all.colors.accent_2.label"
+            },
+            {
+              "value": "background-1",
+              "label": "t:sections.all.colors.background_1.label"
+            },
+            {
+              "value": "background-2",
+              "label": "t:sections.all.colors.background_2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.all.colors.inverse.label"
+            }
+          ],
+          "default": "accent-1",
+          "label": "t:sections.image-banner-plds.blocks.slide.settings.button_color_front.label",
+          "info": "t:sections.image-banner-plds.blocks.slide.settings.button_color_front.info"
+        },
+        {
+          "type": "select",
+          "id": "button_color_back",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "t:sections.all.colors.accent_1.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.all.colors.accent_2.label"
+            },
+            {
+              "value": "background-1",
+              "label": "t:sections.all.colors.background_1.label"
+            },
+            {
+              "value": "background-2",
+              "label": "t:sections.all.colors.background_2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.all.colors.inverse.label"
+            }
+          ],
+          "default": "accent-1",
+          "label": "t:sections.image-banner-plds.blocks.slide.settings.button_color_back.label",
+          "info": "t:sections.image-banner-plds.blocks.slide.settings.button_color_back.info"
         },
         {
           "type": "url",
