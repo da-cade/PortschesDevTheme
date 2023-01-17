@@ -91,8 +91,6 @@
     {%- else -%}
     #{{ button-id }}:before {
       background-color: rgb(var(--color-base-{{ button-color-front }}));
-      color: white;
-      mix-blend-mode: difference;
     }
   {%- endif -%}
 
@@ -104,8 +102,6 @@
     {%- else -%}
     #{{ button-id }}:after {
       background-color: rgb(var(--color-base-{{ button-color-front }}));
-      color: white;
-      mix-blend-mode: difference;
     }
   {%- endif -%}
 {%- endstyle -%}
