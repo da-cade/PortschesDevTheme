@@ -4,9 +4,9 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
+        "show_collection_image": true,
         "color_scheme": "background-1",
-        "margin_top": 52
+        "margin_top": 48
       }
     },
     "product-grid": {
@@ -26,52 +26,10 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
-    },
-    "6a076d6d-d5f0-4d12-b06e-9eb166fcd23f": {
-      "type": "collage",
-      "blocks": {
-        "template--14670191198313__6a076d6d-d5f0-4d12-b06e-9eb166fcd23f-1673412489b8697b7d-0": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
-            "image_padding": false
-          }
-        },
-        "template--14670191198313__6a076d6d-d5f0-4d12-b06e-9eb166fcd23f-1673412489b8697b7d-1": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "template--14670191198313__6a076d6d-d5f0-4d12-b06e-9eb166fcd23f-1673412489b8697b7d-2": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14670191198313__6a076d6d-d5f0-4d12-b06e-9eb166fcd23f-1673412489b8697b7d-0",
-        "template--14670191198313__6a076d6d-d5f0-4d12-b06e-9eb166fcd23f-1673412489b8697b7d-1",
-        "template--14670191198313__6a076d6d-d5f0-4d12-b06e-9eb166fcd23f-1673412489b8697b7d-2"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "banner",
-    "product-grid",
-    "6a076d6d-d5f0-4d12-b06e-9eb166fcd23f"
+    "product-grid"
   ]
 }
