@@ -170,7 +170,7 @@
             "subheading": "",
             "button_label": "See the Series",
             "link": "",
-            "button_style_secondary": true,
+            "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
             "text_alignment": "center",
