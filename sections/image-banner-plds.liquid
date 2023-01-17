@@ -98,14 +98,17 @@
                 {{ block.shopify_attributes }}
               >
                 {%- assign button_id = 'flip-' | append: section.id %}
-                {%- render 'flip-button',
+                {%-
+                  render 'flip-button',
                   button-id: button_id,
                   classlist: '',
                   button-link: block.settings.button_link,
                   button-text-front: block.settings.button_label_1,
                   button-text-back: block.settings.button_label_2,
                   button-color-front: block.settings.button_color_front,
-                  button-color-back: block.settings.button_color_back
+                  button-color-back: 'black',
+                  text-color-front: 'white',
+                  text-color-back: 'white',
                 -%}
               </div>
           {%- endcase -%}
