@@ -90,6 +90,16 @@
                 </div>
               {%- when 'button' -%}
                 {%- if block.settings.button_label != blank -%}
+                  {%- assign button_id = 'flip-' | append: section.id %}
+                  {%- render 'flip-button',
+                    button-id: button_id,
+                    classlist: '',
+                    button-link: block.settings.button_link,
+                    button-text-front: block.settings.button_label,
+                    button-text-back: block.settings.button_label,
+                    button-color-front: block.settings.button_color_front,
+                    button-color-back: block.settings.button_color_back
+                  -%}
                   <a
                     href="{{ block.settings.button_link }}"
                     class="btn-flip"

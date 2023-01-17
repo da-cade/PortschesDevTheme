@@ -180,8 +180,7 @@
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons slideshow-button-{{ forloop.index }}">
                 {%- assign button_id = 'flip-' | append: section.id | append: forloop['index-'] %}
-                {%-
-                  render 'flip-button',
+                {%- render 'flip-button',
                   button-id: button_id,
                   classlist: 'opacity-80',
                   button-link: block.settings.link,
@@ -190,16 +189,6 @@
                   button-color-front: block.settings.button_color_front,
                   button-color-back: block.settings.button_color_back
                 -%}
-                {% comment %} {%- render 'flip-button', button-id: 'flip-{{ section.id }}-{{ forloop.index }}', classlist: 'opacity-80', button-link: block.settings.link, button-text-front: block.settings.link, button-text-back: block.settings.link, button-color-front: block.settings.button_color_front, button-color-back: block.settings.button_color_back -%} {% endcomment %}
-                {% comment %}
-                  <a
-                    href="{{ block.settings.link }}"
-                    class="btn-flip"
-                    aria-labelledby="SwiperLink-{{ section.id }} SectionHeading-{{ section.id }}"
-                    data-back="{{ block.settings.button_label | escape }}"
-                    data-front="{{ block.settings.button_label | escape }}"
-                  ></a>
-                {% endcomment %}
               </div>
             {%- endif -%}
           </div>
