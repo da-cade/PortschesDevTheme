@@ -1363,6 +1363,10 @@
             "button_link_1": {
               "label": "First button link"
             },
+            "button_label_2": {
+              "label": "Second button label",
+              "info": "Leave the label blank to hide the button."
+            },
             "button_color_front": {
               "label": "Button color - front",
               "info": "Color of the action button."
@@ -1370,13 +1374,6 @@
             "button_color_back": {
               "label": "Button color - back",
               "info": "Color of the button after rotation."
-            },
-            "button_label_2": {
-              "label": "Second button label",
-              "info": "Leave the label blank to hide the button."
-            },
-            "button_link_2": {
-              "label": "Second button link"
             }
           }
         }
