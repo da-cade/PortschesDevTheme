@@ -4,51 +4,63 @@
 {%- style -%}
   @media screen and (max-width: 749px) {
     .collection-hero--with-image .collection-hero__inner {
-      padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
+      padding-bottom: calc({{settings.media_shadow_vertical_offset | at_least: 0}}px + 2rem);
     }
   }
-  .buffer-top {
-    margin-top: {{ section.settings.margin_top }}px;
+
+  {%- if section.settings.show_collection_image and collection.image -%}
+    .bg-collection-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 60vh;
+      width: 100%;
+      background-image: url({{ collection.image | image_url | prepend:'http:' }});
+      background-size: cover;
+      background-position: center;
+    }
+  {%- endif -%}
+
+  .collection-hero__text-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20rem;
+    min-height: 10rem;
   }
 {%- endstyle -%}
 
-<div class="buffer-top">
-  <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
-    <div class="collection-hero__inner page-width">
-      <div class="collection-hero__text-wrapper">
-        <h1 class="collection-hero__title">
-          <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-          {{- collection.title | escape -}}
-        </h1>
-        
-        {%- if section.settings.show_collection_description -%}
-          <div class="collection-hero__description rte">{{ collection.description }}</div>
-        {%- endif -%}
-      </div>
-      
-      {%- if section.settings.show_collection_image and collection.image -%}
-        <div class="collection-hero__image-container media gradient">
-          <img
-            srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
-            {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
-            {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
-            {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
-            {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
-            {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {{ collection.image | image_url }} {{ collection.image.width }}w"
-            src="{{ collection.image | image_url: width: 750 }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-            alt=""
-            width="{{ collection.image.width }}"
-            height="{{ collection.image.height }}"
-          >
-          </div>
-        {%- endif -%}
-      </div>
+<div class="shadow-bar-top"></div>
+<div class="collection-hero__image-container">
+  <div class="bg-collection-hero">
+    <div class="collection-hero__text-wrapper gradient color-{{ section.settings.color_scheme }} gradient">
+      <h1 class="collection-hero__title">
+        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+        {{- collection.title | escape -}}
+      </h1>
+
+      {%- if section.settings.show_collection_description -%}
+        <div class="collection-hero__description rte">{{ collection.description }}</div>
+      {%- endif -%}
     </div>
   </div>
 </div>
-    
+<div class="shadow-bar-bottom"></div>
+
+{% comment %}
+  <div class="buffer-top">
+    <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
+      <div class="collection-hero__inner page-width">
+
+
+
+      </div>
+    </div>
+  </div>
+{% endcomment %}
+
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
