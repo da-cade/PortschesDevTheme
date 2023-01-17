@@ -20,10 +20,13 @@
 
 {%- style -%}
   :root {
+    --color-base-text: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
     --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
     --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
     --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
     --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
+    --color-base-dark: {{ settings.dark.red }}, {{ settings.dark.green }}, {{ settings.dark.blue }};
+    --color-base-light: {{ settings.light.red }}, {{ settings.light.green }}, {{ settings.light.blue }};
   }
 
   #{{ button-id }}{
@@ -74,20 +77,37 @@
     padding: 0 30px;
     line-height: 40px;
     transition: var(--duration-long);
-    background: rgb(var(--color-base-accent-1));
+    /* background: rgb(var(--color-base-accent-1)); */
     position: relative;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
   }
 
-  #{{ button-id }}::before {
-    background-color: rgb(var(--color-base-{{ button-color-front }}));
-    color: white;
-  }
-  #{{ button-id }}::after {
-    background-color: rgb(var(--color-base-{{ button-color-back }}));
-    color: black;
-  }
+  {%- if button_color_front == 'black' -%}
+    #{{ button-id }}:before {
+      background-color: black;
+      color: white;
+    }
+    {%- else -%}
+    #{{ button-id }}:before {
+      background-color: rgb(var(--color-base-{{ button-color-front }}));
+      color: white;
+      mix-blend-mode: difference;
+    }
+  {%- endif -%}
+
+  {%- if button_color_back == 'black' -%}
+    #{{ button-id }}:after {
+      background-color: black;
+      color: white;
+    }
+    {%- else -%}
+    #{{ button-id }}:after {
+      background-color: rgb(var(--color-base-{{ button-color-front }}));
+      color: white;
+      mix-blend-mode: difference;
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 <a
