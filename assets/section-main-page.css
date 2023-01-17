@@ -3,7 +3,6 @@
 }
 
 .main-page-title {
-  /* margin-bottom: 3rem; */
   padding: 3rem;
 }
 
@@ -53,13 +52,6 @@
 
 .title__content--top-right > .heading-banner, .title__content--middle-right > .heading-banner, .title__content--bottom-right > .heading-banner {
   justify-content: flex-end;
-}
-
-@media screen and (min-width: 750px) {
-  .main-page-title {
-    /* margin-bottom: 4rem; */
-  }
-  
 }
 
 .page-placeholder-wrapper {
