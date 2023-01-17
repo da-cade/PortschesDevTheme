@@ -23,7 +23,7 @@
             "button_label_1": "Shop All",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_label_2": "Shop All",
-            "button_color_front": "background-1",
+            "button_color_front": "accent-1",
             "button_color_back": "accent-1"
           }
         }
