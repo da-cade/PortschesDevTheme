@@ -1,18 +1,4 @@
 {
-  "sections": {
-    "main": {
-      "type": "main-list-collections",
-      "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
-        "image_ratio": "square",
-        "columns_desktop": 1,
-        "columns_mobile": "1",
-        "sidebars": "true"
-      }
-    }
-  },
-  "order": [
-    "main"
-  ]
+  "sections": {},
+  "order": []
 }
