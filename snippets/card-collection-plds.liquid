@@ -68,14 +68,15 @@
     }
 
     #{{ id }} .collection-card-overlay {
-    {%- if orientation == 0 -%}
-      color: white;
-      background-color: {{color_scheme_1}};
-    {%- else -%}
-      color: black;
-      background-color: {{ color_scheme_2 }};
-    {%- endif -%}
-  }
+      height: fit-content;
+      {%- if orientation == 0 -%}
+        color: white;
+        background-color: {{color_scheme_1}};
+      {%- else -%}
+        color: black;
+        background-color: {{ color_scheme_2 }};
+      {%- endif -%}
+    }
 
     #{{ id }}:after {
       content: '';
@@ -95,6 +96,7 @@
     }
 
     #{{id}} .card-img-container {
+      margin-top: 1%;
       {%- if orientation == 0 -%}
         margin-right: auto;
       {%- else -%}
