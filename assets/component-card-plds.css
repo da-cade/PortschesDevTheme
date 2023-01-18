@@ -2,44 +2,89 @@
 .plds-card-wrapper{
   display: flex;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 10rem;
   justify-content: space-between;
   width: 100%;
-  overflow: hidden;
 }
 
 .sidebar {
   display: flex;
-  position: relative;
+  position: absolute;
   justify-content: flex-start;
-  height: 100%;
   background: brown;
   width: 18%;
-  max-width: 30%;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 749px){
+  .sidebar {
+    min-width: 30vw;
+  }
+}
+@media only screen and (min-width: 750px){
+  .sidebar {
+    min-width: 30rem;
+  }
+}
+@media only screen and (min-width: 990px){
+  .sidebar {
+    min-width: 25rem;
+  }
 }
 
 .card-img-container {
   display: flex!important;
+  margin-top: 1%;
   width: 80%;
-  height: 95%;
+  height: 100%;
   overflow: hidden;
 }
 
+
+.collection-card-overlay {
+  position: absolute;
+  display: flex;
+  background: rgba(0, 0, 0, 0.1);
+  inset: 0;
+  overflow: hidden;
+  z-index: 2;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 749px){
+  .collection-card-overlay {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 750px){
+  .collection-card-overlay {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 990px){
+  .collection-card-overlay {
+    padding: 4rem;
+  }
+}
+
 .collection-card-content {
-  padding: 8rem;
   transition: ease-in .15s;
   transform: translateX(0);
   color: inherit;
-  flex-shrink: 1;
+  opacity: 1;
+  /* min-height: 40rem; */
+  height: fit-content;
+  width: 50rem;
+  max-width: 100%;
 }
 
 .collection-card-content > * {
-  max-width: 20em;
   color: inherit;
   text-decoration: none;
 }
 
 .collection-card-content > h2 {
+  margin-top: 0;
   margin-bottom: .25rem;
   text-decoration: none;
 }
@@ -55,22 +100,18 @@
   cursor: pointer;
 }
 
-.plds-card-wrapper:hover .card-collection-bg {
-  -ms-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -webkit-transform: scale(1.01);
-  -o-transform: scale(1.01);
-  transform: scale(1.01);
-}
-
-.plds-card-wrapper:hover .collection-card-content {
-  transform: translateY(-3%);
+.plds-card-wrapper:hover .collection-card-content, .plds-card-wrapper:focus .collection-card-content {
+  transform: translateY(-8px);
 }
 
 .plds-card-wrapper:hover .collection-card-information, .collection-card-information > p {
   opacity: 1;
   color: inherit;
-  /* transform: translateY(0) */
+}
+
+.plds-card-wrapper:focus .collection-card-information, .collection-card-information > p {
+  opacity: 1;
+  color: inherit;
 }
 
 @media (max-width: 749px){
