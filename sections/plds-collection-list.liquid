@@ -5,6 +5,10 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
+  .me-5 {
+    margin-right: 3rem;
+  }
+
   .section-{{ section.id }}-padding {
   padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
   padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -37,7 +41,6 @@
   }
 
   .collection-column {
-    /* position: absolute; */
     width: 90vw;
   }
 
@@ -71,14 +74,29 @@
         </h2>
 
         {%- if section.settings.show_view_all and show_mobile_slider -%}
-          <a
-            href="{{ routes.collections_url }}"
-            id="ViewAll-{{ section.id }}"
-            class="btn-flip"
-            aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
-            data-back="{{ 'sections.collection_list.view_all' | t }}"
-            data-front="{{ 'sections.collection_list.view_all' | t }}"
-          ></a>
+          {%- assign button_id = 'button-' | append: section.id %}
+          {%-
+            render 'flip-button',
+            button-id: button_id,
+            classlist: 'me-5',
+            button-link: routes.collections.url,
+            button-text-front: "View All",
+            button-text-back: "Collections",
+            button-color-front: 'accent-2',
+            button-color-back: 'background-2',
+            text-color-front: 'black',
+            text-color-back: 'black',
+          -%}
+          {% comment %}
+            <a
+              href="{{ routes.collections_url }}"
+              id="ViewAll-{{ section.id }}"
+              class="btn-flip"
+              aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
+              data-back="{{ 'sections.collection_list.view_all' | t }}"
+              data-front="{{ 'sections.collection_list.view_all' | t }}"
+            ></a>
+          {% endcomment %}
         {%- endif -%}
       </div>
     {%- endunless -%}

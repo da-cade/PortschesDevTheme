@@ -1,53 +1,51 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-  {%- if section.settings.img_2 != blank -%}
-  .bg-img{
-    background-image: url(
-      {{ section.settings.image_2 | image_url | prepend: 'http:' }}
-    );
-    background-size: cover;
-  }
-  {%- endif -%}
-
-  #ImageWithText--{{ section.id }} > .btn-flip::before {
-    background-color: black;
-    color: #FFE2D8;
-  }
-
-  #ImageWithText--{{ section.id }} > .btn-flip::after {
-    background-color: #FFE2D8;
-    color: black;
-  }
-
-  .bg-light {
-    background-color: white;
-  }
-
-  .p-3{
-    padding: 3rem;
-  }
-
-  .image-with-text__content{
-    /* margin: 3rem; */
-  }
-
-  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
+    {%- if section.settings.img_2 != blank -%}
+    .bg-img{
+      background-image: url(
+        {{ section.settings.image_2 | image_url | prepend: 'http:' }}
+      );
+      background-size: cover;
+    }
+    {%- endif -%}
+
+    .p-3{
+      padding: 3rem;
+    }
+
+    .text-shadow {
+    text-shadow:
+      -2px -2px white,
+      -2px 2px white,
+      2px -2px white,
+      2px 2px white;
   }
+
+    .underline {
+      background-size: 1px 1em;
+      box-shadow:
+        inset 0 -0.175em white,
+        inset 0 -0.25em #ffe2d8;
+      display: inline;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
 {%- endstyle -%}
 
 <div class="isolate bg-img section-{{ section.id }}-padding">
   <div class="image-with-text image-with-text--{{ section.settings.content_layout }} {% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} page-width">
     <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} gradient color-{{ section.settings.color_scheme }} p-3">
-      <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item bg-light">
+      <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item bg-white">
         <div
           class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
           {% if section.settings.height == 'adapt' and section.settings.image != blank %}
@@ -74,7 +72,10 @@
           {%- for block in section.blocks -%}
             {% case block.type %}
               {%- when 'heading' -%}
-                <h2 class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                <h2
+                  class="image-with-text__heading text-shadow underline {{ block.settings.heading_size }}"
+                  {{ block.shopify_attributes }}
+                >
                   {{ block.settings.heading | escape }}
                 </h2>
               {%- when 'caption' -%}
@@ -90,22 +91,18 @@
                 </div>
               {%- when 'button' -%}
                 {%- if block.settings.button_label != blank -%}
-                  {%- assign button_id = 'flip-' | append: section.id %}
-                  {%- render 'flip-button',
+                  {%- assign button_id = 'button-' | append: section.id %}
+                  {%-
+                    render 'flip-button',
                     button-id: button_id,
                     classlist: '',
                     button-link: block.settings.button_link,
-                    button-text-front: block.settings.button_label,
+                    button-text-front: 'Have your own idea?',
                     button-text-back: block.settings.button_label,
-                    button-color-front: block.settings.button_color_front,
-                    button-color-back: block.settings.button_color_back
+                    button-color-front: 'black',
+                    button-color-back: 'accent-2',
+                    text-color-back: 'black',
                   -%}
-                  <a
-                    href="{{ block.settings.button_link }}"
-                    class="btn-flip"
-                    data-back="{{ block.settings.button_label }}"
-                    data-front="{{ block.settings.button_label }}"
-                  ></a>
                 {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}

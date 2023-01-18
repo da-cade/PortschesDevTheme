@@ -124,23 +124,6 @@
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
-
-        {% comment %} :root {
-          --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
-          --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
-          --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
-          --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
-        }
-
-
-        .slideshow-button-{{ forloop.index }} > .btn-flip::before {
-          background-color: rgb(var(--color-base-{{ block.settings.button_color_front }}));
-          color: white;
-        }
-        .slideshow-button-{{ forloop.index }} > .btn-flip::after {
-          background-color: rgb(var(--color-base-{{ block.settings.button_color_back }}));
-          color: black;
-        } {% endcomment %}
       </style>
       <div
         class="slideshow__slide grid__item grid--1-col slider__slide"
@@ -179,15 +162,17 @@
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons slideshow-button-{{ forloop.index }}">
-                {%- assign button_id = 'flip-' | append: section.id | append: forloop['index-'] %}
+                {%- assign button_id = 'button-' | append: section.id | append: forloop.index %}
                 {%- render 'flip-button',
                   button-id: button_id,
-                  classlist: 'opacity-80',
+                  classlist: '',
                   button-link: block.settings.link,
                   button-text-front: block.settings.button_label,
                   button-text-back: block.settings.button_label,
                   button-color-front: block.settings.button_color_front,
-                  button-color-back: block.settings.button_color_back
+                  button-color-back: block.settings.button_color_back,
+                  text-color-front: 'white',
+                  text-color-back: 'black'
                 -%}
               </div>
             {%- endif -%}

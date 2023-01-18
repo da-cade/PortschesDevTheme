@@ -15,12 +15,8 @@
     }
   }
 
-  .multicolumn-flip > .btn-flip::after {
-    background-color: #4F0113;
-  }
-
-  .mt-2 {
-    margin-top: 2rem;
+  .mt-5 {
+    margin-top: 3rem;
   }
 {%- endstyle -%}
 
@@ -155,12 +151,19 @@
     </slider-component>
     <div class="multicolumn-flip center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
-        <a
-          href="{{ section.settings.button_link }}"
-          class="btn-flip mt-2"
-          data-back="{{ section.settings.button_label }}"
-          data-front="{{ section.settings.button_label }}"
-        ></a>
+        {%- assign button_id = 'button-' | append: section.id %}
+        {%-
+          render 'flip-button',
+          button-id: button_id,
+          classlist: 'mt-5',
+          button-link: section.settings.button_link,
+          button-text-front: section.settings.button_label,
+          button-text-back: section.settings.button_label,
+          button-color-front: "background-2",
+          button-color-back: 'black',
+          text-color-front: 'black',
+          text-color-back: 'white',
+        -%}
       {%- endif -%}
     </div>
   </div>

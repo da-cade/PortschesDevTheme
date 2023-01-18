@@ -131,14 +131,19 @@
 
     {%- if section.settings.show_view_all and more_in_collection -%}
       <div class="center collection__view-all">
-        <a
-          href="{{ section.settings.collection.url }}"
-          class="btn-flip"
-          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
-          data-front="{{ 'sections.featured_collection.view_all' | t }}"
-          data-back="{{ 'sections.featured_collection.view_all' | t }}"
-        >
-        </a>
+        {%- assign button_id = 'button-' | append: section.id %}
+        {%-
+          render 'flip-button',
+          button-id: button_id,
+          classlist: '',
+          button-link: section.settings.collection.url,
+          button-text-front: "View More ...",
+          button-text-back: "Like These",
+          button-color-front: section.settings.color_scheme,
+          button-color-back: 'accent-2',
+          text-color-front: 'white',
+          text-color-back: 'black',
+        -%}
       </div>
     {%- endif -%}
   </div>

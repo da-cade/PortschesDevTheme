@@ -33,17 +33,6 @@
   .image-with-text__media--large {
     height: 69.5rem;
   }
-
-  .image-with-text__heading::after {
-    content: '';
-    position: absolute;
-    top: 5rem;
-    left: 0;
-    right: 0;
-    height: 3px;
-    width: 100%;
-    background-color: rgba(var(--color-background))
-  }
 }
 
 .image-with-text__media--placeholder {
@@ -160,17 +149,6 @@
 
   .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__content {
     border-top: 0;
-  }
-  
-  .image-with-text__heading::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    right: 0;
-    height: 100%;
-    width: 3px;
-    background-color: rgba(var(--color-background))
   }
 }
 

@@ -31,10 +31,6 @@
     background-size: cover;
   }
 
-  .bg-blush{
-    background-color: #FFE2D8;
-  }
-
   .accent-bar{
     display: block!important;
     height: 1rem;
@@ -49,7 +45,7 @@
 
 <div class="isolate flex-card bg-img w-100">
   <div class="rich-text content-container rich-text--full-width content-container--full-width section-{{ section.id }}-padding w-80">
-    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }} color-{{ section.settings.color_scheme }} gradient p-5 w-100">
+    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }} bg-white p-5 w-100">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -74,13 +70,28 @@
                 {{ block.shopify_attributes }}
               >
                 {%- if block.settings.button_label != blank -%}
-                  <a
-                    href="{{ block.settings.button_link }}"
-                    class="btn-flip"
-                    aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
-                    data-back="{{ block.settings.button_label | escape }}"
-                    data-front="{{ block.settings.button_label | escape }}"
-                  ></a>
+                  {%- assign button_id = 'button-' | append: section.id %}
+                  {%-
+                    render 'flip-button',
+                    button-id: button_id,
+                    classlist: '',
+                    button-link: block.settings.button_link,
+                    button-text-front: block.settings.button_label,
+                    button-text-back: block.settings.button_label,
+                    button-color-front: section.settings.color_scheme,
+                    button-color-back: 'black',
+                    text-color-front: 'black',
+                    text-color-back: 'white',
+                  -%}
+                  {% comment %}
+                    <a
+                      href="{{ block.settings.button_link }}"
+                      class="btn-flip"
+                      aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
+                      data-back="{{ block.settings.button_label | escape }}"
+                      data-front="{{ block.settings.button_label | escape }}"
+                    ></a>
+                  {% endcomment %}
                 {%- endif -%}
                 {%- if block.settings.button_label_2 != blank -%}
                   <a
@@ -99,7 +110,7 @@
         {%- endfor -%}
       </div>
     </div>
-    <div class="bg-blush accent-bar w-100"></div>
+    <div class="bg-blush accent-bar color-{{ section.settings.color_scheme }} gradient w-100"></div>
   </div>
 </div>
 

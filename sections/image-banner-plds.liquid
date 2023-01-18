@@ -32,11 +32,6 @@
     background-color: transparent;
   }
 
-  /* #Banner-{{ section.id }} > .btn-flip::before {
-    background: #ffe2d8;
-    color: black;
-  } */
-
   #overlay__media::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
@@ -103,10 +98,10 @@
                   button-id: button_id,
                   classlist: '',
                   button-link: block.settings.button_link,
-                  button-text-front: block.settings.button_label_1,
-                  button-text-back: block.settings.button_label_2,
-                  button-color-front: block.settings.button_color_front,
-                  button-color-back: 'black',
+                  button-text-front: "Shop All",
+                  button-text-back: "Shop All",
+                  button-color-front: "black",
+                  button-color-back: block.settings.button_color_back,
                   text-color-front: 'white',
                   text-color-back: 'white',
                 -%}
