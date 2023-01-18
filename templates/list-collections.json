@@ -7,8 +7,7 @@
         "sort": "alphabetical",
         "image_ratio": "square",
         "columns_desktop": 1,
-        "columns_mobile": "1",
-        "sidebars": "true"
+        "columns_mobile": "1"
       }
     }
   },
