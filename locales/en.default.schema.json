@@ -1821,9 +1821,6 @@
           "options__2": {
             "label": "2 columns"
           }
-        },
-        "sidebars": {
-          "label": "Display sidebars"
         }
       }
     },
