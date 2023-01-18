@@ -103,8 +103,11 @@
             {{ block.shopify_attributes }}
           >
             {%- assign card_id = 'card-' | append: section.id | append: forloop.index %}
+            {%- assign orientation = forloop.index | modulo: 2 -%}
             {% render 'card-collection-plds',
-              card_id: card_id,
+              id: card_id,
+              orientation: orientation,
+              sidebar: false,
               card_collection: block.settings.collection,
               media_aspect_ratio: section.settings.image_ratio,
               columns: columns

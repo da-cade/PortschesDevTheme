@@ -1,6 +1,10 @@
 .collection-list {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.collection-width {
+  padding: 0 5rem;
 }
 
 .collection-list-title {

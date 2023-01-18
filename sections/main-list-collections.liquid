@@ -1,5 +1,5 @@
 {{ 'component-card-plds.css' | asset_url | stylesheet_tag }}
-{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+{{ 'section-collection-list-plds.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
   <div class="page-width">
@@ -35,7 +35,7 @@
   </div>
 {% endcomment %}
 
-<div class="page-width">
+<div class="collection-width">
   <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
 
   {%- liquid
@@ -65,9 +65,13 @@
       {%- for collection in collections -%}
         <li class="collection-list__item grid__item">
           {%- assign card_id = 'card-' | append: section.id | append: forloop.index %}
+          {%- assign orientation = forloop.index | modulo: 2 -%}
           {% render 'card-collection-plds',
             id: card_id,
-            sidebars: section.settings.sidebars,
+            orientation: orientation,
+            color_scheme_1: '#4F0113',
+            color_scheme_2: '#DDEDD6',
+            sidebar: section.settings.sidebars,
             card_collection: collection,
             media_aspect_ratio: section.settings.image_ratio,
             columns: 3

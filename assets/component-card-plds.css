@@ -1,41 +1,47 @@
 
 .plds-card-wrapper{
-  width: 100%;
-  height: 100%;
+  display: flex;
   position: relative;
-  transition: ease-in .5s;
+  margin-top: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  height: 100%;
+  background: brown;
+  width: 18%;
+  max-width: 30%;
 }
 
 .card-img-container {
-  height: 60vh;
-  width: 100%;
+  display: flex!important;
+  width: 80%;
+  height: 95%;
+  overflow: hidden;
 }
 
-/* .card-img-container > img {
-  max-width: 100%;
-  min-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  object-position: center;
-} */
-
 .collection-card-content {
-  position: absolute;
-  top: 15%;
-  right: 0;
-  padding: 5rem;
+  padding: 8rem;
   transition: ease-in .15s;
   transform: translateX(0);
+  color: inherit;
+  flex-shrink: 1;
 }
 
 .collection-card-content > * {
-  text-align: right;
   max-width: 20em;
+  color: inherit;
+  text-decoration: none;
 }
 
-.collection-card-content h1 {
-  color: white;
+.collection-card-content > h2 {
   margin-bottom: .25rem;
+  text-decoration: none;
 }
 
 .collection-card-information {
@@ -49,13 +55,21 @@
   cursor: pointer;
 }
 
+.plds-card-wrapper:hover .card-collection-bg {
+  -ms-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
 .plds-card-wrapper:hover .collection-card-content {
-  transform: translateY(-5%);
+  transform: translateY(-3%);
 }
 
 .plds-card-wrapper:hover .collection-card-information, .collection-card-information > p {
-  color: white;
   opacity: 1;
+  color: inherit;
   /* transform: translateY(0) */
 }
 

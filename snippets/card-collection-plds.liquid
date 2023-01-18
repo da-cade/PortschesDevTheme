@@ -13,13 +13,6 @@
   {% render 'card-collection' %}
 {% endcomment %}
 
-{%- style -%}
-  #{{ id }} > .card-collection-bg {
-    background-image: url({{ card_collection.featured_image | image_url | prepend:'http:' }});
-    background-size: cover;
-  }
-{%- endstyle -%}
-
 {%- liquid
   assign ratio = 1
   if card_collection.featured_image and media_aspect_ratio == 'portrait'
@@ -37,18 +30,89 @@
   endif
 -%}
 
-<a href="{{ card_collection.url }}">
-  <h1>I'M A HAIRY LITTLE MAN {{ card_collection.sidebars }}</h1>
-  {%- if card_collection.sidebars != blank -%}
+{%- style -%}
+  #link-{{ id }} {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+  }
+
+  #{{ id }} .card-collection-bg {
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background-color: black;
+    background-image: url({{ card_collection.featured_image | image_url | prepend: 'http:' }});
+    background-size: cover;
+    background-position: center;
+    transition: ease-out .25s;
+  }
+
+  {%- if sidebar -%}
+
+  #{{id}} {
+    {%- if orientation == 0 -%} flex-direction: row-reverse; {%- else -%} flex-direction: row; {%- endif -%}
+  }
+
+  .plds-card-wrapper {
+    height: 40vh;
+  }
+
+    #link-{{ id }}:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #e2eff9;
+    height: 90%;
+    width: 100%;
+    {%- if orientation == 0 -%} left: -2%; {%- else -%} right: -2%; {%- endif -%}
+    top: -5%;
+    pointer-events: none;
+  }
+
+
+  #{{id}} > .sidebar {
+    text-align: start;
+    {%- if orientation == 0 -%} justify-content: flex-start; margin-right: 0; background-color: {{color_scheme_1}} ; color: white;  {%- else -%} justify-content: flex-end; margin-left: 0; background-color: {{color_scheme_2}}; color: black; {%- endif -%}
+  }
+
+  {%- else -%}
+
+  .plds-card-wrapper {
+    height: 60vh;
+  }
+
+  #{{id}} > .card-img-container {
+    color: white;
+    {%- if orientation == 0 -%} justify-content: flex-start; margin-right: 0; background-color: {{color_scheme_1}}; text-align: left; {%- else -%} justify-content: flex-end; margin-left: 0; background-color: {{color_scheme_2}}; text-align: right; {%- endif -%}
+  }
+
+  #{{ id }} > .card-collection-bg:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 10%;
+  }
+  {%- endif -%}
+{%- endstyle -%}
+
+<a id="link-{{ id }}" href="{{ card_collection.url }}">
+  {%- if sidebar -%}
     <div class="plds-card-wrapper" id="{{ id }}">
-      <div class="sidebar"></div>
-      <div class="collection-card-content banner-content">
-        <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
-        <div class="collection-card-information">
-          <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
+      <div id="{{id}}-sidebar" class="sidebar">
+        <div class="collection-card-content banner-content">
+          <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
+          <div class="collection-card-information">
+            <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
+          </div>
         </div>
       </div>
-      <div class="card-img-container card-collection-bg"></div>
+      <div class="card-img-container">
+        <div class=" card-collection-bg"></div>
+      </div>
     </div>
   {%- else -%}
     <div class="plds-card-wrapper" id="{{ id }}">
