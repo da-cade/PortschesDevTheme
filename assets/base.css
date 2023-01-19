@@ -163,6 +163,10 @@ main {
   background-color: white;
 }
 
+.display-none {
+  display: none;
+}
+
 .shadow-container {
   display: block !important;
   position: relative;

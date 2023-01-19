@@ -461,7 +461,7 @@ a.product__text {
 }
 
 .product-form__buttons {
-  max-width: 44rem;
+  max-width: 20rem;
 }
 
 .product--no-media .product__info-container > modal-opener {
@@ -712,7 +712,7 @@ a.product__text {
 
 .product-media-modal {
   background-color: rgb(var(--color-background));
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
