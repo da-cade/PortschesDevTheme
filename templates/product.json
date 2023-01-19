@@ -20,17 +20,6 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -53,8 +42,6 @@
         "vendor",
         "title",
         "price",
-        "variant_picker",
-        "quantity_selector",
         "description",
         "share",
         "1c426f45-4724-482b-b8b6-8598f3b65120"
