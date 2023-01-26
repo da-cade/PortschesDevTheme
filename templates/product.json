@@ -36,12 +36,6 @@
           "settings": {
             "custom_liquid": ""
           }
-        },
-        "5a8bb1f1-1e7b-4056-83fe-207f6277fd04": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
         }
       },
       "block_order": [
@@ -50,8 +44,7 @@
         "price",
         "description",
         "share",
-        "1c426f45-4724-482b-b8b6-8598f3b65120",
-        "5a8bb1f1-1e7b-4056-83fe-207f6277fd04"
+        "1c426f45-4724-482b-b8b6-8598f3b65120"
       ],
       "settings": {
         "enable_sticky_info": false,
