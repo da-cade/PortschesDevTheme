@@ -205,9 +205,10 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
           "type": "slide",
           "settings": {
-            "heading": "The Van Gogh Series by Laguiole",
+            "image": "shopify:\/\/shop_images\/visconti-vangogh.webp",
+            "heading": "The Van Gogh Series by Visconti",
             "heading_size": "h1",
-            "subheading": "",
+            "subheading": "These exquisite pens from the Florentine masters celebrate the magnificence of Dutch maestro",
             "button_label": "See the Series",
             "link": "",
             "button_style_secondary": false,
