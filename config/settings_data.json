@@ -167,29 +167,30 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Index",
+              "menu": "footer-navigation"
             }
           },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": ""
-            }
-          },
-          "footer-2": {
+          "5d59c32b-28b0-4f45-9bd7-611c59bfd26a": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Info",
+              "subtext": "<p>Portsche's is located at <a href=\"https:\/\/goo.gl\/maps\/4QX48pvUPEbhbSkP7\" target=\"_blank\" title=\"Portsche's Google Maps location downtown Boise\">816 W Idaho St, Boise, ID 83702.<\/a><\/p><p>Store hours:<\/p><ul><li>M-F: <strong>10<\/strong>am- <strong>6<\/strong>pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul>"
+            }
+          },
+          "2adfeb18-f9fc-4448-b1aa-12865fe91240": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/thin_logo_gold.png",
+              "image_width": 200,
+              "alignment": "right"
             }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "5d59c32b-28b0-4f45-9bd7-611c59bfd26a",
+          "2adfeb18-f9fc-4448-b1aa-12865fe91240"
         ],
         "settings": {
           "color_scheme": "inverse",
