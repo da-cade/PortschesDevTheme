@@ -147,8 +147,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "background_image": "shopify:\/\/shop_images\/byz-wallpaper_66cfbe5b-3094-4cf1-bfa5-75a1784d8aab.jpg",
-          "logo": "shopify:\/\/shop_images\/thin_logo_gold_13e4dbd6-4408-4eae-bf74-43b8905f39e0.png",
+          "background_image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
+          "logo": "shopify:\/\/shop_images\/thin_logo_gold.png",
           "logo_width": 190,
           "logo_position": "middle-left",
           "menu": "main-menu",
@@ -175,7 +175,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "footer-info"
+              "menu": ""
             }
           },
           "footer-2": {
