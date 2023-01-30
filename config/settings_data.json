@@ -10,7 +10,7 @@
     "colors_background_1": "#fffdfd",
     "colors_background_2": "#e2eff9",
     "type_header_font": "cormorant_n4",
-    "heading_scale": 150,
+    "heading_scale": 135,
     "type_body_font": "cormorant_n4",
     "body_scale": 115,
     "page_width": 1200,
@@ -171,11 +171,11 @@
               "menu": "footer-navigation"
             }
           },
-          "5d59c32b-28b0-4f45-9bd7-611c59bfd26a": {
+          "d90d9a17-886c-44ce-b4e2-1f81b6dd1f62": {
             "type": "text",
             "settings": {
               "heading": "Info",
-              "subtext": "<p>Portsche's is located at <a href=\"https:\/\/goo.gl\/maps\/4QX48pvUPEbhbSkP7\" target=\"_blank\" title=\"Portsche's Google Maps location downtown Boise\">816 W Idaho St, Boise, ID 83702.<\/a><\/p><p>Store hours:<\/p><ul><li>M-F: <strong>10<\/strong>am- <strong>6<\/strong>pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul>"
+              "subtext": "<p>Portsche's is located at 816 W Idaho St, Boise, ID 83702<\/p><p>Store hours:<\/p><ul><li>M-F: <strong>10<\/strong>am- <strong>6<\/strong>pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul>"
             }
           },
           "2adfeb18-f9fc-4448-b1aa-12865fe91240": {
@@ -189,7 +189,7 @@
         },
         "block_order": [
           "footer-0",
-          "5d59c32b-28b0-4f45-9bd7-611c59bfd26a",
+          "d90d9a17-886c-44ce-b4e2-1f81b6dd1f62",
           "2adfeb18-f9fc-4448-b1aa-12865fe91240"
         ],
         "settings": {
@@ -222,7 +222,21 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "1449514830453105753": {
+        "type": "shopify:\/\/apps\/slots-appointment-booking-app\/blocks\/appointment-scheduler-embed\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "4804304946286255945": {
+        "type": "shopify:\/\/apps\/avada-gdpr-ccpa-cookie-consent\/blocks\/app-embed\/deacc407-65bc-4a4e-84d9-f90e9e492cf3",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {

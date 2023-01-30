@@ -3,6 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "image": "shopify:\/\/shop_images\/store-interior.resize.jpg",
         "desktop_title_position": "middle-center",
         "padding_top": 40,
         "padding_bottom": 0
@@ -10,6 +11,16 @@
     },
     "166758138605b0c625": {
       "type": "apps",
+      "blocks": {
+        "fbc77891-d9e2-4ec1-94fc-7e79b64f2d04": {
+          "type": "shopify:\/\/apps\/slots-appointment-booking-app\/blocks\/appointment-scheduler\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "fbc77891-d9e2-4ec1-94fc-7e79b64f2d04"
+      ],
       "settings": {
         "include_margins": true
       }
