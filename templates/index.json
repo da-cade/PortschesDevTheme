@@ -81,19 +81,19 @@
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "gemstone"
+            "collection": "philip-portsche-designs"
           }
         },
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "opal"
+            "collection": "garnets"
           }
         },
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "engagement-rings"
+            "collection": "on-sale"
           }
         }
       },
@@ -162,22 +162,23 @@
     "e664ffef-887a-4468-b461-478a838fdf2c": {
       "type": "slideshow",
       "blocks": {
-        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
+        "f0823213-c761-4749-9bb4-cc4513af8892": {
           "type": "slide",
           "settings": {
-            "heading": "The Van Gogh Series by Laguiole",
+            "image": "shopify:\/\/shop_images\/P8122253.jpg",
+            "heading": "Portsche's Vintage and Estate Jewelry",
             "heading_size": "h1",
-            "subheading": "",
-            "button_label": "See the Series",
+            "subheading": "Find antique and unique treasures",
+            "button_label": "Shop vintage",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "bottom-left",
+            "box_align": "top-right",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 30,
-            "color_scheme": "background-2",
+            "image_overlay_opacity": 20,
+            "color_scheme": "background-1",
             "button_color_front": "accent-1",
-            "button_color_back": "accent-2",
+            "button_color_back": "accent-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -200,11 +201,31 @@
             "button_color_back": "accent-2",
             "text_alignment_mobile": "center"
           }
+        },
+        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
+          "type": "slide",
+          "settings": {
+            "heading": "The Van Gogh Series by Laguiole",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "See the Series",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 30,
+            "color_scheme": "background-2",
+            "button_color_front": "accent-1",
+            "button_color_back": "accent-2",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0",
-        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1"
+        "f0823213-c761-4749-9bb4-cc4513af8892",
+        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1",
+        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0"
       ],
       "settings": {
         "layout": "full_bleed",
