@@ -34,6 +34,7 @@
         "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
         "image_2": "shopify:\/\/shop_images\/handmade-jewelry-textile-background-gift-women-bijouterie-jewellery-women_230311-39816.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -148,7 +149,6 @@
         "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/byz-wallpaper_66cfbe5b-3094-4cf1-bfa5-75a1784d8aab.jpg",
         "image_overlay_opacity": 100,
         "desktop_content_position": "right",
         "content_alignment": "left",
@@ -164,7 +164,6 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/makeup-and-jewelry.jpg",
             "heading": "The Van Gogh Series by Laguiole",
             "heading_size": "h1",
             "subheading": "",
@@ -184,7 +183,6 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dainty-gold-necklace.jpg",
             "heading": "The Chain Shop",
             "heading_size": "h1",
             "subheading": "Lightweight pieces for a breezy look",
@@ -247,8 +245,6 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/P1011454.jpg",
-        "image_2": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -267,7 +263,6 @@
         "template--14669277954153__93cda31d-517a-4aaf-afdf-e0db73bace11-166863043466cc0644-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/P1011424.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -277,7 +272,6 @@
         "template--14669277954153__93cda31d-517a-4aaf-afdf-e0db73bace11-166863043466cc0644-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/P1011454.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -287,7 +281,6 @@
         "template--14669277954153__93cda31d-517a-4aaf-afdf-e0db73bace11-166863043466cc0644-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hand-holds-up-a-two-scoop-ice-cream-cone.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
