@@ -81,7 +81,7 @@
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "philip-portsche-designs"
+            "collection": "philip-portsche-collection"
           }
         },
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-1": {
@@ -165,7 +165,6 @@
         "f0823213-c761-4749-9bb4-cc4513af8892": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/P8122253.jpg",
             "heading": "Portsche's Vintage and Estate Jewelry",
             "heading_size": "h1",
             "subheading": "Find antique and unique treasures",
@@ -205,7 +204,6 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/visconti-vangogh.webp",
             "heading": "The Van Gogh Series by Visconti",
             "heading_size": "h1",
             "subheading": "These exquisite pens from the Florentine masters celebrate the magnificence of Dutch maestro",
