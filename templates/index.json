@@ -149,7 +149,8 @@
         "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-2"
       ],
       "settings": {
-        "image_overlay_opacity": 100,
+        "image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
+        "image_overlay_opacity": 0,
         "desktop_content_position": "right",
         "content_alignment": "left",
         "color_scheme": "accent-2",
@@ -183,6 +184,7 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/P1011878.jpg",
             "heading": "The Chain Shop",
             "heading_size": "h1",
             "subheading": "Lightweight pieces for a breezy look",
@@ -220,14 +222,14 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "The Custom Process",
             "heading_size": "h1"
           }
         },
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>At Portsche's, you can be the designer. Our expert showroom team will provide feedback and, if needed, a stylish twist — as well as advice on metal and stones.<\/p>",
             "text_style": "body"
           }
         },
@@ -245,6 +247,8 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/P1011454.jpg",
+        "image_2": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
