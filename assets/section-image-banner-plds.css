@@ -1,4 +1,4 @@
-.plds-banner{
+.plds-banner {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -12,9 +12,11 @@
   .plds-banner--small {
     height: 30vh;
   }
+
   .plds-banner--medium {
     height: 60vh;
   }
+
   .plds-banner--large {
     height: 90vh;
   }
@@ -24,9 +26,11 @@
   .plds-banner--small {
     height: 30vh;
   }
+
   .plds-banner--medium {
     height: 50vh;
   }
+
   .plds-banner--large {
     height: 70vh;
   }
@@ -44,11 +48,13 @@
   .plds-banner--small {
     height: 60vh;
   }
+
   .plds-banner--medium {
     height: 75vh;
   }
+
   .plds-banner--large {
-    height: 85vh;
+    height: 100vh;
   }
 }
 
@@ -139,8 +145,7 @@
     box-shadow: none;
   }
 
-  .plds-banner--stacked:not(.plds-banner--mobile-bottom):not(.plds-banner--adapt)
-    .banner__content {
+  .plds-banner--stacked:not(.plds-banner--mobile-bottom):not(.plds-banner--adapt) .banner__content {
     position: absolute;
     height: auto;
   }
@@ -256,6 +261,7 @@
 }
 
 @media screen and (max-width: 749px) {
+
   .plds-banner--mobile-bottom::after,
   .plds-banner--mobile-bottom .banner__media::after {
     display: none;
@@ -274,21 +280,21 @@
   height: 100%;
 } */
 
-.banner__box > * + .banner__text {
+.banner__box>*+.banner__text {
   margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 750px) {
-  .banner__box > * + .banner__text {
+  .banner__box>*+.banner__text {
     margin-top: 2rem;
   }
 }
 
-.banner__box > * + * {
+.banner__box>*+* {
   margin-top: 1rem;
 }
 
-.banner__box > *:first-child {
+.banner__box>*:first-child {
   margin-top: 0;
 }
 
@@ -310,7 +316,7 @@
   margin-bottom: 0;
 }
 
-.banner__box .banner__heading + * {
+.banner__box .banner__heading+* {
   margin-top: 1rem;
 }
 
@@ -327,14 +333,14 @@
     justify-content: flex-end;
   }
 
-  .plds-banner--content-align-mobile-center .banner__buttons--multiple > * {
+  .plds-banner--content-align-mobile-center .banner__buttons--multiple>* {
     flex-grow: 1;
     min-width: 22rem;
   }
 }
 
 @media screen and (min-width: 750px) {
-  .plds-banner--content-align-center .banner__buttons--multiple > * {
+  .plds-banner--content-align-center .banner__buttons--multiple>* {
     flex-grow: 1;
     min-width: 22rem;
   }
@@ -344,6 +350,6 @@
   }
 }
 
-.banner__box > * + .banner__buttons {
+.banner__box>*+.banner__buttons {
   margin-top: 2rem;
 }
