@@ -3,12 +3,23 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "desktop_title_position": "middle-center",
         "padding_top": 40,
         "padding_bottom": 0
       }
     },
     "166758138605b0c625": {
       "type": "apps",
+      "blocks": {
+        "dcc4020b-fe03-4673-8257-25b0370d2fdd": {
+          "type": "shopify:\/\/apps\/slots-appointment-booking-app\/blocks\/appointment-scheduler\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "dcc4020b-fe03-4673-8257-25b0370d2fdd"
+      ],
       "settings": {
         "include_margins": true
       }
