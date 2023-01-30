@@ -289,6 +289,7 @@
         "template--14669277954153__93cda31d-517a-4aaf-afdf-e0db73bace11-166863043466cc0644-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/P9100906.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -331,7 +332,7 @@
         "button_link": "shopify:\/\/pages\/store-information",
         "color_scheme": "background-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
