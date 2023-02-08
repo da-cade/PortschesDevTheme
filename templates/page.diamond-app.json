@@ -3,6 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "image": "shopify:\/\/shop_images\/store-background.webp",
         "desktop_title_position": "middle-center",
         "padding_top": 40,
         "padding_bottom": 0,
@@ -12,17 +13,6 @@
     },
     "167484546159ee671d": {
       "type": "apps",
-      "blocks": {
-        "8dce9532-dc2d-4212-80bc-04823d449596": {
-          "type": "shopify:\/\/apps\/diamond-index\/blocks\/app-block\/090f52ac-b5f2-4ba8-b277-2ed255e9b11a",
-          "settings": {
-            "color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "8dce9532-dc2d-4212-80bc-04823d449596"
-      ],
       "settings": {
         "include_margins": true
       }
