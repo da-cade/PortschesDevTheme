@@ -49,6 +49,7 @@
   padding-top: {{ section.settings.padding_top }}px;
   padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+
   }
 {%- endstyle -%}
 
@@ -115,22 +116,24 @@
           endif
         -%}
         {%- for block in section.blocks -%}
-          <li
-            id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}"
-            {{ block.shopify_attributes }}
-          >
-            {%- assign card_id = 'card-' | append: section.id | append: forloop.index %}
-            {%- assign orientation = forloop.index | modulo: 2 -%}
-            {% render 'card-collection-plds',
-              id: card_id,
-              orientation: orientation,
-              sidebar: false,
-              card_collection: block.settings.collection,
-              media_aspect_ratio: section.settings.image_ratio,
-              columns: columns
-            %}
-          </li>
+          {%- if block.settings.collection.featured_image != null -%}
+            <li
+              id="Slide-{{ section.id }}-{{ forloop.index }}"
+              class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              {%- assign card_id = 'card-' | append: section.id | append: forloop.index %}
+              {%- assign orientation = forloop.index | modulo: 2 -%}
+              {% render 'card-collection-plds',
+                id: card_id,
+                orientation: orientation,
+                sidebar: false,
+                card_collection: block.settings.collection,
+                media_aspect_ratio: section.settings.image_ratio,
+                columns: columns
+              %}
+            </li>
+          {%- endif -%}
         {%- endfor -%}
       </ul>
       {%- if show_mobile_slider -%}

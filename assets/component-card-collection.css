@@ -11,7 +11,6 @@
   position: absolute;
   justify-content: flex-start;
   background: brown;
-  width: 18%;
   height: fit-content;
 }
 
@@ -40,6 +39,13 @@
   overflow: hidden;
 }
 
+.arrow-overlay i {
+  color: white;
+  opacity: 0;
+  width: 3rem;
+  transition: opacity .25s ease;
+  height: auto;
+}
 
 .collection-card-overlay {
   position: absolute;
@@ -94,7 +100,6 @@
   transition: ease-in .15s;
   color: transparent;
   opacity: 0;
-  /* transform: translateY(50%); */
 }
 
 .plds-card-wrapper:hover {
@@ -117,6 +122,12 @@
   opacity: 1;
   color: inherit;
 }
+
+.plds-card-wrapper:hover .arrow-overlay>i,
+.plds-card-wrapper:focus .arrow-overlay>i {
+  opacity: 1;
+}
+
 
 @media (max-width: 749px) {
   .collection-card-content {

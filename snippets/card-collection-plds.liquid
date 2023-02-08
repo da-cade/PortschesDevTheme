@@ -53,17 +53,18 @@
     width: 100%;
     height: 100%;
     display: flex !important;
+    position: relative;
     background-color: black;
     background-image: url({{ card_collection.featured_image | image_url | prepend: 'http:' }});
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     transition: ease-out .25s;
   }
 
   {%- if sidebar -%}
 
     #{{id}} {
-      height: 40vh;
       {%- if orientation == 0 -%} flex-direction: row-reverse; {%- else -%} flex-direction: row; {%- endif -%}
     }
 
@@ -104,6 +105,69 @@
       {%- endif -%}
     }
 
+    #{{id}} .card-collection-bg .arrow-overlay {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      transition: .3s ease;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 20%;
+      background-color: rgba(0, 0, 0, 0);;
+      {%- if orientation == 0 -%}
+        transform: translateX(-100%);
+        left: 0;
+        {%- else -%}
+        transform: translateX(100%);
+        right: 0;
+      {%- endif -%}
+    }
+
+    #{{id}}:hover .arrow-overlay,
+    #{{id}}:focus .arrow-overlay {
+      background-color: rgba(0, 0, 0, 0.15);
+      {%- if orientation == 0 -%}
+        transform: translateX(0);
+        {%- else -%}
+        transform: translateX(0);
+      {%- endif -%}
+    }
+
+    @media (min-width: 750px){
+      #{{id}} {
+      height: 45vh;
+      }
+      #{{id}} .sidebar{
+        width: 12%;
+      }
+    }
+    @media (min-width: 990px){
+      #{{id}} {
+      height: 65vh;
+      }
+      #{{id}} .sidebar{
+        width: 18%;
+      }
+    }
+    @media (max-width: 749px){
+      #{{id}} {
+      height: 30vh;
+      }
+      #{{id}} .sidebar{
+        width: 90%;
+      }
+    }
+
+
+
+    {%- if card_collection.description == blank -%}
+      /* #{{id}}:focus .collection-card-content */
+      #{{id}}:hover .collection-card-content{
+        transform: translateY(0px);
+      }
+      {%- endif -%}
+
   {%- else -%}
 
     #{{ id }} {
@@ -124,7 +188,7 @@
     }
 
     #{{id }} .collection-card-content {
-      margin-top: 5rem;
+      margin-top: 4rem;
       padding: 2rem;
     }
 
@@ -145,7 +209,37 @@
         </div>
       </div>
       <div class="card-img-container">
-        <div class=" card-collection-bg"></div>
+        <div class=" card-collection-bg">
+          {%- if sidebar -%}
+            <div class="arrow-overlay">
+              <i>
+                {%- if orientation == 0 -%}
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                  </svg>
+                {%- else -%}
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+                  </svg>
+                {%- endif -%}
+              </i>
+            </div>
+          {%- endif -%}
+        </div>
       </div>
     </div>
   {%- else -%}

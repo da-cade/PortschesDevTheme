@@ -37,9 +37,14 @@
   .slider.collection-list--1-items {
     padding-bottom: 0;
   }
+
+  .collection-list__item {
+    margin-bottom: 3rem;
+  }
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
+
   .slider.collection-list--1-items,
   .slider.collection-list--2-items,
   .slider.collection-list--3-items,
@@ -51,6 +56,10 @@
 @media screen and (min-width: 750px) {
   .collection-list__item a:hover {
     box-shadow: none;
+  }
+
+  .collection-list__item {
+    margin-bottom: 4rem;
   }
 }
 

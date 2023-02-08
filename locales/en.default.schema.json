@@ -1839,6 +1839,12 @@
         "image": {
           "label": "First image"
         },
+        "text_color": {
+          "label": "Heading text color"
+        },
+        "show_text_box": {
+          "label": "Show container on desktop"
+        },
         "desktop_title_position": {
           "options__1": {
             "label": "Top Left"

@@ -5,7 +5,9 @@
       "settings": {
         "desktop_title_position": "middle-center",
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "show_text_box": true,
+        "text_color": "#000000"
       }
     },
     "167484546159ee671d": {
