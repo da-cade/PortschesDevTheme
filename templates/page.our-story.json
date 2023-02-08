@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/workshop.webp",
+        "image": "shopify:\/\/shop_images\/stick_fig.jpg",
         "desktop_title_position": "bottom-right",
         "padding_top": 40,
         "padding_bottom": 40
