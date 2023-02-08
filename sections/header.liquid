@@ -111,9 +111,9 @@
   }
 
   .header-wrapper {
-    /* width: 98%; */
-    margin-top: 2vh;
-    margin-bottom: 4vh;
+    width: 100%;
+    /* margin-top: 2vh; */
+    /* margin-bottom: 4vh; */
   }
 
   @media screen and (min-width: 750px) {
@@ -726,13 +726,13 @@
 
     reveal() {
       this.header.classList.add('shopify-section-header-sticky', 'animate');
-      this.headerBar.classList.add('show-shadow')
+      this.header.classList.add('show-shadow')
       this.header.classList.remove('shopify-section-header-hidden');
     }
 
     reset() {
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
-      this.headerBar.classList.remove('show-shadow')
+      this.header.classList.remove('show-shadow')
     }
 
     closeMenuDisclosure() {
