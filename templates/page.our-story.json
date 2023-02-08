@@ -8,31 +8,9 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
-    },
-    "3c791f07-2d66-4e39-bc80-91e5030cf1b0": {
-      "type": "page",
-      "settings": {
-        "page": "the-staff",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "7283f680-726f-4dde-90e6-b398c7575fce": {
-      "type": "page",
-      "settings": {
-        "page": "the-store",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
-    "main",
-    "3c791f07-2d66-4e39-bc80-91e5030cf1b0",
-    "7283f680-726f-4dde-90e6-b398c7575fce"
+    "main"
   ]
 }
