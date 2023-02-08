@@ -30,6 +30,12 @@
     min-width: 20rem;
     min-height: 10rem;
   }
+
+  .collection-hero__title {
+    word-wrap: nowrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 {%- endstyle -%}
 
 <div class="shadow-bar-top"></div>
@@ -41,7 +47,7 @@
         {{- collection.title | escape -}}
       </h1>
 
-      {%- if section.settings.show_collection_description -%}
+      {%- if section.settings.paragraph.content != blank -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
     </div>
