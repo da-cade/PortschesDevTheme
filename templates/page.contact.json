@@ -3,6 +3,8 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "image": "shopify:\/\/shop_images\/rotary-telephone-numbers.jpg",
+        "desktop_title_position": "middle-center",
         "padding_top": 36,
         "padding_bottom": 36
       }
