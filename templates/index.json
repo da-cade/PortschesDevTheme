@@ -192,7 +192,7 @@
             "button_label": "Explore",
             "link": "",
             "button_style_secondary": true,
-            "box_align": "middle-center",
+            "box_align": "bottom-left",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 30,
