@@ -5,70 +5,68 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-  .content-column {
-    padding-top: 4rem;
-    box-shadow: 0px -9px 15px -3px rgba(0,0,0,0.1);
-  }
-
-  .page-content {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-
-  {%- if section.settings.image -%}
-
-  .cover-img {
-    position: relative;
-    display: flex;
-    height: 60vh;
-    width: 100%;
-    background-image: url(
-    {{ section.settings.image | image_url | prepend: 'http:' }}
-    );
-    background-size: cover;
-    background-position: center;
-  }
-
-  .rte{
-    background: white;
-    z-index: 1;
-  }
-
-  .heading-banner {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    padding: 7rem;
-    /* background-color: rgba(0, 0, 0, 0.450); */
-  }
-
-  .main-page-title {
-    display: flex;
-    text-align: inherit;
-    color: black;
-    background-color: white;
-  }
-
-  {%- else -%}
-
-
-  {%- endif -%}
-
-  @media screen and (min-width: 750px) {
-    .page-content {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-
     .content-column {
-      /* padding: 2rem; */
+      padding-top: 4rem;
+      box-shadow: 0px -9px 15px -3px rgba(0,0,0,0.1);
     }
 
-  @media screen and (min-width: 990px) {
     .page-content {
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+
+    {%- if section.settings.image -%}
+
+    .cover-img {
+      position: relative;
+      display: flex;
+      height: 60vh;
+      width: 100%;
+      background-image: url(
+      {{ section.settings.image | image_url | prepend: 'http:' }}
+      );
+      background-size: cover;
+      background-position: center;
+    }
+
+    .rte{
+      background: white;
+      z-index: 1;
+    }
+
+    .heading-banner {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      padding: 7rem;
+      /* background-color: rgba(0, 0, 0, 0.450); */
+    }
+
+    .main-page-title {
+      display: flex;
+      text-align: inherit;
+      color: black;
+      background-color: white;
+    }
+
+    {%- endif -%}
+
+    @media screen and (min-width: 750px) {
+      .page-content {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+
+      .content-column {
+
+      }
+
+    @media screen and (min-width: 990px) {
+      .page-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
     }
   }
 {%- endstyle -%}
