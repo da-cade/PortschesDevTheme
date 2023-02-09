@@ -81,19 +81,19 @@
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "philip-portsche-designs"
+            "collection": "diamond"
           }
         },
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "garnets"
+            "collection": "pendants"
           }
         },
         "template--14670190706793__31f7032c-a5c9-4f1e-a361-8db1d5ff908f-1673492391b1aa9f8d-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "on-sale"
+            "collection": "earrings"
           }
         }
       },
@@ -170,7 +170,7 @@
             "heading_size": "h1",
             "subheading": "Find antique and unique treasures",
             "button_label": "Shop vintage",
-            "link": "",
+            "link": "shopify:\/\/collections\/estate-and-vintage",
             "button_style_secondary": false,
             "box_align": "top-right",
             "show_text_box": false,
@@ -185,12 +185,12 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PB192714.jpg",
+            "image": "shopify:\/\/shop_images\/dainty-gold-necklace.jpg",
             "heading": "The Chain Shop",
             "heading_size": "h1",
             "subheading": "Lightweight pieces for a breezy look",
             "button_label": "Explore",
-            "link": "",
+            "link": "shopify:\/\/collections\/the-chain-shop",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -210,7 +210,7 @@
             "heading_size": "h1",
             "subheading": "These exquisite pens from the Florentine masters celebrate the magnificence of the famous Dutch genius",
             "button_label": "See the Series",
-            "link": "",
+            "link": "shopify:\/\/collections\/visconti-1",
             "button_style_secondary": false,
             "box_align": "top-right",
             "show_text_box": false,
@@ -289,7 +289,7 @@
         "18858c56-af66-4c68-83c9-b4c6a012be7a": {
           "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 20,
+            "heading_size": 30,
             "feed_width": 100,
             "html_area": ""
           }
