@@ -298,6 +298,9 @@
       "block_order": [
         "18858c56-af66-4c68-83c9-b4c6a012be7a"
       ],
+      "custom_css": [
+        "#insta-feed {margin-bottom: 30px}"
+      ],
       "settings": {
         "include_margins": true
       }
