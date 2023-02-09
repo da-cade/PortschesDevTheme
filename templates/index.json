@@ -170,7 +170,7 @@
             "heading_size": "h1",
             "subheading": "Find antique and unique treasures",
             "button_label": "Shop vintage",
-            "link": "",
+            "link": "shopify:\/\/collections\/estate-and-vintage",
             "button_style_secondary": false,
             "box_align": "top-right",
             "show_text_box": false,
