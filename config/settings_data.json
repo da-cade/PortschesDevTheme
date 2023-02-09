@@ -130,7 +130,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "Welcome back! We had a little work done",
               "text_alignment": "center",
               "color_scheme": "accent-2",
               "link": ""
