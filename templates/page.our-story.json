@@ -3,7 +3,8 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        ".main-page-title {background-color: transparent; color: white;}"
+        ".main-page-title {background-color: transparent; color: white;}",
+        ".page-img-2 {height: 100vh;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/PortscheFamily-5_resize.jpg",
