@@ -3,11 +3,11 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        ".main-page-title{background-color: transparent; color: white;}"
+        ".main-page-title {background-color: transparent; color: white;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/PortscheFamily-5_resize.jpg",
-        "desktop_title_position": "top-left",
+        "desktop_title_position": "middle-right",
         "padding_top": 40,
         "padding_bottom": 40
       }
