@@ -7,7 +7,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/PortscheFamily-5_resize.jpg",
-        "desktop_title_position": "middle-right",
+        "image_2": "shopify:\/\/shop_images\/le_table_cropped.jpg",
+        "desktop_title_position": "top-center",
         "padding_top": 40,
         "padding_bottom": 40
       }
