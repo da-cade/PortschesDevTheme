@@ -1839,6 +1839,9 @@
         "image": {
           "label": "First image"
         },
+        "image_2": {
+          "label": "Second image"
+        },
         "text_color": {
           "label": "Heading text color"
         },

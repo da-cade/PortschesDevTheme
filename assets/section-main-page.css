@@ -42,15 +42,21 @@
   align-items: flex-end;
 }
 
-.title__content--top-left > .heading-banner, .title__content--middle-left > .heading-banner, .title__content--bottom-left > .heading-banner {
+.title__content--top-left>.heading-banner,
+.title__content--middle-left>.heading-banner,
+.title__content--bottom-left>.heading-banner {
   justify-content: flex-start;
 }
 
-.title__content--top-center > .heading-banner, .title__content--middle-center > .heading-banner, .title__content--bottom-center > .heading-banner {
+.title__content--top-center>.heading-banner,
+.title__content--middle-center>.heading-banner,
+.title__content--bottom-center>.heading-banner {
   justify-content: center;
 }
 
-.title__content--top-right > .heading-banner, .title__content--middle-right > .heading-banner, .title__content--bottom-right > .heading-banner {
+.title__content--top-right>.heading-banner,
+.title__content--middle-right>.heading-banner,
+.title__content--bottom-right>.heading-banner {
   justify-content: flex-end;
 }
 

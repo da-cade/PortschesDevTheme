@@ -23,11 +23,18 @@
       display: flex;
       height: 60vh;
       width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .page-img-1 {
       background-image: url(
       {{ section.settings.image | image_url | prepend: 'http:' }}
       );
-      background-size: cover;
-      background-position: center;
+    }
+
+    .page-img-2 {
+      background-image: url({{ section.settings.image_2 | image_url | prepend: 'http:' }});
     }
 
     .bg-white{
@@ -39,15 +46,35 @@
       position: absolute;
       display: flex;
       width: 100%;
+      height: 100%;
       padding: 7rem;
-      /* background-color: rgba(0, 0, 0, 0.450); */
+      z-index: 2;
     }
 
     .main-page-title {
       display: flex;
       text-align: inherit;
+      height: fit-content;
       color: black;
       background-color: white;
+    }
+
+    .page-bg-overlay {
+      position: absolute;
+      display: flex !important;
+      background: rgba(0, 0, 0, 0.1);
+      inset: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    @media screen and (max-width: 749px) {
+      .heading-banner {
+        padding: 1rem;
+      }
+
+      .main-page-title {}
+
     }
 
     {%- endif -%}
@@ -58,9 +85,6 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
 
-      .content-column {
-
-      }
 
     @media screen and (min-width: 990px) {
       .page-content {
@@ -74,12 +98,13 @@
 {% comment %} <div class="page-width page-width--narrow section-{{ section.id }}-padding"> {% endcomment %}
 <div class="section-{{ section.id }}-padding">
   <div class="content-column">
-    <div class="cover-img title__content--{{ section.settings.desktop_title_position }}">
+    <div class="cover-img page-img-1 title__content--{{ section.settings.desktop_title_position }}">
       <div class="heading-banner">
         <h1 class="main-page-title page-title h0">
           {{ page.title | escape }}
         </h1>
       </div>
+      <div class="page-bg-overlay"></div>
     </div>
     <div class="shadow-bar-bottom"></div>
 
@@ -88,6 +113,12 @@
         {{ page.content }}
       </div>
     </div>
+    {%- if section.settings.image_2 -%}
+      <div class="shadow-bar-top"></div>
+      <div class="cover-img page-img-2">
+        <div class="page-bg-overlay"></div>
+      </div>
+    {%- endif -%}
   </div>
 </div>
 
@@ -101,6 +132,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.main-page.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "t:sections.main-page.settings.image_2.label"
     },
     {
       "type": "select",
