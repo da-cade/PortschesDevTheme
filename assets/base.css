@@ -174,12 +174,12 @@ main {
   width: 100%;
 }
 
-/* .shadow-bar-top {
+.shadow-bar-top {
   display: block !important;
   position: relative;
   height: 4rem;
   width: 100%;
-} */
+}
 
 .shadow-bar-top:after {
   content: '';
