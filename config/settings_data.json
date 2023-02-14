@@ -130,7 +130,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "Welcome to the new Portsche's",
               "text_alignment": "center",
               "color_scheme": "accent-2",
               "link": ""
