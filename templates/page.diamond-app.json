@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+        ".page-content {display: none;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/diamond_background.png",
         "desktop_title_position": "middle-left",
@@ -11,6 +14,20 @@
     },
     "167484546159ee671d": {
       "type": "apps",
+      "blocks": {
+        "a6b9beb8-b2d4-4cf7-974e-09f4ac212e71": {
+          "type": "shopify:\/\/apps\/diamond-index\/blocks\/app-block\/73d07ce7-c7ef-4a29-9b1f-04f7e06afcfa",
+          "settings": {
+            "color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "a6b9beb8-b2d4-4cf7-974e-09f4ac212e71"
+      ],
+      "custom_css": [
+        ".section__pagination {}"
+      ],
       "settings": {
         "include_margins": true
       }
