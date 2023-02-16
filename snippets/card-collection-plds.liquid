@@ -39,19 +39,9 @@
     text-decoration: none;
   }
 
-  #{{ id }} .collection-card-overlay {
-    {%- if orientation == 0 -%}
-      justify-content: flex-start;
-      text-align: left;
-    {%- else -%}
-      justify-content: flex-end;
-      text-align: right;
-    {%- endif -%}
-  }
-
   #{{ id }} .card-collection-bg {
     width: 100%;
-    height: 100%;
+    height: 45vh;
     display: flex !important;
     position: relative;
     background-color: black;
@@ -62,47 +52,37 @@
     transition: ease-out .25s;
   }
 
-  {%- if sidebar -%}
-
-    #{{id}} {
-      {%- if orientation == 0 -%} flex-direction: row-reverse; {%- else -%} flex-direction: row; {%- endif -%}
-    }
-
+  {%- if orientation == 0 -%}
     #{{ id }} .collection-card-overlay {
-      height: fit-content;
-      {%- if orientation == 0 -%}
-        color: white;
-        background-color: {{color_scheme_1}};
-      {%- else -%}
-        color: black;
-        background-color: {{ color_scheme_2 }};
-      {%- endif -%}
+      justify-content: flex-start;
+      text-align: left;
     }
+
+  {%- else -%}
+    #{{ id }} .collection-card-overlay {
+      justify-content: flex-end;
+      text-align: right;
+    }
+
+  {%- endif -%}
+
+
+
+  {%- if sidebar -%}
 
     #{{ id }}:after {
       content: '';
+      top: -5%;
       position: absolute;
       z-index: -1;
       background: #e2eff9;
       height: 100%;
       width: 100%;
-      {%- if orientation == 0 -%} left: -2%; {%- else -%} right: -2%; {%- endif -%}
-      top: -5%;
       pointer-events: none;
     }
 
     #{{id}} .sidebar {
       text-align: start;
-      {%- if orientation == 0 -%} justify-content: flex-start; margin-right: 0; background-color: {{color_scheme_1}} ; color: white;  {%- else -%} justify-content: flex-end; margin-left: 0; background-color: {{color_scheme_2}}; color: black; {%- endif -%}
-    }
-
-    #{{id}} .card-img-container {
-      margin-top: 1%;
-      {%- if orientation == 0 -%}
-        margin-right: auto;
-      {%- else -%}
-        margin-left: auto;
-      {%- endif -%}
     }
 
     #{{id}} .card-collection-bg .arrow-overlay {
@@ -114,57 +94,85 @@
       top: 0;
       bottom: 0;
       width: 20%;
-      background-color: rgba(0, 0, 0, 0);;
-      {%- if orientation == 0 -%}
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    {%- if orientation == 0 -%}
+
+      #{{ id }} {
+        flex-direction: row-reverse;
+      }
+
+      #{{ id }}:after {
+        left: -2%;
+      }
+
+      #{{ id }} .collection-card-overlay {
+        color: white;
+        background-color: {{color_scheme_1}};
+      }
+
+      #{{id}} .sidebar {
+        justify-content: flex-end;
+        margin-right: 0;
+        color: white;
+        left: -8px;
+      }
+
+      #{{id}} .card-collection-bg .arrow-overlay {
         transform: translateX(-100%);
         left: 0;
-        {%- else -%}
+      }
+
+      @media screen and (max-width: 749px) {
+      #{{ id }} .sidebar {
+        left: 8px;
+      }
+  }
+
+    {%- else -%}
+      #{{ id }} {
+        flex-direction: row;
+      }
+
+      #{{ id }}:after {
+        right: -2%;
+      }
+
+      #{{ id }} .collection-card-overlay {
+        color: black;
+        background-color: {{ color_scheme_2 }};
+      }
+
+      #{{id}} .sidebar {
+        justify-content: flex-start;
+        margin-left: 0;
+        color: black;
+        right: -8px;
+      }
+
+      #{{id}} .card-collection-bg .arrow-overlay {
         transform: translateX(100%);
         right: 0;
-      {%- endif -%}
-    }
+      }
+
+      @media screen and (max-width: 749px) {
+      #{{ id }} .sidebar {
+        right: 8px;
+      }
+  }
+
+    {%- endif -%}
 
     #{{id}}:hover .arrow-overlay,
     #{{id}}:focus .arrow-overlay {
       background-color: rgba(0, 0, 0, 0.15);
-      {%- if orientation == 0 -%}
-        transform: translateX(0);
-        {%- else -%}
-        transform: translateX(0);
-      {%- endif -%}
+      transform: translateX(0);
     }
-
-    @media (min-width: 750px){
-      #{{id}} {
-      height: 45vh;
-      }
-      #{{id}} .sidebar{
-        width: 12%;
-      }
-    }
-    @media (min-width: 990px){
-      #{{id}} {
-      height: 65vh;
-      }
-      #{{id}} .sidebar{
-        width: 18%;
-      }
-    }
-    @media (max-width: 749px){
-      #{{id}} {
-      height: 30vh;
-      }
-      #{{id}} .sidebar{
-        width: 90%;
-      }
-    }
-
-
 
     {%- if card_collection.description == blank -%}
-      /* #{{id}}:focus .collection-card-content */
       #{{id}}:hover .collection-card-content{
-        transform: translateY(0px);
+        /* transform: translateY(0px); */
       }
       {%- endif -%}
 
@@ -193,21 +201,17 @@
     }
 
   {%- endif -%}
+
+  @media screen and (max-width: 749px){
+    #{{ id }} {
+      flex-direction: column;
+    }
+  }
 {%- endstyle -%}
 
 <a id="link-{{ id }}" href="{{ card_collection.url }}">
   {%- if sidebar -%}
     <div class="plds-card-wrapper" id="{{ id }}">
-      <div id="{{id}}-sidebar" class="sidebar">
-        <div class="collection-card-overlay">
-          <div class="collection-card-content banner-content">
-            <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
-            <div class="collection-card-information">
-              <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="card-img-container">
         <div class=" card-collection-bg">
           {%- if sidebar -%}
@@ -239,6 +243,16 @@
               </i>
             </div>
           {%- endif -%}
+        </div>
+      </div>
+      <div id="{{id}}-sidebar" class="sidebar">
+        <div class="collection-card-overlay">
+          <div class="collection-card-content banner-content">
+            <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
+            <div class="collection-card-information">
+              <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

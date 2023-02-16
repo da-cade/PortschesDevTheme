@@ -26,6 +26,16 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .collection-width {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .slideUp {
+    display: none;
+  }
 }
 
 .collection-list__item:only-child {
@@ -71,4 +81,10 @@
 
 .collection-list-view-all {
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 1500px) {
+  .collection-width {
+    padding: 0 8rem;
+  }
 }

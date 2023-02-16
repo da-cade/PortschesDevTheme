@@ -1,20 +1,18 @@
 .plds-card-wrapper {
   display: flex;
-  position: relative;
-  /* margin-top: 10rem; */
-  justify-content: space-between;
+
   width: 100%;
 }
 
 .sidebar {
   display: flex;
-  position: absolute;
   justify-content: flex-start;
-  background: brown;
   height: fit-content;
+  bottom: 10px;
+  width: 100%;
 }
 
-@media only screen and (max-width: 749px) {
+/* @media only screen and (max-width: 749px) {
   .sidebar {
     min-width: 30vw;
   }
@@ -30,11 +28,11 @@
   .sidebar {
     min-width: 25rem;
   }
-}
+} */
 
 .card-img-container {
   display: flex !important;
-  width: 80%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
@@ -48,29 +46,55 @@
 }
 
 .collection-card-overlay {
-  position: absolute;
   display: flex;
   background: rgba(0, 0, 0, 0.1);
   inset: 0;
   overflow: hidden;
+  height: fit-content;
   z-index: 2;
 }
 
 @media only screen and (max-width: 749px) {
+  .plds-card-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+  }
+
   .collection-card-overlay {
     padding: 2rem;
+    width: 80%;
   }
 }
 
 @media only screen and (min-width: 750px) {
+  .plds-card-wrapper {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 10px;
+  }
+
   .collection-card-overlay {
     padding: 3rem;
+    width: 50%;
   }
 }
 
 @media only screen and (min-width: 990px) {
   .collection-card-overlay {
     padding: 4rem;
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .collection-card-overlay {
+    width: 18%;
   }
 }
 
@@ -79,7 +103,6 @@
   transform: translateX(0);
   color: inherit;
   opacity: 1;
-  /* min-height: 40rem; */
   height: fit-content;
   width: 50rem;
   max-width: 100%;
