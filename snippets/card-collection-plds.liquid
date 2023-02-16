@@ -179,8 +179,9 @@
   {%- else -%}
 
     #{{ id }} {
-      height: 80vh;
+      height: 70vh;
       overflow: hidden;
+      position: relative;
     }
 
     #{{ id }}:hover .card-collection-bg, #{{ id }}:focus .card-collection-bg {
@@ -191,8 +192,15 @@
       transform: scale(1.01);
     }
 
+    {{ id }} .card-image-container {
+      position: absolute;
+      height: 100%;
+    }
+
     #{{ id }} .collection-card-overlay {
       color: white;
+      height: 100%;
+      width: 100%;
     }
 
     #{{id }} .collection-card-content {
