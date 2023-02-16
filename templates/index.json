@@ -6,14 +6,14 @@
         "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-0": {
           "type": "heading",
           "settings": {
-            "heading": "See the Store",
+            "heading": "The Shop",
             "heading_size": "h1"
           }
         },
         "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-1": {
           "type": "text",
           "settings": {
-            "text": "The finest purveyors of custom and estate jewelry, located in downtown Boise",
+            "text": "The finest quality for an excellent price",
             "text_style": "subtitle"
           }
         },
@@ -33,16 +33,20 @@
         "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-1",
         "template--14670190706793__08d07866-ec0e-4e60-bfda-01b254b990ac-167368239021210662-2"
       ],
+      "custom_css": [
+        ".banner__heading {color: black;}",
+        ".banner__text {color: darkslategray;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
-        "image_2": "shopify:\/\/shop_images\/handmade-jewelry-textile-background-gift-women-bijouterie-jewellery-women_230311-39816.jpg",
+        "image_2": "shopify:\/\/shop_images\/P1102887.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-right",
-        "show_text_box": true,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
         "desktop_content_alignment": "right",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
