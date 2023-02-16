@@ -145,6 +145,9 @@
       },
       "header": {
         "type": "header",
+        "custom_css": [
+          ".header-wrapper {background-color: white;}"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "background_image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
