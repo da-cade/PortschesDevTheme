@@ -22,6 +22,9 @@
       "block_order": [
         "42982760-e6bd-47b1-b482-b7c575e410de"
       ],
+      "custom_css": [
+        ".section__pagination {}"
+      ],
       "settings": {
         "include_margins": true
       }
