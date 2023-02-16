@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+        ".page-content {display: none;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/diamond_background.png",
         "desktop_title_position": "middle-left",
