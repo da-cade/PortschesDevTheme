@@ -12,7 +12,7 @@
     "167484546159ee671d": {
       "type": "apps",
       "blocks": {
-        "f62a5c7c-d3a3-4207-86a9-78990170ddb6": {
+        "42982760-e6bd-47b1-b482-b7c575e410de": {
           "type": "shopify:\/\/apps\/diamond-index\/blocks\/app-block\/73d07ce7-c7ef-4a29-9b1f-04f7e06afcfa",
           "settings": {
             "color": "#000000"
@@ -20,7 +20,7 @@
         }
       },
       "block_order": [
-        "f62a5c7c-d3a3-4207-86a9-78990170ddb6"
+        "42982760-e6bd-47b1-b482-b7c575e410de"
       ],
       "settings": {
         "include_margins": true
