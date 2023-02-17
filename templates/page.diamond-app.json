@@ -14,6 +14,17 @@
     },
     "167484546159ee671d": {
       "type": "apps",
+      "blocks": {
+        "98f330ce-7130-4a74-9505-3ed21489ffee": {
+          "type": "shopify:\/\/apps\/diamond-index\/blocks\/app-block\/73d07ce7-c7ef-4a29-9b1f-04f7e06afcfa",
+          "settings": {
+            "color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "98f330ce-7130-4a74-9505-3ed21489ffee"
+      ],
       "custom_css": [
         ".section__pagination {}"
       ],
