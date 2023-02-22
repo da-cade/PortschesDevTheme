@@ -33,7 +33,7 @@
 
   #{{ button-id }}{
     opacity: 1;
-    color: inherit;
+    color: {{ button-color-front }};
     outline: 0;
     line-height: 40px;
     position: relative;
@@ -62,7 +62,18 @@
     opacity: 1;
     display: block;
     text-align: center;
-    color: {{ text-color-front }};
+    {%- case button-color-front -%}
+      {%- when 'accent-1' -%}
+        color: white;
+      {%- when 'accent-2' -%}
+        color: black;
+      {%- when 'background-1' -%}
+        color: black;
+      {%- when 'background-2' -%}
+        color: black;
+      {%- when 'inverse' -%}
+        color: black;
+    {%- endcase -%}
     padding: 0 30px;
     line-height: 40px;
     transition: var(--duration-long);
@@ -76,7 +87,18 @@
     left: 0;
     opacity: 0;
     width: 100%;
-    color: {{ text-color-back }};
+    {%- case button-color-back -%}
+      {%- when 'accent-1' -%}
+        color: white;
+      {%- when 'accent-2' -%}
+        color: black;
+      {%- when 'background-1' -%}
+        color: black;
+      {%- when 'background-2' -%}
+        color: black;
+      {%- when 'inverse' -%}
+        color: black;
+    {%- endcase -%}
     background: black;
     display: block;
     text-align: center;
