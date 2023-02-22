@@ -201,8 +201,8 @@
             "text_alignment": "center",
             "image_overlay_opacity": 30,
             "color_scheme": "accent-2",
-            "button_color_front": "inverse",
-            "button_color_back": "accent-2",
+            "button_color_front": "accent-2",
+            "button_color_back": "background-2",
             "text_alignment_mobile": "center"
           }
         },
