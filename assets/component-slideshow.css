@@ -4,7 +4,7 @@ slideshow-component {
   flex-direction: column;
 }
 
-.banner__heading {
+/* .banner__heading {
   color: rgb(var(--color-foreground));
 }
 
@@ -14,7 +14,7 @@ slideshow-component {
 
 .banner__buttons {
   color: rgb(var(--color-foreground));
-}
+} */
 
 @media screen and (max-width: 989px) {
   .no-js slideshow-component .slider {

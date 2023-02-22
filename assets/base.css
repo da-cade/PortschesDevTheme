@@ -2,13 +2,15 @@
 
 :root,
 .color-background-1 {
-  --color-foreground: var(--color-base-text);
+  /* --color-foreground: var(--color-base-text); */
+  --color-foreground: black;
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
 
 .color-background-2 {
-  --color-foreground: var(--color-base-text);
+  /* --color-foreground: var(--color-base-text); */
+  --color-foreground: black;
   --color-background: var(--color-base-background-2);
   --gradient-background: var(--gradient-base-background-2);
 }
@@ -20,13 +22,16 @@
 }
 
 .color-accent-1 {
-  --color-foreground: var(--text-color-base-1);
+  /* --color-foreground: var(--text-color-base-1); */
+
+  --color-foreground: 255, 255, 255;
   --color-background: var(--color-base-accent-1);
   --gradient-background: var(--gradient-base-accent-1);
 }
 
 .color-accent-2 {
-  --color-foreground: var(--text-color-base-2);
+  --color-foreground: 0, 0, 0;
+  /* --color-foreground: var(--text-color-base-2); */
   --color-background: var(--color-base-accent-2);
   --gradient-background: var(--gradient-base-accent-2);
 }
@@ -36,11 +41,11 @@
 }
 
 .color-foreground-accent-1 {
-  --color-foreground: var(--color-base-accent-1);
+  --color-foreground: var(--color-accent-1);
 }
 
 .color-foreground-accent-2 {
-  --color-foreground: var(--color-base-accent-2);
+  --color-foreground: var(--color-accent-2);
 }
 
 :root,
@@ -379,13 +384,9 @@ body,
 .color-background-1,
 .color-background-2,
 .color-inverse,
-.color-accent-1 {
-  color: rgba(var(--color-foreground), 0.75);
-  background-color: rgb(var(--color-background));
-}
-
+.color-accent-1,
 .color-accent-2 {
-  color: rgba(var(--text-color), 0.75) !important;
+  color: rgba(var(--color-foreground), 0.75);
   background-color: rgb(var(--color-background));
 }
 
