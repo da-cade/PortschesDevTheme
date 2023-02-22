@@ -3,14 +3,14 @@
 :root,
 .color-background-1 {
   /* --color-foreground: var(--color-base-text); */
-  --color-foreground: black;
+  --color-foreground: 0, 0, 0;
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
 
 .color-background-2 {
   /* --color-foreground: var(--color-base-text); */
-  --color-foreground: black;
+  --color-foreground: 0, 0, 0;
   --color-background: var(--color-base-background-2);
   --gradient-background: var(--gradient-base-background-2);
 }
