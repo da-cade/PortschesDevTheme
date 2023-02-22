@@ -5,7 +5,7 @@ slideshow-component {
 }
 
 .banner__heading {
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-button-text));
 }
 
 .banner__buttons {
