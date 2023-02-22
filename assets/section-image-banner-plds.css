@@ -133,7 +133,7 @@
 @media screen and (max-width: 749px) {
 
   .banner:not(.plds-banner--mobile-bottom):not(.email-signup-banner) .banner__box {
-    background: transparent;
+    /* background: transparent; */
     --color-foreground: 255, 255, 255;
     --color-button: 255, 255, 255;
     --color-button-text: 0, 0, 0;
