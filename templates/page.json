@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-
+        "a {overflow-wrap: anywhere;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/store-background.webp",
