@@ -12,7 +12,7 @@
     "type_header_font": "cormorant_n4",
     "heading_scale": 110,
     "type_body_font": "cormorant_n4",
-    "body_scale": 105,
+    "body_scale": 110,
     "page_width": 1200,
     "spacing_sections": 100,
     "spacing_grid_horizontal": 20,
@@ -178,7 +178,7 @@
             "type": "text",
             "settings": {
               "heading": "Info",
-              "subtext": "<p>Portsche's is located in downtown Boise, Idaho at <a href=\"https:\/\/goo.gl\/maps\/vW2XGQ9aTvcJLtGcA\" target=\"_blank\" title=\"Portsche's Location in Google Maps\">816 W. Idaho St.<\/a><\/p><p>Store hours:<\/p><ul><li>M-F: 10am - 6pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul>"
+              "subtext": "<p>Portsche's is located in downtown Boise, Idaho at <a href=\"https:\/\/goo.gl\/maps\/vW2XGQ9aTvcJLtGcA\" target=\"_blank\" title=\"Portsche's Location in Google Maps\">816 W. Idaho St.<\/a><\/p><p>Store hours:<\/p><ul><li>M-F: 10am - 6pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul><p>Call: (208) 343-4443<\/p><p>Text: (208) 314-4096<\/p>"
             }
           },
           "2adfeb18-f9fc-4448-b1aa-12865fe91240": {
