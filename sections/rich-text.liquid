@@ -102,7 +102,7 @@
                     button-link: block.settings.button_link_2,
                     button-text-front: block.settings.button_label_2,
                     button-text-back: block.settings.button_label_2,
-                    button-color-front: section.settings.color_scheme,
+                    button-color-front: section.settings.button_color,
                     button-color-back: 'black',
                     text-color-front: 'black',
                     text-color-back: 'white',
@@ -194,6 +194,34 @@
     {
       "type": "select",
       "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "select",
+      "id": "button_color",
       "options": [
         {
           "value": "accent-1",

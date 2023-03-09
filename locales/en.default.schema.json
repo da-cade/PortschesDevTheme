@@ -2694,6 +2694,9 @@
         },
         "full_width": {
           "label": "Make section full width"
+        },
+        "button_color": {
+          "label": "Front color of the buttons"
         }
       },
       "blocks": {
