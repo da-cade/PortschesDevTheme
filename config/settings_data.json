@@ -146,7 +146,7 @@
       "header": {
         "type": "header",
         "custom_css": [
-          ".header-wrapper {background-color: white;}"
+
         ],
         "settings": {
           "color_scheme": "background-1",
