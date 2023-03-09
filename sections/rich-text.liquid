@@ -94,6 +94,19 @@
                   {% endcomment %}
                 {%- endif -%}
                 {%- if block.settings.button_label_2 != blank -%}
+                  {%- assign button_id = 'button-' | append: section.id %}
+                  {%-
+                    render 'flip-button',
+                    button-id: button_id,
+                    classlist: '',
+                    button-link: block.settings.button_link_2,
+                    button-text-front: block.settings.button_label_2,
+                    button-text-back: block.settings.button_label_2,
+                    button-color-front: section.settings.color_scheme,
+                    button-color-back: 'black',
+                    text-color-front: 'black',
+                    text-color-back: 'white',
+                  -%}
                   <a
                     {% if block.settings.button_link_2 == blank %}
                       role="link" aria-disabled="true"
