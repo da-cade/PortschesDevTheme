@@ -13,7 +13,7 @@
             "button_label": "Shop All",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "bottom-center",
+            "box_align": "top-center",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 20,
