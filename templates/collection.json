@@ -69,6 +69,7 @@
         "desktop_content_position": "right",
         "content_alignment": "left",
         "color_scheme": "accent-1",
+        "button_color": "accent-2",
         "full_width": true,
         "padding_top": 100,
         "padding_bottom": 100
