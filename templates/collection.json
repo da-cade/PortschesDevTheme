@@ -63,6 +63,9 @@
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-1",
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-2"
       ],
+      "custom_css": [
+        ".rich-text__text p: {padding: 3rem;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
         "image_overlay_opacity": 0,
