@@ -8,13 +8,13 @@
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#fffdfd",
-    "colors_background_2": "#e2eff9",
+    "colors_background_2": "#ebf3f9",
     "type_header_font": "cormorant_n4",
     "heading_scale": 110,
     "type_body_font": "cormorant_n4",
-    "body_scale": 105,
+    "body_scale": 110,
     "page_width": 1200,
-    "spacing_sections": 100,
+    "spacing_sections": 0,
     "spacing_grid_horizontal": 20,
     "spacing_grid_vertical": 40,
     "buttons_border_thickness": 1,
@@ -130,9 +130,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to the new Portsche's",
+              "text": "Give us a call any time during business hours at (208) 343-4443",
               "text_alignment": "center",
-              "color_scheme": "accent-2",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
@@ -146,7 +146,7 @@
       "header": {
         "type": "header",
         "custom_css": [
-          ".header-wrapper {background-color: white;}"
+          ".header-wrapper {background-color: rgb(var(--color-base-background-1));}"
         ],
         "settings": {
           "color_scheme": "background-1",
@@ -159,7 +159,7 @@
           "show_line_separator": false,
           "enable_sticky_header": true,
           "mobile_logo_position": "center",
-          "margin_bottom": 40,
+          "margin_bottom": 0,
           "padding_top": 12,
           "padding_bottom": 12
         }
@@ -178,7 +178,7 @@
             "type": "text",
             "settings": {
               "heading": "Info",
-              "subtext": "<p>Portsche's is located in downtown Boise, Idaho at <a href=\"https:\/\/goo.gl\/maps\/vW2XGQ9aTvcJLtGcA\" target=\"_blank\" title=\"Portsche's Location in Google Maps\">816 W. Idaho St.<\/a><\/p><p>Store hours:<\/p><ul><li>M-F: 10am - 6pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul>"
+              "subtext": "<p>Portsche's is located in downtown Boise, Idaho at <a href=\"https:\/\/goo.gl\/maps\/vW2XGQ9aTvcJLtGcA\" target=\"_blank\" title=\"Portsche's Location in Google Maps\">816 W. Idaho St.<\/a><\/p><p>Store hours:<\/p><ul><li>M-F: 10am - 6pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul><p>Call: (208) 343-4443<\/p><p>Text: (208) 314-4096<\/p>"
             }
           },
           "2adfeb18-f9fc-4448-b1aa-12865fe91240": {

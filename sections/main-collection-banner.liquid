@@ -47,13 +47,14 @@
         {{- collection.title | escape -}}
       </h1>
 
-      {%- if section.settings.paragraph.content != blank -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
-      {%- endif -%}
     </div>
   </div>
 </div>
+{%- if section.settings.show_collection_description -%}
+        <div class="collection-hero__description page-width rte">{{ collection.description }}</div>
+      {%- endif -%}
 <div class="shadow-bar-bottom"></div>
+
 
 {% comment %}
   <div class="buffer-top">

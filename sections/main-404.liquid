@@ -11,12 +11,15 @@
 </style>
 
 <div class="template-404 page-width page-margin center">
-  <p>
+  <h1>
     {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
   </h1>
+  <h2 class="title">
+    Sorry! That page wasn't found.
+  </h2>
+  <h3>
+    We've made some big changes around here and you might see some outdated pages for a little while.
+  </h3>
   <a href="{{ routes.all_products_collection_url }}" class="button">
     {{ 'general.continue_shopping' | t }}
   </a>
