@@ -38,7 +38,7 @@
   }
 {%- endstyle -%}
 
-<div class="shadow-bar-top"></div>
+{% comment %} <div class="shadow-bar-top"></div> {% endcomment %}
 <div class="collection-hero__image-container">
   <div class="bg-collection-hero">
     <div class="collection-hero__text-wrapper gradient color-{{ section.settings.color_scheme }} gradient">
@@ -46,15 +46,13 @@
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
-
     </div>
   </div>
 </div>
 {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description page-width rte">{{ collection.description }}</div>
-      {%- endif -%}
+  <div class="collection-hero__description page-width rte">{{ collection.description }}</div>
+{%- endif -%}
 <div class="shadow-bar-bottom"></div>
-
 
 {% comment %}
   <div class="buffer-top">
