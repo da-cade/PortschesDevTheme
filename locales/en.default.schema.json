@@ -632,6 +632,9 @@
         },
         "swipe_on_mobile": {
           "label": "Enable swipe on mobile"
+        },
+        "margin_y": {
+          "label": "Horizontal margin between sections"
         }
       },
       "blocks": {

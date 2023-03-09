@@ -14,8 +14,10 @@
     }
     {%- endif -%}
 
-    .p-3{
-      padding: 3rem;
+    @media screen and (min-width: 750px){
+      .p-3{
+        padding: 3rem;
+      }
     }
 
     .text-shadow {
@@ -97,10 +99,10 @@
                     button-id: button_id,
                     classlist: '',
                     button-link: block.settings.button_link,
-                    button-text-front: 'Have your own idea?',
+                    button-text-front: 'Have an idea?',
                     button-text-back: block.settings.button_label,
                     button-color-front: 'black',
-                    button-color-back: 'accent-2',
+                    button-color-back: 'accent-1',
                     text-color-back: 'black',
                   -%}
                 {%- endif -%}
