@@ -49,11 +49,11 @@
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-2": {
           "type": "button",
           "settings": {
-            "button_label": "Appointments",
-            "button_link": "shopify:\/\/pages\/schedule-an-appointment",
+            "button_label": "Custom Design",
+            "button_link": "shopify:\/\/pages\/the-custom-process",
             "button_style_secondary": false,
-            "button_label_2": "Custom Design",
-            "button_link_2": "shopify:\/\/pages\/the-custom-process",
+            "button_label_2": "Appointments",
+            "button_link_2": "shopify:\/\/pages\/schedule-an-appointment",
             "button_style_secondary_2": false
           }
         }
