@@ -6,15 +6,31 @@
         ".main-page-title {background-color: transparent; color: white;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/PortscheFamily-5_resize.jpg",
-        "image_2": "shopify:\/\/shop_images\/le_table.jpg",
+        "image": "shopify:\/\/shop_images\/20150603-untitled1613.jpg",
         "desktop_title_position": "top-center",
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "16787372316ebf5c43": {
+      "type": "apps",
+      "blocks": {
+        "db49cf10-a325-40f7-93f9-7cdf039955f7": {
+          "type": "shopify:\/\/apps\/slots-appointment-scheduling\/blocks\/appointment-scheduler\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "db49cf10-a325-40f7-93f9-7cdf039955f7"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16787372316ebf5c43"
   ]
 }
