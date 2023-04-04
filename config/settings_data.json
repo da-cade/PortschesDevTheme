@@ -130,7 +130,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Give us a call any time during business hours at (208) 343-4443",
+              "text": "Give us a call any time during business hours at",
               "text_alignment": "center",
               "color_scheme": "inverse",
               "link": ""
@@ -139,6 +139,9 @@
         },
         "block_order": [
           "announcement-bar-0"
+        ],
+        "custom_css": [
+
         ],
         "settings": {
         }

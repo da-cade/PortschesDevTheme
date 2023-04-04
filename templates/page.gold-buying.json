@@ -6,14 +6,31 @@
         "a {overflow-wrap: anywhere;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/store-background.webp",
+        "image": "shopify:\/\/shop_images\/P8020686.jpg",
         "desktop_title_position": "middle-center",
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "167873790872646313": {
+      "type": "apps",
+      "blocks": {
+        "651802c6-2684-4b67-9146-5769d2378f46": {
+          "type": "shopify:\/\/apps\/slots-appointment-scheduling\/blocks\/appointment-scheduler\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "651802c6-2684-4b67-9146-5769d2378f46"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "167873790872646313"
   ]
 }
