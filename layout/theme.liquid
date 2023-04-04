@@ -308,6 +308,16 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    <script>
+  window.addEventListener('load', function() {
+    if (document.location.href.includes('contact_posted=true')) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-959632957/i-AsCLOgk5YYEL2sy8kD'
+      });
+    }
+  });
+
+</script>
     
   </body>
 </html>
