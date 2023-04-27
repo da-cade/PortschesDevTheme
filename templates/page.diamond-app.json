@@ -3,7 +3,8 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        ".rte {height: 36px;}"
+        ".rte {height: 36px;}",
+        ".shadow-bar-bottom::after{background-color: white;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/diamond_background.png",
