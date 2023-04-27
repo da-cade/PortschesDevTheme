@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        ".rte {display: none;}"
+        ".rte {height: 36px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/diamond_background.png",
