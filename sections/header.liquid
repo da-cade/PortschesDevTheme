@@ -99,18 +99,6 @@
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  body::after{
-    content: "";
-    position: absolute;
-    background-size: cover;
-    background-image: url(
-      {{ section.settings.background_image | image_url | prepend: 'http:' }}
-    );
-    z-index: -1;
-    height: 150vh;
-    width: 100%;
-  }
-
   .header-wrapper {
     width: 100%;
     /* margin-top: 2vh; */
