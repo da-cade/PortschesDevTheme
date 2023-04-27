@@ -5,6 +5,9 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
+    main {
+      background-color: rgb(var(--color-base-background-1))
+    }
     .content-column {
       /* padding-top: 4rem; */
       box-shadow: 0px -9px 15px -3px rgba(0,0,0,0.1);
@@ -112,7 +115,7 @@
     </div>
     <div class="shadow-bar-bottom"></div>
 
-    <div class="rte color-background-1">
+    <div class="rte">
       <div class="page-width page-width--narrow page-content">
         {{ page.content }}
       </div>
