@@ -1449,7 +1449,7 @@
       {
         "type": "image_picker",
         "id": "main_background_image",
-        "label": "t:settings_schema.main_background_image.background_image.label"
+        "label": "t:settings_schema.main_background_image.main_background_image.label"
       }
     ]
   },

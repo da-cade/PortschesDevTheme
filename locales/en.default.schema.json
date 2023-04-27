@@ -297,7 +297,7 @@
       }
     },
     "main_background_image": {
-      "name": "main_background_image",
+      "name": "Main background image",
       "settings": {
         "main_background_image": {
           "label": "A defining cover image to be displayed regularly"
