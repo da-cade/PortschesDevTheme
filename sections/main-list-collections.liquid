@@ -5,10 +5,16 @@
   #shopify-section-{{ section.id }} {
     background-color: rgb(var(--color-base-background-1));
   }
+  .mt-0 {
+    margin-top: 0!important;
+  }
+  .pt-5{
+    padding-top: 5vmin;
+  }
 {%- endstyle -%}
 
-<div class="collection-width">
-  <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+<div class="collection-width pt-5">
+  <h1 class="title title--primary mt-0">{{ section.settings.title | escape }}</h1>
 
   {%- liquid
     case section.settings.sort
