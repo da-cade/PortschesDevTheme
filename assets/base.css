@@ -188,7 +188,7 @@ main {
 
 .shadow-bar-top:after {
   content: '';
-  background-color: rgb(var(--color-background));
+  background-color: var(--color-background);
   inset: 0;
   position: absolute;
   z-index: 2;
@@ -204,7 +204,7 @@ main {
 
 .shadow-bar-bottom:after {
   content: '';
-  background-color: rgb(var(--color-background));
+  background-color: var(--color-background);
   inset: 0;
   position: absolute;
   z-index: 2;
