@@ -1,10 +1,10 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} {
+  .p-5 {
     padding: 3rem;
   }
 {%- endstyle -%}
 
-<div class="{% if section.settings.include_margins %}page-width{% endif %} hoogie-boogie">
+<div class="{% if section.settings.include_margins %}page-width{% endif %} p-5 color-background-1">
   {%- for block in section.blocks -%}
     {% render block %}
   {%- endfor -%}
