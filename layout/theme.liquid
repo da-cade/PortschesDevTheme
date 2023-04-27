@@ -217,7 +217,7 @@
 
       main {
         {%- if settings.main_background_image != blank -%}
-          /* background-image: url({{ settings.main_background_image | image_url }}); */
+          background-image: url({{ settings.main_background_image | image_url }});
           background-size: cover;
         {%- endif -%}
       }
