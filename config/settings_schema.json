@@ -87,6 +87,7 @@
       {
         "type": "image",
         "id": "main_background_image",
+        "default": "",
         "label": "t:settings_schema.colors.settings.main_background_image.label"
       }
     ]
