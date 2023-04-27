@@ -296,6 +296,14 @@
         }
       }
     },
+    "main_background_image": {
+      "name": "main_background_image",
+      "settings": {
+        "main_background_image": {
+          "label": "A defining cover image to be displayed regularly"
+        }
+      }
+    },
     "currency_format": {
       "name": "Currency format",
       "settings": {
