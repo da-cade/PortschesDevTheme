@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-
+        ".rte {height: 36px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/diamond_background.png",
@@ -26,7 +26,7 @@
         "30953940-a529-45d8-811d-c203fb946df6"
       ],
       "custom_css": [
-        ".section__pagination {}"
+
       ],
       "settings": {
         "include_margins": true
