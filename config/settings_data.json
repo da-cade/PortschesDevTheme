@@ -9,6 +9,7 @@
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#fffdfd",
     "colors_background_2": "#ebf3f9",
+    "main_background_image": "",
     "type_header_font": "cormorant_n4",
     "heading_scale": 110,
     "type_body_font": "cormorant_n4",
@@ -140,11 +141,8 @@
         "block_order": [
           "announcement-bar-0"
         ],
-        "custom_css": [
-
-        ],
-        "settings": {
-        }
+        "custom_css": [],
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -225,21 +223,17 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "1449514830453105753": {
         "type": "shopify:\/\/apps\/slots-appointment-booking-app\/blocks\/appointment-scheduler-embed\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "4804304946286255945": {
         "type": "shopify:\/\/apps\/avada-gdpr-ccpa-cookie-consent\/blocks\/app-embed\/deacc407-65bc-4a4e-84d9-f90e9e492cf3",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -257,6 +251,7 @@
       "light_background_1": "",
       "colors_background_2": "#f3f3f3",
       "light_background_2": "",
+      "main_background_image": "",
       "type_header_font": "assistant_n4",
       "heading_scale": 100,
       "type_body_font": "assistant_n4",
@@ -384,8 +379,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",
