@@ -275,7 +275,24 @@
     </div>
   {%- else -%}
     <div class="plds-card-wrapper" id="{{ id }}">
-      <div class="card-img-container card-collection-bg"></div>
+      {%- liquid
+        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+        if card_collection.featured_image != blank
+          assign image_class = 'banner__media-image-half'
+        endif
+        assign sizes = '90vw'
+      -%}
+      {{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+      }}
       <div class="collection-card-overlay">
         <div class="collection-card-content banner-content">
           <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
