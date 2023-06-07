@@ -2335,7 +2335,7 @@
       }
     },
     "masonry-container": {
-      "name": "Masonry Container",
+      "name": "Pleiades Masonry Container",
       "settings": {
         "title": {
           "label": "Heading"
@@ -2380,7 +2380,7 @@
         }
       },
       "presets": {
-        "name": "Pleiades masonry container"
+        "name": "Pleiades Masonry container"
       }
     },
     "multicolumn": {
