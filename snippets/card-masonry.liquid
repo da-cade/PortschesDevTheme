@@ -1,0 +1,124 @@
+{% comment %}
+  Renders a collection card
+
+  Accepts:
+  - card_collection: {Object} Collection Liquid object
+  - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square"
+  (optional)
+  - extend_height: {Boolean} Card height extends to available container space. Default: false (optional)
+  - wrapper_class: {String} Wrapper class for card (optional)
+
+  Usage:
+  {% render 'card-collection-plds' %}
+{% endcomment %}
+
+{%- liquid
+  assign ratio = 1
+  if card_collection.featured_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif card_collection.featured_image and media_aspect_ratio == 'landscape'
+    assign ratio = 1.2
+  elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
+    assign ratio = card_collection.featured_image.aspect_ratio
+  endif
+  assign card_color_scheme = settings.card_color_scheme
+  assign card_style = settings.card_style
+  if wrapper_class == null or wrapper_class == 'none'
+    assign card_color_scheme = settings.collection_card_color_scheme
+    assign card_style = settings.collection_card_style
+  endif
+-%}
+
+{%- style -%}
+  .standard_image {
+    height: 40vh;
+    line-height: 150px;
+    background: #ec985a;
+    color: white;
+    margin: 0 1rem 1rem 0;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 900;
+    font-size: 2rem;
+    flex: 1 0 auto;
+  }
+{%- endstyle -%}
+
+<a id="link-{{ id }}" href="{{ card_collection.url }}">
+  {%- if sidebar -%}
+    <div class="plds-card-wrapper" id="{{ id }}">
+      <div class="card-img-container">
+        <div class=" card-collection-bg">
+          {%- if sidebar -%}
+            <div class="arrow-overlay">
+              <i>
+                {%- if orientation == 0 -%}
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                  </svg>
+                {%- else -%}
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+                  </svg>
+                {%- endif -%}
+              </i>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+      <div id="{{id}}-sidebar" class="sidebar">
+        <div class="collection-card-overlay">
+          <div class="collection-card-content banner-content">
+            <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
+            <div class="collection-card-information">
+              <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- else -%}
+    <div class="plds-card-wrapper" id="{{ id }}">
+      {%- liquid
+        assign image_height = card_collection.featured_image.width | divided_by: card_collection.featured_image.aspect_ratio
+        if card_collection.featured_image != blank
+          assign image_class = 'standard_image'
+        endif
+        assign sizes = '100vw'
+      -%}
+      {{
+        card_collection.featured_image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          width: card_collection.featured_image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+      }}
+      <div class="collection-card-overlay">
+        <div class="collection-card-content banner-content">
+          <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
+          <div class="collection-card-information">
+            <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+</a>
