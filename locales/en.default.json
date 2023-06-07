@@ -274,6 +274,10 @@
     "collection_list": {
       "view_all": "View all"
     },
+    "masonry_container": {
+      "view_all": "View all",
+      "view_all_label": "View all collections"
+    },
     "collection_template": {
       "empty": "No products found",
       "title": "Collection",

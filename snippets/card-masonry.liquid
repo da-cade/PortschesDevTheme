@@ -31,7 +31,13 @@
 
 {%- style -%}
   .standard_image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .masonry_block {
     height: 40vh;
+    /* width: {{ collection.featured_image.alt }}; */
     line-height: 150px;
     background: #ec985a;
     color: white;
@@ -44,81 +50,33 @@
   }
 {%- endstyle -%}
 
-<a id="link-{{ id }}" href="{{ card_collection.url }}">
-  {%- if sidebar -%}
-    <div class="plds-card-wrapper" id="{{ id }}">
-      <div class="card-img-container">
-        <div class=" card-collection-bg">
-          {%- if sidebar -%}
-            <div class="arrow-overlay">
-              <i>
-                {%- if orientation == 0 -%}
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-                  </svg>
-                {%- else -%}
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-                  </svg>
-                {%- endif -%}
-              </i>
-            </div>
-          {%- endif -%}
-        </div>
-      </div>
-      <div id="{{id}}-sidebar" class="sidebar">
-        <div class="collection-card-overlay">
-          <div class="collection-card-content banner-content">
-            <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
-            <div class="collection-card-information">
-              <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
-            </div>
-          </div>
+<div id="masonry-{{id}}" class="masonry_block" id="{{ id }}">
+  {%- liquid
+    assign image_height = card_collection.featured_image.width | divided_by: card_collection.featured_image.aspect_ratio
+    if card_collection.featured_image != blank
+      assign image_class = 'standard_image'
+    endif
+    assign sizes = '100vw'
+  -%}
+  {{
+    card_collection.featured_image
+    | image_url: width: 3840
+    | image_tag:
+      loading: 'lazy',
+      width: card_collection.featured_image.width,
+      height: image_height,
+      class: image_class,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+  }}
+  {% comment %}
+    <div class="collection-card-overlay">
+      <div class="collection-card-content banner-content">
+        <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
+        <div class="collection-card-information">
+          <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
         </div>
       </div>
     </div>
-  {%- else -%}
-    <div class="plds-card-wrapper" id="{{ id }}">
-      {%- liquid
-        assign image_height = card_collection.featured_image.width | divided_by: card_collection.featured_image.aspect_ratio
-        if card_collection.featured_image != blank
-          assign image_class = 'standard_image'
-        endif
-        assign sizes = '100vw'
-      -%}
-      {{
-        card_collection.featured_image
-        | image_url: width: 3840
-        | image_tag:
-          loading: 'lazy',
-          width: card_collection.featured_image.width,
-          height: image_height,
-          class: image_class,
-          sizes: sizes,
-          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-      }}
-      <div class="collection-card-overlay">
-        <div class="collection-card-content banner-content">
-          <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
-          <div class="collection-card-information">
-            <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  {%- endif -%}
-</a>
+  {% endcomment %}
+</div>
