@@ -5,14 +5,15 @@
     margin-right: 5rem; */
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 100vw;
   }
 {%- endstyle -%}
 
 <div class="isolate masonry-with-columns">
   {%- for block in section.blocks -%}
     {%- if block.settings.collection.featured_image != null -%}
-      {%- assign card_id = 'card-' | append: section.id | append: forloop.index %}
-      {% render 'card-masonry', id: card_id, card_collection: block.settings.collection, media_aspect_ratio: 'adapt' %}
+      {%- assign card_id = 'masonry-' | append: section.id | append: forloop.index %}
+      {% render 'card-masonry', id: card_id, this_collection: block.settings.collection, media_aspect_ratio: 'adapt' %}
     {%- endif -%}
   {%- endfor -%}
 </div>

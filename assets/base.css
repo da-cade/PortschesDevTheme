@@ -1549,6 +1549,13 @@ button.shopify-payment-button__button--unbranded {
   width: 100%;
 }
 
+/* // MINE */
+.standard_image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .button.loading {
   color: transparent;
   position: relative;

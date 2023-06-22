@@ -22,21 +22,13 @@
   elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
     assign ratio = card_collection.featured_image.aspect_ratio
   endif
-  assign card_color_scheme = settings.card_color_scheme
   assign card_style = settings.card_style
   if wrapper_class == null or wrapper_class == 'none'
-    assign card_color_scheme = settings.collection_card_color_scheme
     assign card_style = settings.collection_card_style
   endif
 -%}
 
 {%- style -%}
-  .standard_image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   #link-{{ id }} {
     height: 100%;
     width: 100%;
@@ -45,15 +37,19 @@
     text-decoration: none;
   }
 
-  #{{ id }} .card-collection-bg {
+  #{{ id }} .collection-card-content {
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+  #{{ id }}:after {
+    content: '';
+    top: -5%;
+    position: absolute;
+    z-index: -1;
+    background: {{ accent_color }};
+    height: 100%;
     width: 100%;
-    display: flex !important;
-    background-color: black;
-    background-image: url({{ card_collection.featured_image | image_url | prepend: 'http:' }});
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    transition: ease-out .25s;
+    pointer-events: none;
   }
 
   {%- if orientation == 0 -%}
@@ -61,169 +57,26 @@
       justify-content: flex-start;
       text-align: left;
     }
+    #{{ id }}:after {
+      right: -2%;
+    }
 
   {%- else -%}
     #{{ id }} .collection-card-overlay {
       justify-content: flex-end;
       text-align: right;
     }
-
-  {%- endif -%}
-
-
-
-  {%- if sidebar -%}
-
     #{{ id }}:after {
-      content: '';
-      top: -5%;
-      position: absolute;
-      z-index: -1;
-      background: #e2eff9;
-      height: 100%;
-      width: 100%;
-      pointer-events: none;
-    }
+      left: -2%;
 
-    #{{id}} .sidebar {
-      text-align: start;
-    }
-
-    #{{id}} .card-collection-bg {
-      position: relative;
-      height: 65vh;
-    }
-
-    #{{id}} .card-collection-bg .arrow-overlay {
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-      transition: .3s ease;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 20%;
-      background-color: rgba(0, 0, 0, 0);
-    }
-
-    @media screen and (max-width: 749px){
-      .collection-card-title {
-        padding: 2rem;
-      }
-    }
-
-    {%- if orientation == 0 -%}
-
-      #{{ id }} {
-        flex-direction: row-reverse;
-      }
-
-      #{{ id }}:after {
-        left: -2%;
-      }
-
-      #{{ id }} .collection-card-overlay {
-        color: white;
-        background-color: {{color_scheme_1}};
-      }
-
-      #{{id}} .sidebar {
-        justify-content: flex-end;
-        margin-right: 0;
-        color: white;
-        left: -8px;
-      }
-
-      #{{id}} .card-collection-bg .arrow-overlay {
-        transform: translateX(-100%);
-        left: 0;
-      }
-
-      @media screen and (max-width: 749px) {
-      #{{ id }} .sidebar {
-        left: 8px;
-      }
-  }
-
-    {%- else -%}
-      #{{ id }} {
-        flex-direction: row;
-      }
-
-      #{{ id }}:after {
-        right: -2%;
-      }
-
-      #{{ id }} .collection-card-overlay {
-        color: black;
-        background-color: {{ color_scheme_2 }};
-      }
-
-      #{{id}} .sidebar {
-        justify-content: flex-start;
-        margin-left: 0;
-        color: black;
-        right: -8px;
-      }
-
-      #{{id}} .card-collection-bg .arrow-overlay {
-        transform: translateX(100%);
-        right: 0;
-      }
-
-      @media screen and (max-width: 749px) {
-      #{{ id }} .sidebar {
-        right: 8px;
-      }
-  }
-
-    {%- endif -%}
-
-    #{{id}}:hover .arrow-overlay,
-    #{{id}}:focus .arrow-overlay {
-      background-color: rgba(0, 0, 0, 0.15);
-      transform: translateX(0);
-    }
-
-    {%- if card_collection.description == blank -%}
-      #{{id}}:hover .collection-card-content{
-        /* transform: translateY(0px); */
-      }
-      {%- endif -%}
-
-  {%- else -%}
-
-    #{{ id }} {
-      /* height: 70vh; */
-      overflow: hidden;
-      position: relative;
-    }
-
-    #{{ id }}:hover .card-collection-bg, #{{ id }}:focus .card-collection-bg {
-      -ms-transform: scale(1.01);
-      -moz-transform: scale(1.01);
-      -webkit-transform: scale(1.01);
-      -o-transform: scale(1.01);
-      transform: scale(1.01);
-    }
-
-    #{{ id }} .card-img-container {
-      position: absolute;
-      height: 100%;
-    }
-
-    #{{ id }} .collection-card-overlay {
-      color: white;
-      height: 100%;
-      width: 100%;
-    }
-
-    #{{id }} .collection-card-content {
-      margin-top: 4rem;
-      padding: 2rem;
     }
 
   {%- endif -%}
+
+  /* #{{ id }} {
+    flex-direction: row;
+  } */
+
 
   @media screen and (max-width: 749px){
     #{{ id }} {
@@ -233,80 +86,33 @@
 {%- endstyle -%}
 
 <a id="link-{{ id }}" href="{{ card_collection.url }}">
-  {%- if sidebar -%}
-    <div class="plds-card-wrapper" id="{{ id }}">
-      <div class="card-img-container">
-        <div class=" card-collection-bg">
-          {%- if sidebar -%}
-            <div class="arrow-overlay">
-              <i>
-                {%- if orientation == 0 -%}
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-                  </svg>
-                {%- else -%}
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-                  </svg>
-                {%- endif -%}
-              </i>
-            </div>
-          {%- endif -%}
-        </div>
-      </div>
-      <div id="{{id}}-sidebar" class="sidebar">
-        <div class="collection-card-overlay">
-          <div class="collection-card-content banner-content">
-            <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
-            <div class="collection-card-information">
-              <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
-            </div>
-          </div>
+  <div class="plds-card-wrapper" id="{{ id }}">
+    {%- liquid
+      assign image_height = card_collection.featured_image.width | divided_by: card_collection.featured_image.aspect_ratio
+      if card_collection.featured_image != blank
+        assign image_class = 'standard_image'
+      endif
+      assign sizes = '100vw'
+    -%}
+    {{
+      card_collection.featured_image
+      | image_url: width: 3840
+      | image_tag:
+        loading: 'lazy',
+        width: card_collection.featured_image.width,
+        height: image_height,
+        class: image_class,
+        sizes: sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+    }}
+    <div class="collection-card-overlay">
+      <div class="collection-card-content banner-content">
+        <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
+        <div class="collection-card-information">
+          <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 20 -}}</p>
+          {% comment %} <p class="slideUp">{{- card_collection.description -}}</p> {% endcomment %}
         </div>
       </div>
     </div>
-  {%- else -%}
-    <div class="plds-card-wrapper" id="{{ id }}">
-      {%- liquid
-        assign image_height = card_collection.featured_image.width | divided_by: card_collection.featured_image.aspect_ratio
-        if card_collection.featured_image != blank
-          assign image_class = 'standard_image'
-        endif
-        assign sizes = '100vw'
-      -%}
-      {{
-        card_collection.featured_image
-        | image_url: width: 3840
-        | image_tag:
-          loading: 'lazy',
-          width: card_collection.featured_image.width,
-          height: image_height,
-          class: image_class,
-          sizes: sizes,
-          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-      }}
-      <div class="collection-card-overlay">
-        <div class="collection-card-content banner-content">
-          <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
-          <div class="collection-card-information">
-            <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  {%- endif -%}
+  </div>
 </a>

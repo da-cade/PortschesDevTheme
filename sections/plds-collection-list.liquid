@@ -53,7 +53,7 @@
   }
 
   .collection-column {
-    width: 85vw;
+    width: 75%;
   }
 
   }
@@ -129,14 +129,17 @@
               {{ block.shopify_attributes }}
             >
               {%- assign card_id = 'card-' | append: section.id | append: forloop.index %}
+              {%- liquid
+                assign colors = '#64816f #ffe2d8 #e2eff9 #fff5ed #121212 #fffdfd #ebf3f9' | split: ' '
+                assign chosen_color = forloop.index
+              -%}
               {%- assign orientation = forloop.index | modulo: 2 -%}
-              {% render 'card-collection-plds',
+              {%
+                render 'card-collection-plds',
                 id: card_id,
                 orientation: orientation,
-                sidebar: false,
                 card_collection: block.settings.collection,
                 media_aspect_ratio: section.settings.image_ratio,
-                columns: columns
               %}
             </li>
           {%- endif -%}

@@ -1,5 +1,5 @@
 .collection-list {
-  margin-top: 3vh;
+  margin-top: 70px;
   margin-bottom: 5vh;
 }
 
@@ -29,12 +29,6 @@
 
   .collection-width {
     padding: 0 2rem;
-  }
-}
-
-@media screen and (max-width: 989px) {
-  .slideUp {
-    display: none;
   }
 }
 
@@ -81,6 +75,12 @@
 
 .collection-list-view-all {
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .collection-width {
+    padding: 0 10rem;
+  }
 }
 
 @media screen and (min-width: 1500px) {

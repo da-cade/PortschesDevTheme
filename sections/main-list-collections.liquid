@@ -53,15 +53,19 @@
         <li class="collection-list__item grid__item">
           {%- assign card_id = 'card-' | append: section.id | append: forloop.index %}
           {%- assign orientation = forloop.index | modulo: 2 -%}
-          {% render 'card-collection-plds',
+          {%- liquid
+            assign colors = '#64816f #e2eff9 #A6CCBA #ffe2d8 #fffbd8 #A6CCBA #e2eff9 #ffcd8e  #fff5ed #f57373 #ebf3f9 #ebf3f9' | split: ' '
+            assign length = colors | size
+            assign indexer = forloop.index | modulo: length
+            assign chosen_color = colors[indexer]
+          -%}
+          {%
+            render 'card-collection-plds',
             id: card_id,
             orientation: orientation,
-            color_scheme_1: '#4F0113',
-            color_scheme_2: '#DDEDD6',
-            sidebar: section.settings.sidebars,
+            accent_color: chosen_color,
             card_collection: collection,
             media_aspect_ratio: section.settings.image_ratio,
-            columns: 3
           %}
         </li>
       {%- endfor -%}

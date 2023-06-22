@@ -2,6 +2,7 @@
   Renders a collection card
 
   Accepts:
+  - id
   - card_collection: {Object} Collection Liquid object
   - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square"
   (optional)
@@ -9,17 +10,17 @@
   - wrapper_class: {String} Wrapper class for card (optional)
 
   Usage:
-  {% render 'card-collection-plds' %}
+  {% render 'card-masonry' %}
 {% endcomment %}
 
 {%- liquid
   assign ratio = 1
-  if card_collection.featured_image and media_aspect_ratio == 'portrait'
+  if this_collection.featured_image and media_aspect_ratio == 'portrait'
     assign ratio = 0.8
-  elsif card_collection.featured_image and media_aspect_ratio == 'landscape'
+  elsif this_collection.featured_image and media_aspect_ratio == 'landscape'
     assign ratio = 1.2
-  elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
-    assign ratio = card_collection.featured_image.aspect_ratio
+  elsif this_collection.featured_image and media_aspect_ratio == 'adapt'
+    assign ratio = this_collection.featured_image.aspect_ratio
   endif
   assign card_color_scheme = settings.card_color_scheme
   assign card_style = settings.card_style
@@ -35,46 +36,67 @@
     width: 100%;
     height: auto;
   }
-  .masonry_block {
+  #masonry-{{id}} {
+    display: flex;
     height: 40vh;
-    /* width: {{ collection.featured_image.alt }}; */
-    line-height: 150px;
     background: #ec985a;
     color: white;
     margin: 0 1rem 1rem 0;
     text-align: center;
-    font-family: system-ui;
-    font-weight: 900;
-    font-size: 2rem;
     flex: 1 0 auto;
   }
+  #masonry-{{id}} .masonry-overlay {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex: auto; */
+    height: 100%;
+    /* width: 30px; */
+    background: white;
+    color: black;
+  }
+  #masonry-{{id}} .masonry-title {
+    display: flex;
+    flex-shrink: 1;
+  }
+  #masonry-{{id}} .masonry-desc {
+    display: flex;
+  }
 {%- endstyle -%}
-
-<div id="masonry-{{id}}" class="masonry_block" id="{{ id }}">
+<div id="masonry-{{id}}">
   {%- liquid
-    assign image_height = card_collection.featured_image.width | divided_by: card_collection.featured_image.aspect_ratio
-    if card_collection.featured_image != blank
+    assign image_height = this_collection.featured_image.width | divided_by: this_collection.featured_image.aspect_ratio
+    if this_collection.featured_image != blank
       assign image_class = 'standard_image'
     endif
     assign sizes = '100vw'
   -%}
   {{
-    card_collection.featured_image
+    this_collection.featured_image
     | image_url: width: 3840
     | image_tag:
       loading: 'lazy',
-      width: card_collection.featured_image.width,
+      width: this_collection.featured_image.width,
       height: image_height,
       class: image_class,
       sizes: sizes,
       widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
   }}
+
+  <div class="masonry-overlay">
+    {% comment %}
+      <h3 class="masonry-title">{{ this_collection.title }}</h3>
+      <p class="masonry-desc">{{ this_collection.description }}</p>
+    {% endcomment %}
+  </div>
+
   {% comment %}
     <div class="collection-card-overlay">
       <div class="collection-card-content banner-content">
-        <h2 class="collection-card-title">{{- card_collection.title | escape -}}</h2>
+        <h2 class="collection-card-title">{{- this_collection.title | escape -}}</h2>
         <div class="collection-card-information">
-          <p class="slideUp">{{- card_collection.description | strip_html | truncatewords: 12 -}}</p>
+          <p class="slideUp">{{- this_collection.description | strip_html | truncatewords: 12 -}}</p>
         </div>
       </div>
     </div>
