@@ -19,7 +19,7 @@
         "heading": "Send us a Message",
         "heading_size": "h1",
         "color_scheme": "background-1",
-        "padding_top": 0,
+        "padding_top": 100,
         "padding_bottom": 36
       }
     }
