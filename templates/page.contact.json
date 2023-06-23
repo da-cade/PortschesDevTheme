@@ -4,6 +4,7 @@
       "type": "main-page",
       "settings": {
         "image": "shopify:\/\/shop_images\/store-background.webp",
+        "image_2": "shopify:\/\/shop_images\/PA142618.jpg",
         "desktop_title_position": "middle-center",
         "padding_top": 36,
         "padding_bottom": 0
