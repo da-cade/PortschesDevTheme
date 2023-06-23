@@ -9,6 +9,12 @@
   }
 
   {%- if section.settings.show_collection_image and collection.image -%}
+    .collection-hero__image-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .bg-collection-hero {
       display: flex;
       justify-content: center;
@@ -27,30 +33,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 20rem;
-    min-height: 10rem;
   }
 
   .collection-hero__title {
-    word-wrap: nowrap;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .collection-hero__description {
+    background-color: rgb(var(--color-background));
+  }
+  .rte {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 {%- endstyle -%}
 
 {% comment %} <div class="shadow-bar-top"></div> {% endcomment %}
 <div class="collection-hero__image-container">
-  <div class="bg-collection-hero">
-    <div class="collection-hero__text-wrapper gradient color-{{ section.settings.color_scheme }} gradient">
-      <h1 class="collection-hero__title">
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
-      </h1>
-    </div>
+  {%- liquid
+    assign image_height = collection.image.width | divided_by: collection.image.aspect_ratio
+    if collection.image != blank
+      assign image_class = 'standard_image'
+    endif
+    assign sizes = '100vw'
+  -%}
+  {{
+    collection.image
+    | image_url: width: 3840
+    | image_tag:
+      loading: 'lazy',
+      width: collection.image.width,
+      height: image_height,
+      class: image_class,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+  }}
+  <div class="collection-hero__text-wrapper gradient color-{{ section.settings.color_scheme }} gradient">
+    <h1 class="collection-hero__title">
+      <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+      {{- collection.title | escape -}}
+    </h1>
   </div>
 </div>
 {%- if section.settings.show_collection_description -%}
-  <div class="collection-hero__description page-width rte">{{ collection.description }}</div>
+  <div class="collection-hero__description">
+    <div class="page-width page-width--narrow page-content rte">
+      {{ collection.description }}
+    </div>
+  </div>
 {%- endif -%}
 <div class="shadow-bar-bottom"></div>
 
