@@ -285,8 +285,8 @@
         "image_overlay_opacity": 0,
         "desktop_content_position": "center",
         "content_alignment": "left",
-        "color_scheme": "background-1",
-        "button_color": "background-1",
+        "color_scheme": "accent-2",
+        "button_color": "accent-1",
         "full_width": true,
         "padding_top": 200,
         "padding_bottom": 200
