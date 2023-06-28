@@ -2,24 +2,42 @@
 {{ 'section-collection-list-plds.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-    main{
-      background: rgb(var(--color-base-accent-2))
-    }
-    #shopify-section-{{ section.id }} {
-      background-color: rgb(var(--color-base-background-1));
-    }
+  .mt-0 {
+    margin-top: 0!important;
+  }
+  .pt-5{
+    padding-top: 5vmin;
+  }
+  main{
+    background: rgb(var(--color-base-accent-2))
+  }
+  #shopify-section-{{ section.id }} {
+    background-color: rgb(var(--color-base-background-1));
+  }
   @media screen and (min-width: 750px){
     #shopify-section-{{ section.id }} {
       margin: 3rem;
     }
   }
 
-    .mt-0 {
-      margin-top: 0!important;
+  @media (max-width: 749px) {
+    .title {
+      position: relative;
+      z-index: 1;
     }
-    .pt-5{
-      padding-top: 5vmin;
+    .title:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 95%;
+      height: 200%;
+      top: -60%;
+      left: -20%;
+      background-color: rgb(var(--color-base-accent-2));
+
     }
+  }
 {%- endstyle -%}
 
 <div class="collection-width pt-5">

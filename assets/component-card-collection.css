@@ -120,35 +120,35 @@
   }
 
   .collection-card-overlay {
-    padding: 3rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .collection-card-content {
+    max-width: 30rem;
+  }
+
+  .collection-card-overlay {
+    padding: 2rem;
+    /* width: 25%; */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .collection-card-overlay {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .collection-card-content {
+    max-width: 35rem;
   }
 }
 
 @media screen and (max-width: 989px) {
   .slideUp {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 990px) {
-  .collection-card-content {
-    width: 30rem;
-  }
-
-  .collection-card-overlay {
-    padding: 4rem;
-    /* width: 25%; */
-  }
-}
-
-@media only screen and (min-width: 1200px) {}
-
-@media only screen and (min-width: 1500px) {
-  .collection-card-content {
-    width: 35rem;
-  }
-
-  .collection-card-overlay {
-    /* width: 18%; */
   }
 }
