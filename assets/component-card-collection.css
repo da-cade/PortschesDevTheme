@@ -37,6 +37,7 @@
   transform: translateX(0);
   color: inherit;
   opacity: 1;
+  min-width: 50px;
   height: fit-content;
   width: fit-content;
 }
