@@ -228,6 +228,7 @@
     },
     "04d515d9-8915-423a-89b4-e8921868c7c7": {
       "type": "masonry-container",
+      "disabled": true,
       "blocks": {
         "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-0": {
           "type": "featured_collection",
@@ -263,6 +264,54 @@
         "padding_bottom": 36,
         "margin_y": 0
       }
+    },
+    "316252f9-5d31-409d-b4ea-f5eebf89d82e": {
+      "type": "plds-collection-list",
+      "blocks": {
+        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "anutha"
+          }
+        },
+        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "diamond"
+          }
+        },
+        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "emerald-1"
+          }
+        },
+        "14f38cc7-d18a-4b80-aec0-2bab12160715": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "emerald"
+          }
+        }
+      },
+      "block_order": [
+        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-0",
+        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-1",
+        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-2",
+        "14f38cc7-d18a-4b80-aec0-2bab12160715"
+      ],
+      "settings": {
+        "title": "Featured Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 1,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_y": 0
+      }
     }
   },
   "order": [
@@ -271,6 +320,7 @@
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59",
     "16759178895453edbd",
     "036a7b84-ce47-4bf5-8179-8aa3a9a87c33",
-    "04d515d9-8915-423a-89b4-e8921868c7c7"
+    "04d515d9-8915-423a-89b4-e8921868c7c7",
+    "316252f9-5d31-409d-b4ea-f5eebf89d82e"
   ]
 }
