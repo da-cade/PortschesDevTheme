@@ -22,25 +22,14 @@
 {%- endstyle -%}
 
 {%- style -%}
-  {%- if section.settings.image != blank -%}
-
-  .bg-img{
-    background-image: url(
-      {{ section.settings.image | image_url | prepend: 'http:' }}
-    );
-    background-size: cover;
-  }
-
-  .accent-bar{
-    display: block!important;
+  .accent-bar {
+    display: block !important;
     height: 1rem;
   }
 
-  .w-100{
+  .w-100 {
     width: 100%;
   }
-
-  {%- endif -%}
 {%- endstyle -%}
 
 <div class="isolate flex-card bg-img w-100">
