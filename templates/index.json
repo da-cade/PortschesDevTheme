@@ -222,6 +222,45 @@
         "padding_bottom": 200
       }
     },
+    "04d515d9-8915-423a-89b4-e8921868c7c7": {
+      "type": "masonry-container",
+      "disabled": true,
+      "blocks": {
+        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "diamond"
+          }
+        },
+        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "emerald"
+          }
+        },
+        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lightsabers"
+          }
+        }
+      },
+      "block_order": [
+        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-0",
+        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-1",
+        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-2"
+      ],
+      "settings": {
+        "title": "Heading",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_y": 0
+      }
+    },
     "316252f9-5d31-409d-b4ea-f5eebf89d82e": {
       "type": "plds-collection-list",
       "blocks": {
