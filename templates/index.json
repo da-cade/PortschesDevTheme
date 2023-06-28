@@ -242,7 +242,7 @@
         "c71f6874-22b9-4c19-92fb-29758496cb1f"
       ],
       "custom_css": [
-        "#insta-feed {margin-top: 100px; margin-bottom: 100px;}"
+        "#insta-feed {margin-top: 30px; margin-bottom: 100px;}"
       ],
       "settings": {
         "include_margins": true
