@@ -279,6 +279,7 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "accent-2",
+        "color_scheme_2": "accent-1",
         "button_color": "accent-1",
         "full_width": true,
         "padding_top": 200,
