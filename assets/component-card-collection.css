@@ -113,6 +113,13 @@
   .collection-card-overlay {
     padding: 1rem;
   }
+
+  .collection-card-content {
+    transform: translateY(-5px);
+    opacity: 1;
+    background-color: #fffdfd;
+    color: black;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -121,7 +128,7 @@
   }
 
   .collection-card-overlay {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
@@ -131,7 +138,7 @@
   }
 
   .collection-card-overlay {
-    padding: 2rem;
+    padding: 3rem;
     /* width: 25%; */
   }
 }
