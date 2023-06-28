@@ -6,7 +6,7 @@
         "f0823213-c761-4749-9bb4-cc4513af8892": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/store-background.webp",
+            "image": "shopify:\/\/shop_images\/gold-ring-with-white-dimonds-and-a-large-stone.jpg",
             "heading": "The Shop",
             "heading_size": "h0",
             "subheading": "Browse our entire catalog, from antiques to one-of-a-kind creations.",
@@ -19,13 +19,14 @@
             "image_overlay_opacity": 20,
             "color_scheme": "background-1",
             "button_color_front": "accent-2",
-            "button_color_back": "background-1",
+            "button_color_back": "accent-1",
             "text_alignment_mobile": "center"
           }
         },
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/20150603-untitled1443.jpg",
             "heading": "The Custom Process",
             "heading_size": "h1",
             "subheading": "Whether it's for an engagement, a gift, or just a stylish piece for yourself, we'll help you craft something special",
@@ -45,17 +46,18 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/diamond_black_white_21-9.jpg",
             "heading": "Philip Portsche Designs",
             "heading_size": "h1",
             "subheading": "Discover the tasteful elegance of Philip Portsche's custom collection, designed in-house and hand made.",
             "button_label": "See the Collection",
             "link": "shopify:\/\/collections\/philip-portsche-designs",
             "button_style_secondary": false,
-            "box_align": "middle-left",
+            "box_align": "middle-right",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 30,
-            "color_scheme": "background-2",
+            "color_scheme": "accent-1",
             "button_color_front": "background-2",
             "button_color_back": "accent-1",
             "text_alignment_mobile": "center"
@@ -64,19 +66,20 @@
         "123a3a88-78e1-483a-9cbc-31b2bd20de0c": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/calalilly_engagement_natural_21-9.jpg",
             "heading": "Bridal and Engagement",
             "heading_size": "h1",
             "subheading": "Explore Portsche's collection of antique and modern wedding jewelry, featuring pieces for both men and women.",
             "button_label": "Shop Bridal",
             "link": "shopify:\/\/collections\/portsches-engagement-and-bridal",
             "button_style_secondary": false,
-            "box_align": "middle-left",
+            "box_align": "top-left",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 20,
-            "color_scheme": "background-2",
+            "color_scheme": "accent-2",
             "button_color_front": "accent-1",
-            "button_color_back": "accent-2",
+            "button_color_back": "background-1",
             "text_alignment_mobile": "center"
           }
         }
@@ -87,7 +90,9 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0",
         "123a3a88-78e1-483a-9cbc-31b2bd20de0c"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -155,7 +160,9 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-1",
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-2"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "height": "large",
         "desktop_image_width": "medium",
