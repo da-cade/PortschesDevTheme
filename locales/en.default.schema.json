@@ -2752,6 +2752,12 @@
           },
           "label": "Content alignment"
         },
+        "color_scheme": {
+          "info": "Accent color for front of button and bottom bar."
+        },
+        "color_scheme_2": {
+          "info": "Color of button reverse side."
+        },
         "full_width": {
           "label": "Make section full width"
         },
