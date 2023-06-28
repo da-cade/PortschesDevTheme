@@ -228,6 +228,19 @@
     },
     "16759178895453edbd": {
       "type": "apps",
+      "blocks": {
+        "c71f6874-22b9-4c19-92fb-29758496cb1f": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 30,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "c71f6874-22b9-4c19-92fb-29758496cb1f"
+      ],
       "custom_css": [
         "#insta-feed {margin-top: 100px; margin-bottom: 100px;}"
       ],
@@ -278,45 +291,6 @@
         "padding_top": 200,
         "padding_bottom": 200
       }
-    },
-    "04d515d9-8915-423a-89b4-e8921868c7c7": {
-      "type": "masonry-container",
-      "disabled": true,
-      "blocks": {
-        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "diamond"
-          }
-        },
-        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "emerald"
-          }
-        },
-        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lightsabers"
-          }
-        }
-      },
-      "block_order": [
-        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-0",
-        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-1",
-        "template--19284469645604__04d515d9-8915-423a-89b4-e8921868c7c7-1686177322f99fec25-2"
-      ],
-      "settings": {
-        "title": "Heading",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "margin_y": 0
-      }
     }
   },
   "order": [
@@ -325,7 +299,6 @@
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59",
     "316252f9-5d31-409d-b4ea-f5eebf89d82e",
     "16759178895453edbd",
-    "036a7b84-ce47-4bf5-8179-8aa3a9a87c33",
-    "04d515d9-8915-423a-89b4-e8921868c7c7"
+    "036a7b84-ce47-4bf5-8179-8aa3a9a87c33"
   ]
 }
