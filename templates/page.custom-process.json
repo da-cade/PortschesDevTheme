@@ -3,10 +3,10 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        ".main-page-title {background-color: transparent; color: white;}"
+
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/20150603-untitled1613.jpg",
+        "image": "shopify:\/\/shop_images\/customs_21-9.png",
         "desktop_title_position": "top-center",
         "padding_top": 40,
         "padding_bottom": 40

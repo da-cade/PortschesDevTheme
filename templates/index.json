@@ -59,7 +59,7 @@
             "image_overlay_opacity": 30,
             "color_scheme": "accent-1",
             "button_color_front": "background-2",
-            "button_color_back": "accent-1",
+            "button_color_back": "background-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -242,34 +242,34 @@
         "c71f6874-22b9-4c19-92fb-29758496cb1f"
       ],
       "custom_css": [
-        "#insta-feed {margin-top: 100px; margin-bottom: 100px;}"
+        "#insta-feed {margin-top: 30px; margin-bottom: 100px;}"
       ],
       "settings": {
         "include_margins": true
       }
     },
-    "036a7b84-ce47-4bf5-8179-8aa3a9a87c33": {
+    "43608922-1c7a-4577-a553-da1356acf6dc": {
       "type": "rich-text",
       "blocks": {
-        "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-0": {
+        "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>The Premier Boise Boutique<\/p>",
+            "heading": "<p>An Engagement Ring You're Guaranteed to Love<\/p>",
             "heading_size": "h1"
           }
         },
-        "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-1": {
+        "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Portsche's Fine Jewelry have helped thousands choose their perfect piece, from engagement rings to estate jewelry to custom pieces. We take pride in offering best in class service, expert repairs, and unique designs made in house by our goldsmiths. Custom processes can begin by contacting our team. <\/p>"
+            "text": "<p>At Portsche's Fine Jewelry, we work with you every step of the way when designing your engagement ring. We know how to listen and where to give advice, so that you'll always end up with something perfect for you.<\/p>"
           }
         },
-        "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-2": {
+        "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-2": {
           "type": "button",
           "settings": {
-            "button_label": "Send a Message",
-            "button_link": "shopify:\/\/pages\/contact",
-            "button_style_secondary": true,
+            "button_label": "Get Started",
+            "button_link": "shopify:\/\/pages\/the-custom-process",
+            "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -277,16 +277,16 @@
         }
       },
       "block_order": [
-        "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-0",
-        "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-1",
-        "template--14669277954153__036a7b84-ce47-4bf5-8179-8aa3a9a87c33-166863043437c2fd89-2"
+        "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-0",
+        "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-1",
+        "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-2"
       ],
       "settings": {
         "image_overlay_opacity": 0,
-        "desktop_content_position": "right",
+        "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "accent-2",
-        "button_color": "background-1",
+        "button_color": "accent-1",
         "full_width": true,
         "padding_top": 200,
         "padding_bottom": 200
@@ -299,6 +299,6 @@
     "1df1de0a-7200-4d5f-9ab1-7d99545a1d59",
     "316252f9-5d31-409d-b4ea-f5eebf89d82e",
     "16759178895453edbd",
-    "036a7b84-ce47-4bf5-8179-8aa3a9a87c33"
+    "43608922-1c7a-4577-a553-da1356acf6dc"
   ]
 }
