@@ -180,6 +180,14 @@ main {
   padding-bottom: 1rem;
 }
 
+.pb-4 {
+  padding-bottom: 2rem;
+}
+
+.pb-5 {
+  padding-bottom: 3rem !important;
+}
+
 .bg-white {
   background-color: white;
 }
