@@ -257,7 +257,7 @@
         {%- else -%}
           {% paginate search.results by 24 %}
             <div
-              class="bg-light-1 pb-1 template-search__results collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+              class="bg-light-1 pb-5 template-search__results collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
               id="product-grid"
               data-id="{{ section.id }}"
             >
