@@ -43,26 +43,6 @@
             "text_alignment_mobile": "center"
           }
         },
-        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/diamond_black_white_21-9.jpg",
-            "heading": "Philip Portsche Designs",
-            "heading_size": "h1",
-            "subheading": "Discover the tasteful elegance of Philip Portsche's custom collection, designed in-house and hand made.",
-            "button_label": "See the Collection",
-            "link": "shopify:\/\/collections\/philip-portsche-designs",
-            "button_style_secondary": false,
-            "box_align": "top-right",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 10,
-            "color_scheme": "accent-1",
-            "button_color_front": "background-2",
-            "button_color_back": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "123a3a88-78e1-483a-9cbc-31b2bd20de0c": {
           "type": "slide",
           "settings": {
@@ -82,13 +62,33 @@
             "button_color_back": "accent-2",
             "text_alignment_mobile": "center"
           }
+        },
+        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/diamond_black_white_21-9.jpg",
+            "heading": "Philip Portsche Designs",
+            "heading_size": "h1",
+            "subheading": "Discover the tasteful elegance of Philip Portsche's custom collection, designed in-house and hand made.",
+            "button_label": "See the Collection",
+            "link": "shopify:\/\/collections\/philip-portsche-designs",
+            "button_style_secondary": false,
+            "box_align": "top-right",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "accent-1",
+            "button_color_front": "background-2",
+            "button_color_back": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "f0823213-c761-4749-9bb4-cc4513af8892",
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1",
-        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0",
-        "123a3a88-78e1-483a-9cbc-31b2bd20de0c"
+        "123a3a88-78e1-483a-9cbc-31b2bd20de0c",
+        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0"
       ],
       "custom_css": [
 
