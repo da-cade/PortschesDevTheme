@@ -216,13 +216,13 @@
     <div
       id="searchBody"
 
-      class="{% if section.settings.filter_type == 'vertical' %}facets-vertical page-width{% endif %} bg-light-1"
+      class="{% if section.settings.filter_type == 'vertical' %}facets-vertical page-width{% endif %}"
     >
       {%- if search.filters != empty -%}
         {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
           <aside
             aria-labelledby="verticalTitle"
-            class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+            class="bg-light-1 facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
             id="main-search-filters"
             data-id="{{ section.id }}"
           >
@@ -238,7 +238,7 @@
       <div class="product-grid-container" id="ProductGridContainer">
         {%- if search.results.size == 0 and search.filters != empty -%}
           <div
-            class="template-search__results collection collection--empty{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+            class="bg-light-1 template-search__results collection collection--empty{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
             id="product-grid"
             data-id="{{ section.id }}"
           >
