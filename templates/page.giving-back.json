@@ -7,7 +7,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Portsche-158.jpg",
-        "desktop_title_position": "top-center",
+        "desktop_title_position": "middle-center",
         "padding_top": 40,
         "padding_bottom": 40
       }
