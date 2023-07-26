@@ -6,6 +6,19 @@
     .collection-hero--with-image .collection-hero__inner {
       padding-bottom: calc({{settings.media_shadow_vertical_offset | at_least: 0}}px + 2rem);
     }
+    .collection-hero__image-container {
+      flex-direction: column;
+    }
+    .mobile-second {
+      order: 2;
+    }
+    .mobile-first {
+      order: 1;
+    }
+    .collection-hero__text-wrapper {
+      width: 100%;
+      position: relative;
+    }
   }
 
   {%- if section.settings.show_collection_image and collection.image -%}
@@ -54,7 +67,7 @@
   {%- liquid
     assign image_height = collection.image.width | divided_by: collection.image.aspect_ratio
     if collection.image != blank
-      assign image_class = 'standard_image'
+      assign image_class = 'standard_image mobile-first'
     endif
     assign sizes = '100vw'
   -%}
@@ -69,7 +82,7 @@
       sizes: sizes,
       widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
   }}
-  <div class="collection-hero__text-wrapper gradient color-{{ section.settings.color_scheme }} gradient">
+  <div class="collection-hero__text-wrapper mobile-second gradient color-{{ section.settings.color_scheme }} gradient">
     <h1 class="collection-hero__title">
       <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
       {{- collection.title | escape -}}
@@ -84,18 +97,6 @@
   </div>
 {%- endif -%}
 <div class="shadow-bar-bottom"></div>
-
-{% comment %}
-  <div class="buffer-top">
-    <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
-      <div class="collection-hero__inner page-width">
-
-
-
-      </div>
-    </div>
-  </div>
-{% endcomment %}
 
 {% schema %}
 {
