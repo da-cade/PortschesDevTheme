@@ -63,23 +63,23 @@
             "text_alignment_mobile": "center"
           }
         },
-        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0": {
+        "0d1dd54e-b021-44ad-8efc-45ae8c690ae9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/diamond_black_white_21-9.jpg",
-            "heading": "Philip Portsche Designs",
+            "image": "shopify:\/\/shop_images\/Megan_Portsche_s_Ring_21-9.jpg",
+            "heading": "Designing For Lifestyle",
             "heading_size": "h1",
-            "subheading": "Discover the tasteful elegance of Philip Portsche's custom collection, designed in-house and hand made.",
-            "button_label": "See the Collection",
-            "link": "shopify:\/\/collections\/philip-portsche-designs",
+            "subheading": "Non-Traditional Settings for Unusual People",
+            "button_label": "Find Out More",
+            "link": "shopify:\/\/pages\/the-big-rock-effect",
             "button_style_secondary": false,
-            "box_align": "top-right",
+            "box_align": "top-left",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 10,
-            "color_scheme": "accent-1",
-            "button_color_front": "background-1",
-            "button_color_back": "background-2",
+            "image_overlay_opacity": 20,
+            "color_scheme": "background-1",
+            "button_color_front": "accent-1",
+            "button_color_back": "accent-2",
             "text_alignment_mobile": "center"
           }
         }
@@ -88,7 +88,7 @@
         "f0823213-c761-4749-9bb4-cc4513af8892",
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1",
         "123a3a88-78e1-483a-9cbc-31b2bd20de0c",
-        "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-0"
+        "0d1dd54e-b021-44ad-8efc-45ae8c690ae9"
       ],
       "custom_css": [
 
