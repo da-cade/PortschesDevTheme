@@ -11,7 +11,7 @@
             "heading_size": "h0",
             "subheading": "Browse our entire catalog, from antiques to one-of-a-kind creations.",
             "button_label": "Shop All",
-            "link": "",
+            "link": "shopify:\/\/collections\/all",
             "button_style_secondary": false,
             "box_align": "top-center",
             "show_text_box": false,
