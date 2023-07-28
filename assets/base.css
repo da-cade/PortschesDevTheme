@@ -1575,6 +1575,7 @@ button.shopify-payment-button__button--unbranded {
 
 /* // MINE */
 .standard_image {
+  background-color: rgb(var(--color-background));
   display: block;
   width: 100%;
   height: auto;
