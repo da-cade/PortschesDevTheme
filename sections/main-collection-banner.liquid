@@ -67,7 +67,7 @@
   {%- liquid
     assign image_height = collection.image.width | divided_by: collection.image.aspect_ratio
     if collection.image != blank
-      assign image_class = 'standard_image mobile-first bg-white'
+      assign image_class = 'standard_image mobile-first'
     endif
     assign sizes = '100vw'
   -%}
