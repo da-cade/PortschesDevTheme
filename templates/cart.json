@@ -7,7 +7,7 @@
       ],
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "cart-footer": {
@@ -29,7 +29,7 @@
         "buttons"
       ],
       "custom_css": [
-        "#main-cart-footer {background-color: rgba(var(--color-background));}"
+        "#main-cart-footer {background-color: rgba(var(--color-background)); margin-bottom: 36px;}"
       ],
       "settings": {
       }
