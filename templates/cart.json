@@ -28,6 +28,9 @@
         "subtotal",
         "buttons"
       ],
+      "custom_css": [
+        "#main-cart-footer {background-color: rgba(var(--color-background));}"
+      ],
       "settings": {
       }
     },
