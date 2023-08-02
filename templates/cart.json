@@ -29,7 +29,7 @@
         "buttons"
       ],
       "custom_css": [
-        "#main-cart-footer {background-color: rgba(var(--color-background)); margin-bottom: 36px;}"
+        "#main-cart-footer {background-color: rgba(var(--color-background)); padding-bottom: 36px; margin-bottom: 27px}"
       ],
       "settings": {
       }
