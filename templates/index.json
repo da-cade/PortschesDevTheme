@@ -69,7 +69,7 @@
             "image": "shopify:\/\/shop_images\/Megan_Portsche_s_Ring_21-9.jpg",
             "heading": "Designing For Lifestyle",
             "heading_size": "h1",
-            "subheading": "Non-Traditional Settings for Unusual People",
+            "subheading": "Non-Traditional Settings for that marry style and practicality",
             "button_label": "Find Out More",
             "link": "shopify:\/\/pages\/the-big-rock-effect",
             "button_style_secondary": false,
@@ -223,7 +223,7 @@
       "type": "apps",
       "blocks": {
         "c71f6874-22b9-4c19-92fb-29758496cb1f": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_size": 30,
             "feed_width": 100,
