@@ -585,12 +585,12 @@
                   </div>
                 </div>
               </noscript>
-            {%- when 'buy_buttons' -%}
-              {%- if product.price < 300000 -%}
-                
               
+            {%- when 'buy_buttons' -%}
+              {% comment %} // TODO v-if on this section to only show buy buttons when accessing price {% endcomment %}
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
+                  <h1> PRIIIIIICe </h1>
                   <div class="product-form__error-message-wrapper" role="alert" hidden>
                     <svg
                       aria-hidden="true"
@@ -678,9 +678,6 @@
               </div>
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-              {%- else -%}
-              <span>For the time being, <strong> we are only accepting wire transfers for this item.</strong> Please <a href="#contact-form">contact us</a> and we will gladly arrange it with you.</span>
-            {%- endif -%}
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
