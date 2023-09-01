@@ -7,7 +7,7 @@
       ],
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "cart-footer": {
@@ -27,6 +27,9 @@
       "block_order": [
         "subtotal",
         "buttons"
+      ],
+      "custom_css": [
+        "#main-cart-footer {background-color: rgba(var(--color-background)); padding-bottom: 36px; margin-bottom: 27px}"
       ],
       "settings": {
       }
