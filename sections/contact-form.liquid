@@ -118,6 +118,19 @@
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
+      <div class="">
+        <input
+          id="MarketingConsent"
+          class="checkbox"
+          type="checkbox"
+          name="contact[MarketingConsent]"
+          checked
+        >
+        <label class="" for="MarketingConsent">
+          Sign-up for exclusive deals and special offers from Portsche's. More info
+          {% comment %} <a href="{{ 'templates.contact.form.privacyPolicy' }}">here</a> {% endcomment %}
+        </label>
+      </div>
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
