@@ -162,6 +162,7 @@
             body: new FormData(formEl),
           }
         ).then(async (response) => {
+          console.log(response);
           const data = await response.json();
           console.log(data);
         });
