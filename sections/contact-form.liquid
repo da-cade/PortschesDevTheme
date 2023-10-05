@@ -149,7 +149,7 @@
       name: e.target[2].value,
       email: e.target[3].value,
       phone: e.target[4].value,
-      marketingConsent: e.target[6].value,
+      marketingConsent: e.target[6].checked,
     };
     const marketingConsentBox = document.getElementById('MarketingConsent');
     if (marketingConsentBox.checked) {
@@ -161,11 +161,13 @@
             method: 'POST',
             body: JSON.stringify(formData),
           }
-        ).then(async (response) => {
-          console.log(response);
-          const data = await response.json();
-          console.log(data);
-        });
+        )
+          .then(async (response) => {
+            console.log(response);
+          })
+          .finally(() => {
+            formEl.submit();
+          });
       } catch (error) {
         console.log(error.message);
       }
