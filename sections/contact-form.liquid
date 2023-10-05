@@ -154,7 +154,7 @@
     const marketingConsentBox = document.getElementById('MarketingConsent');
     if (marketingConsentBox.checked) {
       try {
-        console.log('sending');
+        console.log(formData);
         fetch(
           'https://pleiadesmarketingconsent.azurewebsites.net/api/portschestrigger?code=E9y5n_1ukk_Y0OqxDmGGB3QNcmep7SipgZ27ieoND8XkAzFuHVjUEA%3D%3D',
           {
