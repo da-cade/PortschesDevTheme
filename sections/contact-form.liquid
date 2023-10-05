@@ -140,11 +140,11 @@
   </div>
 </div>
 
-<script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
 <script>
   const formEl = document.getElementById('ContactForm');
   formEl.addEventListener('submit', (e) => {
+    console.log('submitting');
+    e.preventDefault();
     let formData = {
       name: e.target[2].value,
       email: e.target[3].value,
@@ -154,6 +154,8 @@
     const marketingConsentBox = document.getElementById('MarketingConsent');
     if (marketingConsentBox.checked) {
       try {
+        console.log('sending');
+        fetch('https://pleiadesmarketingconsent.azurewebsites.net'. {method: 'POST', body: new FormData(formData)}).then((response) => {console.log(response)})
       } catch (error) {
         console.log(error.message);
       }
