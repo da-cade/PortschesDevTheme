@@ -140,6 +140,27 @@
   </div>
 </div>
 
+<script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+  const formEl = document.getElementById('ContactForm');
+  formEl.addEventListener('submit', (e) => {
+    let formData = {
+      name: e.target[2].value,
+      email: e.target[3].value,
+      phone: e.target[4].value,
+      marketingConsent: e.target[6].value,
+    };
+    const marketingConsentBox = document.getElementById('MarketingConsent');
+    if (marketingConsentBox.checked) {
+      try {
+      } catch (error) {
+        console.log(error.message);
+      }
+    }
+  });
+</script>
+
 {% schema %}
 {
   "name": "t:sections.contact-form.name",

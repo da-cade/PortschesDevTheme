@@ -218,8 +218,8 @@ Shopify.postLink = function (path, options) {
     form.appendChild(hiddenField);
   }
   document.body.appendChild(form);
+  console.log('hi frm gobal')
   form.submit();
-  console.log('hi')
   document.body.removeChild(form);
 };
 

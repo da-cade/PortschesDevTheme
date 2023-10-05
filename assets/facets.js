@@ -16,6 +16,7 @@ class FacetFiltersForm extends HTMLElement {
 
   static setListeners() {
     const onHistoryChange = (event) => {
+      console.log('hi history change')
       const searchParams = event.state ? event.state.searchParams : FacetFiltersForm.searchParamsInitial;
       if (searchParams === FacetFiltersForm.searchParamsPrev) return;
       FacetFiltersForm.renderPage(searchParams, null, false);
@@ -35,10 +36,10 @@ class FacetFiltersForm extends HTMLElement {
     const countContainer = document.getElementById('ProductCount');
     const countContainerDesktop = document.getElementById('ProductCountDesktop');
     document.getElementById('ProductGridContainer').querySelector('.collection').classList.add('loading');
-    if (countContainer){
+    if (countContainer) {
       countContainer.classList.add('loading');
     }
-    if (countContainerDesktop){
+    if (countContainerDesktop) {
       countContainerDesktop.classList.add('loading');
     }
 
@@ -168,6 +169,7 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   onSubmitForm(searchParams, event) {
+    console.log('submitted facets')
     FacetFiltersForm.renderPage(searchParams, event);
   }
 
