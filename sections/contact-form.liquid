@@ -154,8 +154,9 @@
     const marketingConsentBox = document.getElementById('MarketingConsent');
     if (marketingConsentBox.checked) {
       try {
-        //{% comment %} let endpoint = 'https://pleiadesmarketingconsent.azurewebsites.net/api/portschestrigger?code=E9y5n_1ukk_Y0OqxDmGGB3QNcmep7SipgZ27ieoND8XkAzFuHVjUEA%3D%3D' {% endcomment %}
-        let endpoint = 'http://localhost:7071/api/PortschesTrigger';
+        let endpoint =
+          'https://pleiadesmarketingconsent.azurewebsites.net/api/portschestrigger?code=E9y5n_1ukk_Y0OqxDmGGB3QNcmep7SipgZ27ieoND8XkAzFuHVjUEA%3D%3D';
+
         console.log(formData);
         fetch(endpoint, {
           method: 'POST',
