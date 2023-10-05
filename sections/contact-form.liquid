@@ -158,8 +158,8 @@
         fetch('https://pleiadesmarketingconsent.azurewebsites.net', {
           method: 'POST',
           body: new FormData(formEl),
-        }).then((response) => {
-          const data = await response.json()
+        }).then(async (response) => {
+          const data = await response.json();
           console.log(data);
         });
       } catch (error) {
