@@ -155,10 +155,13 @@
     if (marketingConsentBox.checked) {
       try {
         console.log('sending');
-        fetch('https://pleiadesmarketingconsent.azurewebsites.net', {
-          method: 'POST',
-          body: new FormData(formEl),
-        }).then(async (response) => {
+        fetch(
+          'https://pleiadesmarketingconsent.azurewebsites.net/api/portschestrigger?code=E9y5n_1ukk_Y0OqxDmGGB3QNcmep7SipgZ27ieoND8XkAzFuHVjUEA%3D%3D',
+          {
+            method: 'POST',
+            body: new FormData(formEl),
+          }
+        ).then(async (response) => {
           const data = await response.json();
           console.log(data);
         });
