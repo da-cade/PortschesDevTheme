@@ -158,7 +158,8 @@
         fetch(
           'https://pleiadesmarketingconsent.azurewebsites.net/api/portschestrigger?code=E9y5n_1ukk_Y0OqxDmGGB3QNcmep7SipgZ27ieoND8XkAzFuHVjUEA%3D%3D',
           {
-            method: 'GET',
+            method: 'POST',
+            body: formData,
           }
         ).then(async (response) => {
           console.log(response);
