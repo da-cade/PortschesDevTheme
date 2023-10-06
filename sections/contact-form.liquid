@@ -162,13 +162,13 @@
           body: JSON.stringify(formData),
         })
           .then(async (response) => {
-            console.log(response.message);
+            console.log(response);
           })
           .finally(() => {
             formEl.submit();
           });
       } catch (error) {
-        console.log(error.message);
+        console.log(error);
       }
     }
   });
