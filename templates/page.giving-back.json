@@ -3,8 +3,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "a {overflow-wrap: anywhere;}",
-        ".heading-banner {margin-top: 25%}"
+        "a {overflow-wrap: anywhere;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Portsche-157_21-9.jpg",
