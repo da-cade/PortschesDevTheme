@@ -3,11 +3,12 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "a {overflow-wrap: anywhere;}"
+        "a {overflow-wrap: anywhere;}",
+        ".heading-banner {margin-top: 25%}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Portsche-135.jpg",
-        "desktop_title_position": "middle-center",
+        "image": "shopify:\/\/shop_images\/Portsche-157_21-9.jpg",
+        "desktop_title_position": "bottom-center",
         "padding_top": 40,
         "padding_bottom": 40
       }
