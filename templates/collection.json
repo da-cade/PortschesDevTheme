@@ -67,11 +67,12 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
+        "image": "shopify:\/\/shop_images\/byz-wallpaper_57207e86-48c0-406d-86f0-4399e8cabd41.jpg",
         "image_overlay_opacity": 0,
         "desktop_content_position": "right",
         "content_alignment": "left",
         "color_scheme": "accent-1",
+        "color_scheme_2": "background-1",
         "button_color": "accent-2",
         "full_width": true,
         "padding_top": 100,
