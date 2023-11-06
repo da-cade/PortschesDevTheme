@@ -3,7 +3,7 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        ".main-blog {background-color: white; padding: 2rem;}"
+        ".main-blog {background-color: white; margin: 2rem; padding: 2rem;}"
       ],
       "settings": {
         "layout": "collage",
