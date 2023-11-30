@@ -82,13 +82,34 @@
             "button_color_back": "background-2",
             "text_alignment_mobile": "center"
           }
+        },
+        "4255d93d-b215-4003-bb8e-2bbecacab25f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mens_philip_portsche_21-9_1.jpg",
+            "heading": "Men's Jewelry",
+            "heading_size": "h1",
+            "subheading": "Find something special this Holiday Season for the man in your life. Featuring Philip Portsche's original designs and brands like King Baby.",
+            "button_label": "Shop the Collection",
+            "link": "shopify:\/\/collections\/mens",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "button_color_front": "accent-1",
+            "button_color_back": "background-2",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "f0823213-c761-4749-9bb4-cc4513af8892",
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1",
         "123a3a88-78e1-483a-9cbc-31b2bd20de0c",
-        "0d1dd54e-b021-44ad-8efc-45ae8c690ae9"
+        "0d1dd54e-b021-44ad-8efc-45ae8c690ae9",
+        "4255d93d-b215-4003-bb8e-2bbecacab25f"
       ],
       "custom_css": [
 
