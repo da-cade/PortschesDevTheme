@@ -12,7 +12,7 @@
     "form": {
       "type": "contact-form",
       "custom_css": [
-        ".color-background-1 {background-color: var(--color-base-accent-1);}"
+        ".color-background-1 {background-color: var(--color-base-accent-2);}"
       ],
       "settings": {
         "heading": "Send us a Message",
