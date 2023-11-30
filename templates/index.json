@@ -181,29 +181,29 @@
     "316252f9-5d31-409d-b4ea-f5eebf89d82e": {
       "type": "plds-collection-list",
       "blocks": {
-        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-0": {
+        "59e209ad-e52e-4f02-8b8d-f4a4f0295e77": {
           "type": "featured_collection",
           "settings": {
-            "collection": "goshwara-at-portsches"
+            "collection": "diamond-accent"
           }
         },
-        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-2": {
+        "4974084b-6ac3-4f16-a44c-c8fd806d26c7": {
           "type": "featured_collection",
           "settings": {
-            "collection": "charms-bracelets"
+            "collection": "the-chain-shop"
           }
         },
-        "14f38cc7-d18a-4b80-aec0-2bab12160715": {
+        "119268db-1077-4144-ae5e-60581187d841": {
           "type": "featured_collection",
           "settings": {
-            "collection": "pendants"
+            "collection": "rings"
           }
         }
       },
       "block_order": [
-        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-0",
-        "template--19284469645604__316252f9-5d31-409d-b4ea-f5eebf89d82e-1687924388c0fda1bb-2",
-        "14f38cc7-d18a-4b80-aec0-2bab12160715"
+        "59e209ad-e52e-4f02-8b8d-f4a4f0295e77",
+        "4974084b-6ac3-4f16-a44c-c8fd806d26c7",
+        "119268db-1077-4144-ae5e-60581187d841"
       ],
       "settings": {
         "title": "Featured Collections",
