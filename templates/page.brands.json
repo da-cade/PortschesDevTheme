@@ -6,25 +6,63 @@
         "a {overflow-wrap: anywhere;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sidebysiderefurbish_21-9_1.jpg",
+        "image": "shopify:\/\/shop_images\/starry_gemstones_21-9_1.png",
         "desktop_title_position": "middle-center",
         "padding_top": 40,
         "padding_bottom": 40
       }
     },
-    "0743f5f8-53a3-4d18-a563-59b3bf191879": {
-      "type": "contact-form",
+    "6e436c35-42ab-4327-bb8e-1f8935109cd3": {
+      "type": "plds-collection-list",
+      "blocks": {
+        "template--21741107183915__6e436c35-42ab-4327-bb8e-1f8935109cd3-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "goshwara-at-portsches"
+          }
+        },
+        "template--21741107183915__6e436c35-42ab-4327-bb8e-1f8935109cd3-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parle-at-porsches"
+          }
+        },
+        "template--21741107183915__6e436c35-42ab-4327-bb8e-1f8935109cd3-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "philip-portsche-designs"
+          }
+        },
+        "ba5a16a4-9925-46d2-b25a-9ef8f9ab50cb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21741107183915__6e436c35-42ab-4327-bb8e-1f8935109cd3-featured_collection-1",
+        "template--21741107183915__6e436c35-42ab-4327-bb8e-1f8935109cd3-featured_collection-2",
+        "template--21741107183915__6e436c35-42ab-4327-bb8e-1f8935109cd3-featured_collection-3",
+        "ba5a16a4-9925-46d2-b25a-9ef8f9ab50cb"
+      ],
       "settings": {
-        "heading": "Contact form",
+        "title": "",
         "heading_size": "h1",
-        "color_scheme": "accent-2",
+        "image_ratio": "square",
+        "columns_desktop": 1,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "margin_y": 0
       }
     }
   },
   "order": [
     "main",
-    "0743f5f8-53a3-4d18-a563-59b3bf191879"
+    "6e436c35-42ab-4327-bb8e-1f8935109cd3"
   ]
 }
