@@ -230,12 +230,6 @@
 
     ],
     "blocks": {
-      "1449514830453105753": {
-        "type": "shopify:\/\/apps\/slots-appointment-booking-app\/blocks\/appointment-scheduler-embed\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "4804304946286255945": {
         "type": "shopify:\/\/apps\/avada-gdpr-ccpa-cookie-consent\/blocks\/app-embed\/deacc407-65bc-4a4e-84d9-f90e9e492cf3",
         "disabled": false,
@@ -244,6 +238,12 @@
       },
       "14060646107696862457": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "4015264832934714879": {
+        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": false,
         "settings": {
         }
