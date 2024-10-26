@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "e664ffef-887a-4468-b461-478a838fdf2c": {
@@ -6,12 +15,12 @@
         "f0823213-c761-4749-9bb4-cc4513af8892": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gold-ring-with-white-dimonds-and-a-large-stone_cf51a397-d495-4acf-bf15-c185d3d5efcb.jpg",
+            "image": "shopify://shop_images/gold-ring-with-white-dimonds-and-a-large-stone_cf51a397-d495-4acf-bf15-c185d3d5efcb.jpg",
             "heading": "The Shop",
             "heading_size": "h0",
             "subheading": "Browse our entire catalog, from antiques to one-of-a-kind creations.",
             "button_label": "Shop All",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "top-center",
             "show_text_box": false,
@@ -26,12 +35,12 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/goldsmithing_crucible_flame.jpg",
+            "image": "shopify://shop_images/goldsmithing_crucible_flame.jpg",
             "heading": "The Custom Process",
             "heading_size": "h1",
             "subheading": "Whether it's for an engagement, a gift, or just a stylish piece for yourself, we'll help you craft something special",
             "button_label": "Get Started",
-            "link": "shopify:\/\/pages\/schedule-an-appointment",
+            "link": "shopify://pages/schedule-an-appointment",
             "button_style_secondary": true,
             "box_align": "top-right",
             "show_text_box": false,
@@ -46,12 +55,12 @@
         "123a3a88-78e1-483a-9cbc-31b2bd20de0c": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Portsche-143.jpg",
+            "image": "shopify://shop_images/Portsche-143.jpg",
             "heading": "Bridal and Engagement",
             "heading_size": "h1",
             "subheading": "Explore Portsche's collection of antique and modern wedding jewelry, featuring pieces for both men and women.",
             "button_label": "Shop Bridal",
-            "link": "shopify:\/\/collections\/portsches-engagement-and-bridal",
+            "link": "shopify://collections/portsches-engagement-and-bridal",
             "button_style_secondary": false,
             "box_align": "top-left",
             "show_text_box": true,
@@ -67,12 +76,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/mens_philip_portsche_21-9_1.jpg",
+            "image": "shopify://shop_images/mens_philip_portsche_21-9_1.jpg",
             "heading": "Men's Jewelry",
             "heading_size": "h1",
             "subheading": "Find something special this Holiday Season for the man in your life. Featuring Philip Portsche's original designs and brands like King Baby.",
             "button_label": "Shop the Collection",
-            "link": "shopify:\/\/collections\/mens",
+            "link": "shopify://collections/mens",
             "button_style_secondary": false,
             "box_align": "top-left",
             "show_text_box": true,
@@ -87,12 +96,12 @@
         "slide_HpVgMC": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/work_for_portsches.webp",
+            "image": "shopify://shop_images/work_for_portsches.webp",
             "heading": "Work at Portsche's",
             "heading_size": "h1",
             "subheading": "We're Hiring in the Showroom",
             "button_label": "Find Out More",
-            "link": "",
+            "link": "shopify://pages/work-for-portsches",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": true,
@@ -117,7 +126,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "medium",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 7,
@@ -130,7 +139,7 @@
       "settings": {
         "title": "What's Featured",
         "heading_size": "h1",
-        "description": "<p>We love these pieces and we think everyone should know about them<\/p>",
+        "description": "<p>We love these pieces and we think everyone should know about them</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "featured",
@@ -165,7 +174,7 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Portsche's, you can be the designer. Our expert showroom team will provide feedback and, if needed, a stylish twist — as well as advice on metal and stones.<\/p>",
+            "text": "<p>At Portsche's, you can be the designer. Our expert showroom team will provide feedback and, if needed, a stylish twist — as well as advice on metal and stones.</p>",
             "text_style": "body"
           }
         },
@@ -173,7 +182,7 @@
           "type": "button",
           "settings": {
             "button_label": "Get Started",
-            "button_link": "shopify:\/\/pages\/schedule-an-appointment"
+            "button_link": "shopify://pages/schedule-an-appointment"
           }
         }
       },
@@ -186,8 +195,8 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/diamond_gold_pendant.jpg",
-        "image_2": "shopify:\/\/shop_images\/byz-wallpaper_57207e86-48c0-406d-86f0-4399e8cabd41.jpg",
+        "image": "shopify://shop_images/diamond_gold_pendant.jpg",
+        "image_2": "shopify://shop_images/byz-wallpaper_57207e86-48c0-406d-86f0-4399e8cabd41.jpg",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -247,21 +256,21 @@
         "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>An Engagement Ring You're Guaranteed to Love<\/p>",
+            "heading": "<p>An Engagement Ring You're Guaranteed to Love</p>",
             "heading_size": "h1"
           }
         },
         "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Portsche's Fine Jewelry, we work with you every step of the way when designing your engagement ring. We know how to listen and where to give advice, so that you'll always end up with something perfect for you.<\/p>"
+            "text": "<p>At Portsche's Fine Jewelry, we work with you every step of the way when designing your engagement ring. We know how to listen and where to give advice, so that you'll always end up with something perfect for you.</p>"
           }
         },
         "template--19739533082923__43608922-1c7a-4577-a553-da1356acf6dc-168793462407b1122e-2": {
           "type": "button",
           "settings": {
             "button_label": "Get Started",
-            "button_link": "shopify:\/\/pages\/the-custom-process",
+            "button_link": "shopify://pages/the-custom-process",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
