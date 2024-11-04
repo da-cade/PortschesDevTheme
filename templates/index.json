@@ -123,7 +123,7 @@
         "slide_N3LBqM"
       ],
       "custom_css": [
-        ".banner__content--bottom-right > div:nth-child(1) h2 {color: #005b44;}",
+        ".banner__content--bottom-right > div:nth-child(1) h2 {color: #413452;}",
         ".banner__content--bottom-right > div:nth-child(1) span {color: black;}"
       ],
       "settings": {
