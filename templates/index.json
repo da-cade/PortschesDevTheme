@@ -16,9 +16,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Bubbles_Baubles_Cover_2.png",
-            "heading": "Thursday, Nov. 7th",
+            "heading": "Charms | Chains | Pendants",
             "heading_size": "h1",
-            "subheading": "Join Portsche's for a charm bar and complimentary wine from Split Rail from 5pm to 8pm!",
+            "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -193,9 +193,7 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-1",
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-2"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/diamond_gold_pendant.jpg",
         "image_2": "shopify://shop_images/byz-wallpaper_57207e86-48c0-406d-86f0-4399e8cabd41.jpg",
