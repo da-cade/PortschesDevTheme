@@ -14,6 +14,7 @@
       "blocks": {
         "slide_N3LBqM": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Bubbles_Baubles_Cover_2.png",
             "heading": "Charms | Chains | Pendants",
@@ -92,35 +93,13 @@
             "button_color_back": "accent-2",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_HpVgMC": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/work_for_portsches.webp",
-            "heading": "Work at Portsche's",
-            "heading_size": "h1",
-            "subheading": "We're Hiring in the Showroom",
-            "button_label": "Find Out More",
-            "link": "shopify://pages/work-for-portsches",
-            "button_style_secondary": false,
-            "box_align": "middle-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "button_color_front": "background-2",
-            "button_color_back": "accent-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
         "slide_N3LBqM",
         "f0823213-c761-4749-9bb4-cc4513af8892",
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1",
-        "123a3a88-78e1-483a-9cbc-31b2bd20de0c",
-        "slide_HpVgMC"
+        "123a3a88-78e1-483a-9cbc-31b2bd20de0c"
       ],
       "custom_css": [
         ".banner__content--bottom-right > div:nth-child(1) h2 {color: #413452;}",
