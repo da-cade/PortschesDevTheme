@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
@@ -104,9 +113,9 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "https:\/\/www.facebook.com\/Portsches-Fine-Jewelry-109123071893506",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/Portsches\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/portschesfinejewelry\/",
+    "social_facebook_link": "https://www.facebook.com/Portsches-Fine-Jewelry-109123071893506",
+    "social_pinterest_link": "https://www.pinterest.com/Portsches/",
+    "social_instagram_link": "https://www.instagram.com/portschesfinejewelry/",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -115,8 +124,8 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/portsches-logo.png",
-    "main_background_image": "shopify:\/\/shop_images\/byz-wallpaper.jpg",
+    "favicon": "shopify://shop_images/portsches-logo.png",
+    "main_background_image": "shopify://shop_images/byz-wallpaper.jpg",
     "currency_code_enabled": true,
     "cart_type": "notification",
     "show_vendor": false,
@@ -130,8 +139,18 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Give us a call any time during business hours at",
+              "text_alignment": "center",
+              "color_scheme": "inverse",
+              "link": ""
+            }
+          },
+          "announcement_NQAaHy": {
+            "type": "announcement",
+            "settings": {
+              "text": "We are closed Monday, February 17th in Honor of President's Day. Phone:",
               "text_alignment": "center",
               "color_scheme": "inverse",
               "link": ""
@@ -139,13 +158,11 @@
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "announcement_NQAaHy"
         ],
-        "custom_css": [
-
-        ],
-        "settings": {
-        }
+        "custom_css": [],
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -154,7 +171,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/thin_logo_gold.png",
+          "logo": "shopify://shop_images/thin_logo_gold.png",
           "logo_width": 190,
           "logo_position": "middle-left",
           "menu": "main-menu",
@@ -181,13 +198,13 @@
             "type": "text",
             "settings": {
               "heading": "Info",
-              "subtext": "<p>Portsche's is located in downtown Boise, Idaho at <a href=\"https:\/\/goo.gl\/maps\/vW2XGQ9aTvcJLtGcA\" target=\"_blank\" title=\"Portsche's Location in Google Maps\">816 W. Idaho St.<\/a><\/p><p>Store hours:<\/p><ul><li>M-F: 10am - 6pm<\/li><li>Sat: 10am - 5pm<\/li><li>Sun: Closed<\/li><\/ul><p>Call:  <a href=\"tel:(208) 343-4443\" title=\"tel:(208) 343-4443\">(208) 343-4443<\/a><\/p>"
+              "subtext": "<p>Portsche's is located in downtown Boise, Idaho at <a href=\"https://goo.gl/maps/vW2XGQ9aTvcJLtGcA\" target=\"_blank\" title=\"Portsche's Location in Google Maps\">816 W. Idaho St.</a></p><p>Store hours:</p><ul><li>M-F: 10am - 6pm</li><li>Sat: 10am - 5pm</li><li>Sun: Closed</li></ul><p>Call:  <a href=\"tel:(208) 343-4443\" title=\"tel:(208) 343-4443\">(208) 343-4443</a></p>"
             }
           },
           "2adfeb18-f9fc-4448-b1aa-12865fe91240": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/thin_logo_gold.png",
+              "image": "shopify://shop_images/thin_logo_gold.png",
               "image_width": 200,
               "alignment": "right"
             }
@@ -226,27 +243,22 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "4804304946286255945": {
-        "type": "shopify:\/\/apps\/avada-gdpr-ccpa-cookie-consent\/blocks\/app-embed\/deacc407-65bc-4a4e-84d9-f90e9e492cf3",
+        "type": "shopify://apps/avada-gdpr-ccpa-cookie-consent/blocks/app-embed/deacc407-65bc-4a4e-84d9-f90e9e492cf3",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "4015264832934714879": {
-        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -391,8 +403,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",
@@ -432,7 +443,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },
