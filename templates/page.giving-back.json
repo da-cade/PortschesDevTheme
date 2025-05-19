@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -6,7 +15,7 @@
         "a {overflow-wrap: anywhere;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Portsche-157_21-9.jpg",
+        "image": "shopify://shop_images/helping_customer_yellow_21-9_1.jpg",
         "desktop_title_position": "bottom-center",
         "padding_top": 40,
         "padding_bottom": 40
