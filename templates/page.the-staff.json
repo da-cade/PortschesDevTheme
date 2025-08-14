@@ -1,16 +1,130 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/helping_customer_smiley_1.jpg",
+        "image": "shopify://shop_images/helping_customer_smiley_1.jpg",
         "desktop_title_position": "middle-center",
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "multicolumn_X9CFm7": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_4Q6j4m": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025-Portsches-348.jpg",
+            "title": "Dylan Cade - Owner",
+            "text": "<p>In the jewelry industry since late 2024, Dylan is a custom jewelry design specialist, collectible watch sourcing agent, and colored gemstone specialist. In the past, Dylan was a web designer, and he also made this website! He runs the store merchandising and marketing with his fiancée, Alyssa, and plays golf, tennis, DnD, and snow sports the rest of the time.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f4YLMg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025-Portsches-347.jpg",
+            "title": "Alyssa Latham - Owner",
+            "text": "<p>A New Approach School graduate, Alyssa is the store's head goldsmith, and uses her expertise to craft and design custom pieces for customers and the store. Alyssa has been in the jewelry industry since 2021, starting first in sales and design. She loves social media, and is always posting pictures and videos on our socials! In her free time, Alyssa bakes, swims, and works on her art and writing.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4Q6j4m",
+        "column_f4YLMg"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "The Team",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bfDyyx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_meadnK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025-Portsches-352.jpg",
+            "title": "Valorie Roper - Manager",
+            "text": "<p>With over 25 years experience in the jewelry industry, Valorie is an expert in jewelry design and sourcing. As a certified GIA gemologist, Valorie conducts appraisals, organizes the store, and helps with buying estate jewelry. An avid craftswoman, Valorie has her own local brand, Design 129, which features wearable, approachable jewelry.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ha38rM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025-Portsches-350.jpg",
+            "title": "Nicole Gibbs - Operations",
+            "text": "<p>Nicole is first and foremost a rock hound, with an enormous collection of rare rocks and stones, many of which adorn the store. At Portsche's, she runs most of the logistics behind the scenes, and spends the remainder of her time learning custom design and gemology. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WfKT6w": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025-Portsches-351.jpg",
+            "title": "Violet Iacovelli - Sales",
+            "text": "<p>Violet's colorful family and friends inform her approach to sales: warm, friendly, and full of good humor. With a history of jewelers in her family, Violet is knowledgeable about pricing, practicality, </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_meadnK",
+        "column_ha38rM",
+        "column_WfKT6w"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "multicolumn_X9CFm7",
+    "multicolumn_bfDyyx"
   ]
 }
