@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "a {overflow-wrap: anywhere;}"
       ],
@@ -30,10 +31,56 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_YagchE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nyMcTD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Dylan & Alyssa",
+            "heading_size": "h0"
+          }
+        },
+        "text_tWiUAR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alyssa and Dylan are the brand new owners of Portsche's Fine Jewelry. Just last April, Alyssa, a long-time employee of Portsche's, and Dylan, a former contractor for the business and the designer of this website, took the torch from Philip and Megan Portsche. Help us celebrate this new journey for Dylan & Alyssa, and the next steps for Philip and Megan.</p><p>Join us Thursday, September 4th from 6-9pm for a night of complimentary wine tastings, ring cleaning and polishing, and even a raffle for a pair of Montana sapphire earrings!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_DYwwdG": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_nyMcTD",
+        "text_tWiUAR",
+        "button_DYwwdG"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/meet_the_owners_flier.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "0743f5f8-53a3-4d18-a563-59b3bf191879"
+    "0743f5f8-53a3-4d18-a563-59b3bf191879",
+    "image_with_text_YagchE"
   ]
 }
