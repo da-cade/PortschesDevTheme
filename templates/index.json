@@ -36,7 +36,7 @@
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/goldsmithing_crucible_flame.jpg",
+            "image": "shopify://shop_images/2025-Portsches-108.jpg",
             "heading": "The Custom Process",
             "heading_size": "h1",
             "subheading": "Whether it's for an engagement, a gift, or just a stylish piece for yourself, we'll help you craft something special",
@@ -173,7 +173,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/diamond_gold_pendant.jpg",
+        "image": "shopify://shop_images/2025-Portsches-130.jpg",
         "image_2": "shopify://shop_images/byz-wallpaper_57207e86-48c0-406d-86f0-4399e8cabd41.jpg",
         "height": "large",
         "desktop_image_width": "medium",
@@ -193,19 +193,19 @@
         "59e209ad-e52e-4f02-8b8d-f4a4f0295e77": {
           "type": "featured_collection",
           "settings": {
-            "collection": "diamond-accent"
+            "collection": "gemstone-jewelry"
           }
         },
         "4974084b-6ac3-4f16-a44c-c8fd806d26c7": {
           "type": "featured_collection",
           "settings": {
-            "collection": "the-chain-shop"
+            "collection": "estate-and-vintage"
           }
         },
         "119268db-1077-4144-ae5e-60581187d841": {
           "type": "featured_collection",
           "settings": {
-            "collection": "rings"
+            "collection": "sapphire"
           }
         }
       },
