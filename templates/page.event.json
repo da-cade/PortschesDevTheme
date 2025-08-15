@@ -40,7 +40,7 @@
         "button_DYwwdG"
       ],
       "custom_css": [
-        ".p-3 {background-color: #ffe2d8}"
+        ".p-3 {background-color: #ffe2d8;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -67,7 +67,7 @@
       "settings": {
         "desktop_title_position": "middle-center",
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 0
       }
     },
     "rich_text_UwaziG": {
