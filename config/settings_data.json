@@ -140,7 +140,7 @@
           "announcement_NQAaHy": {
             "type": "announcement",
             "settings": {
-              "text": "Meet the New Owners & Enjoy a Free Wine Tasting, Thursday September 4th 5-9pm! For details text",
+              "text": "Meet the New Owners & Enjoy a Free Wine Tasting, Thursday September 4th 5-9pm!",
               "text_alignment": "center",
               "color_scheme": "inverse",
               "link": "shopify://pages/meet-the-new-owners"
