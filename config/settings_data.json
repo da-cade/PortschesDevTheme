@@ -137,16 +137,6 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "Give us a call any time during business hours at",
-              "text_alignment": "center",
-              "color_scheme": "inverse",
-              "link": ""
-            }
-          },
           "announcement_NQAaHy": {
             "type": "announcement",
             "settings": {
@@ -158,7 +148,6 @@
           }
         },
         "block_order": [
-          "announcement-bar-0",
           "announcement_NQAaHy"
         ],
         "custom_css": [],
