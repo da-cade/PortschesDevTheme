@@ -1,12 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
-        "image": "shopify:\/\/shop_images\/customs_21-9_1_65b34dc8-e1fc-4e6a-b075-871b6124b299.png",
+        "image": "shopify://shop_images/customs_21-9_1_65b34dc8-e1fc-4e6a-b075-871b6124b299.png",
         "desktop_title_position": "top-center",
         "padding_top": 40,
         "padding_bottom": 40
@@ -15,14 +22,13 @@
     "16787372316ebf5c43": {
       "type": "apps",
       "blocks": {
-        "db49cf10-a325-40f7-93f9-7cdf039955f7": {
-          "type": "shopify:\/\/apps\/slots-appointment-scheduling\/blocks\/appointment-scheduler\/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
-          "settings": {
-          }
+        "slot_appointment_booking_schedule_button_section_7pi4CH": {
+          "type": "shopify://apps/slot-appointment-booking/blocks/schedule_button_section/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+          "settings": {}
         }
       },
       "block_order": [
-        "db49cf10-a325-40f7-93f9-7cdf039955f7"
+        "slot_appointment_booking_schedule_button_section_7pi4CH"
       ],
       "settings": {
         "include_margins": true
