@@ -19,16 +19,16 @@
         "padding_bottom": 40
       }
     },
-    "175527603854d0c770": {
+    "1755288254bcaee707": {
       "type": "apps",
       "blocks": {
-        "slot_appointment_booking_schedule_button_section_EHXdFJ": {
+        "slot_appointment_booking_schedule_button_section_GmKnHn": {
           "type": "shopify://apps/slot-appointment-booking/blocks/schedule_button_section/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
           "settings": {}
         }
       },
       "block_order": [
-        "slot_appointment_booking_schedule_button_section_EHXdFJ"
+        "slot_appointment_booking_schedule_button_section_GmKnHn"
       ],
       "settings": {
         "include_margins": true
@@ -37,6 +37,6 @@
   },
   "order": [
     "main",
-    "175527603854d0c770"
+    "1755288254bcaee707"
   ]
 }
