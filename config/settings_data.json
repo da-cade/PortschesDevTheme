@@ -259,6 +259,11 @@
         "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": false,
         "settings": {}
+      },
+      "9750435628380012155": {
+        "type": "shopify://apps/slot-appointment-booking/blocks/schedule_button/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
