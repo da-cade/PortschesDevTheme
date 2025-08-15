@@ -147,29 +147,21 @@
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-0": {
           "type": "heading",
           "settings": {
-            "heading": "The Custom Process",
+            "heading": "Talk to the Experts",
             "heading_size": "h1"
           }
         },
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Portsche's, you can be the designer. Our expert showroom team will provide feedback and, if needed, a stylish twist — as well as advice on metal and stones.</p>",
+            "text": "<p>You can trust the experts at Portsche's. We know jewelry can be expensive, challenging, and complicated. For your next project, make an appointment with one of our design specialists, and you'll feel confident and heard. Your needs take priority at Portsche's.</p>",
             "text_style": "body"
-          }
-        },
-        "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Get Started",
-            "button_link": "shopify://pages/schedule-an-appointment"
           }
         }
       },
       "block_order": [
         "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-0",
-        "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-1",
-        "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-2"
+        "template--14669277954153__1df1de0a-7200-4d5f-9ab1-7d99545a1d59-1668630433c76e8295-1"
       ],
       "custom_css": [],
       "settings": {
