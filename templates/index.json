@@ -71,12 +71,33 @@
             "button_color_back": "accent-2",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_DPJFbX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/2025-Portsches-65_1.jpg",
+            "heading": "Meet the New Owners Party",
+            "heading_size": "h1",
+            "subheading": "We want to meet you! Join us for a complimentary wine tasting and the chance to win an item of jewelry.",
+            "button_label": "Learn More",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-2",
+            "button_color_front": "accent-1",
+            "button_color_back": "accent-2",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1",
         "f0823213-c761-4749-9bb4-cc4513af8892",
-        "123a3a88-78e1-483a-9cbc-31b2bd20de0c"
+        "123a3a88-78e1-483a-9cbc-31b2bd20de0c",
+        "slide_DPJFbX"
       ],
       "custom_css": [
         ".banner__content--bottom-right > div:nth-child(1) h2 {color: #413452;}",
