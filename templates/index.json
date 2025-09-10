@@ -14,9 +14,10 @@
       "blocks": {
         "slide_DPJFbX": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2025-Portsches-65_1.jpg",
-            "heading": "Meet the New Owners Party",
+            "heading": "Meet the New Owners",
             "heading_size": "h1",
             "subheading": "We want to meet you! Join us for a complimentary wine tasting and the chance to win an item of jewelry.",
             "button_label": "Learn More",
