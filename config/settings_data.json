@@ -139,16 +139,27 @@
         "blocks": {
           "announcement_NQAaHy": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Meet the New Owners & Enjoy a Free Wine Tasting, Thursday September 4th 5-9pm!",
               "text_alignment": "center",
               "color_scheme": "inverse",
               "link": "shopify://pages/meet-the-new-owners"
             }
+          },
+          "announcement_qWQD9D": {
+            "type": "announcement",
+            "settings": {
+              "text": "Coming soon! Lots of simple & modern styles thanks to your votes in our raffle!",
+              "text_alignment": "center",
+              "color_scheme": "inverse",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement_NQAaHy"
+          "announcement_NQAaHy",
+          "announcement_qWQD9D"
         ],
         "custom_css": [],
         "settings": {}
