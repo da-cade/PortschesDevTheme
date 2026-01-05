@@ -28,10 +28,26 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1767654723db53a183": {
+      "type": "apps",
+      "blocks": {
+        "slot_appointment_booking_schedule_button_section_9XHhkJ": {
+          "type": "shopify://apps/slot-appointment-booking/blocks/schedule_button_section/eaf7446e-338e-4b9e-81ce-08f8dd90199c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "slot_appointment_booking_schedule_button_section_9XHhkJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "307f6c31-0b8f-4c89-a660-41bba1f87a4f"
+    "307f6c31-0b8f-4c89-a660-41bba1f87a4f",
+    "1767654723db53a183"
   ]
 }
