@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -11,9 +20,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -25,7 +32,7 @@
         "enable_filtering": true,
         "filter_type": "vertical",
         "enable_sorting": true,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "padding_top": 64,
         "padding_bottom": 100
       }
@@ -36,24 +43,24 @@
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Don't see anything you like?<\/p>",
+            "heading": "<p>Don't see anything you like?</p>",
             "heading_size": "h1"
           }
         },
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-1": {
           "type": "text",
           "settings": {
-            "text": "<h3>Get started on something completely original. <\/h3><p>Learn more about  the custom process at Portsche's, or schedule an appointment.<\/p>"
+            "text": "<h3>Get started on something completely original. </h3><p>Learn more about  the custom process at Portsche's, or schedule an appointment.</p>"
           }
         },
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-2": {
           "type": "button",
           "settings": {
             "button_label": "Custom Design",
-            "button_link": "shopify:\/\/pages\/the-custom-process",
+            "button_link": "shopify://pages/the-custom-process",
             "button_style_secondary": false,
             "button_label_2": "Appointments",
-            "button_link_2": "shopify:\/\/pages\/schedule-an-appointment",
+            "button_link_2": "shopify://pages/schedule-an-appointment",
             "button_style_secondary_2": false
           }
         }
@@ -63,11 +70,9 @@
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-1",
         "template--17828244324651__97999b50-9002-405a-9168-63010c9d76d9-16784051341f97bdf5-2"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
-        "image": "shopify:\/\/shop_images\/byz-wallpaper_57207e86-48c0-406d-86f0-4399e8cabd41.jpg",
+        "image": "shopify://shop_images/byz-wallpaper_57207e86-48c0-406d-86f0-4399e8cabd41.jpg",
         "image_overlay_opacity": 0,
         "desktop_content_position": "right",
         "content_alignment": "left",
