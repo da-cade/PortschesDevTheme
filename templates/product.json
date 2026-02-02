@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -12,34 +21,38 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
+          "settings": {}
+        },
+        "fc173aeb-c10c-45f6-80a3-dcd0e60c7a33": {
+          "type": "buy_buttons",
+          "disabled": true,
           "settings": {
+            "show_dynamic_checkout": true
           }
+        },
+        "text_wHr86q": {
+          "type": "text",
+          "settings": {
+            "text": "Call to Order",
+            "text_style": "uppercase"
+          }
+        },
+        "679acaf7-8963-458e-98e1-23dc8c6dcb04": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "f66432c8-456b-42dc-a7b9-1be65f4b51d8": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "fc173aeb-c10c-45f6-80a3-dcd0e60c7a33": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "679acaf7-8963-458e-98e1-23dc8c6dcb04": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
           }
         }
       },
@@ -48,9 +61,10 @@
         "title",
         "price",
         "description",
-        "f66432c8-456b-42dc-a7b9-1be65f4b51d8",
         "fc173aeb-c10c-45f6-80a3-dcd0e60c7a33",
-        "679acaf7-8963-458e-98e1-23dc8c6dcb04"
+        "text_wHr86q",
+        "679acaf7-8963-458e-98e1-23dc8c6dcb04",
+        "f66432c8-456b-42dc-a7b9-1be65f4b51d8"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -68,8 +82,12 @@
       "type": "apps",
       "blocks": {
         "6dcf6c82-b02d-472c-84f1-9b4debcb55c1": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
