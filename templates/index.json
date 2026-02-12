@@ -12,6 +12,26 @@
     "e664ffef-887a-4468-b461-478a838fdf2c": {
       "type": "slideshow",
       "blocks": {
+        "slide_kVay4e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/101726208-2100x1785-cac5525e-be82-456d-8d88-3eb65b29dddb.webp",
+            "heading": "The Charm Bar",
+            "heading_size": "h1",
+            "subheading": "Starting at $20 - through Valentine's Day only",
+            "button_label": "Learn More",
+            "link": "https://www.instagram.com/p/DUYlHZDDpb3/?hl=en",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 20,
+            "color_scheme": "accent-2",
+            "button_color_front": "accent-1",
+            "button_color_back": "accent-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_DPJFbX": {
           "type": "slide",
           "disabled": true,
@@ -95,6 +115,7 @@
         }
       },
       "block_order": [
+        "slide_kVay4e",
         "slide_DPJFbX",
         "template--14669277954153__e664ffef-887a-4468-b461-478a838fdf2c-16686304346c952906-1",
         "f0823213-c761-4749-9bb4-cc4513af8892",
