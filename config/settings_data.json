@@ -150,7 +150,7 @@
           "announcement_qWQD9D": {
             "type": "announcement",
             "settings": {
-              "text": "Happy New Year!",
+              "text": "",
               "text_alignment": "center",
               "color_scheme": "inverse",
               "link": ""
