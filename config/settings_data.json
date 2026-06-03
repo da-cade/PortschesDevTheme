@@ -149,6 +149,7 @@
           },
           "announcement_qWQD9D": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Portsche's will be closed Friday, May 22nd - Monday, May 25th for the owners' wedding 🤵💍👰",
               "text_alignment": "center",
