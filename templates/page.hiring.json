@@ -33,8 +33,8 @@
         "column_HPKJa9": {
           "type": "column",
           "settings": {
-            "title": "Insurance Benefits",
-            "text": "<p>Health insurance available after a 90 day trial period.</p>",
+            "title": "Benefits",
+            "text": "<p>Health insurance and employee discounts are available after a 90 day trial period.</p>",
             "link_label": "",
             "link": ""
           }
