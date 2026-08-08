@@ -139,6 +139,7 @@
         "blocks": {
           "announcement_k94KyV": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "We're Hiring ~ Join our team as a Full Time Sales Associate!",
               "text_alignment": "right",
