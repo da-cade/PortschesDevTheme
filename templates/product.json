@@ -33,7 +33,6 @@
         },
         "fc173aeb-c10c-45f6-80a3-dcd0e60c7a33": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true
           }
@@ -65,6 +64,9 @@
         "text_wHr86q",
         "679acaf7-8963-458e-98e1-23dc8c6dcb04",
         "f66432c8-456b-42dc-a7b9-1be65f4b51d8"
+      ],
+      "custom_css": [
+        ".product-form__submit {background-color: #ffe2d8;}"
       ],
       "settings": {
         "enable_sticky_info": false,
