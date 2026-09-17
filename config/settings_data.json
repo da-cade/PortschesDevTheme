@@ -139,12 +139,11 @@
         "blocks": {
           "announcement_k94KyV": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "We're Hiring ~ Join our team as a Full Time Sales Associate!",
-              "text_alignment": "right",
+              "text": "Portsche's will be closed September 21st and October 2nd for staff weddings!",
+              "text_alignment": "center",
               "color_scheme": "inverse",
-              "link": "shopify://pages/join-the-team-portsches-fine-jewelry"
+              "link": ""
             }
           },
           "announcement_NQAaHy": {
