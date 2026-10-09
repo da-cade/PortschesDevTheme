@@ -9,6 +9,23 @@
  */
 {
   "sections": {
+    "image_banner_KMb7Rn": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Wine_and_wishes_portsche_s_fine_jewelry.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "custom_css": [
@@ -20,57 +37,10 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "rich_text_UwaziG": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_y8U78P": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text_kE9XBK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_PtTAie": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_y8U78P",
-        "text_kE9XBK",
-        "button_PtTAie"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "image_overlay_opacity": 0,
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
-        "color_scheme_2": "background-1",
-        "button_color": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
-    "main",
-    "rich_text_UwaziG"
+    "image_banner_KMb7Rn",
+    "main"
   ]
 }
