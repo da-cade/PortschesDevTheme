@@ -9,55 +9,6 @@
  */
 {
   "sections": {
-    "image_with_text_YagchE": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_nyMcTD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Meet Dylan & Alyssa",
-            "heading_size": "h0"
-          }
-        },
-        "text_tWiUAR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Alyssa and Dylan are the brand new owners of Portsche's Fine Jewelry. Just last April, Alyssa, a long-time employee of Portsche's, and Dylan, a former contractor for the business and the designer of this website, took the torch from Philip and Megan Portsche. Help us celebrate this new journey for Dylan & Alyssa!</p><p>Join us Thursday, September 4th from 5-9pm for a night of complimentary wine tastings, ring cleaning and polishing, and even a raffle for a pair of Montana sapphire earrings!</p>",
-            "text_style": "body"
-          }
-        },
-        "button_DYwwdG": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_nyMcTD",
-        "text_tWiUAR",
-        "button_DYwwdG"
-      ],
-      "custom_css": [
-        ".p-3 {background-color: #ffe2d8;}"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/2025-Portsches-349_1_f8973019-7038-4f54-b03b-65f00e2b8970.jpg",
-        "image_2": "shopify://shop_images/byz-wallpaper.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "accent-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
       "custom_css": [
@@ -119,7 +70,6 @@
     }
   },
   "order": [
-    "image_with_text_YagchE",
     "main",
     "rich_text_UwaziG"
   ]
