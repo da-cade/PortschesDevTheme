@@ -139,7 +139,6 @@
         "blocks": {
           "announcement_k94KyV": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Join Us For Wine & Wishes at our October 23rd wishlist event!",
               "text_alignment": "center",
