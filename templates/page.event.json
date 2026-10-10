@@ -15,7 +15,7 @@
       "settings": {
         "image": "shopify://shop_images/Wine_and_wishes_portsche_s_fine_jewelry.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -54,11 +54,19 @@
             "text": "<p>Did you know you can park in Park BOI garages for free for a whole hour? These red stars are entrances to the garages across from our store.</p>",
             "text_style": "body"
           }
+        },
+        "button_MzqrYR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Directions",
+            "button_link": "https://maps.app.goo.gl/tNFsUYEhtyrKYvWp6"
+          }
         }
       },
       "block_order": [
         "heading_3E66E6",
-        "text_P773BW"
+        "text_P773BW",
+        "button_MzqrYR"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
