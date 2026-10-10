@@ -11,9 +11,7 @@
   "sections": {
     "image_banner_KMb7Rn": {
       "type": "image-banner",
-      "custom_css": [
-        ".content-container--full-width-mobile{background-position-x: left;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Wine_and_wishes_portsche_s_fine_jewelry.png",
@@ -26,7 +24,7 @@
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "main": {
